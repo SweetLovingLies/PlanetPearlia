@@ -32,7 +32,7 @@
                 src="/assets/MariSitePack/Mari-Border_0000_Picnic.png">
 
             <img class="cornerimg" id="lily" src="/assets/MariSitePack/Mari-Border_0001_Lily.png"
-                onclick="typewriter(basilsWords, 'DWBASIL', emotions);">
+                onclick="typewriter(basilsWords);">
 
             <img class="cornerimg foods" id="fruits" onclick="heal.play();"
                 src="/assets/MariSitePack/Mari-Border_0002_Fruits.png">
@@ -143,7 +143,6 @@
                     `These flowers are called lily of the valley. It's said that they're able to ward off evil spirits and help people see a brighter future...`,
                     `I guess that's why they remind me of MARI. I can always count on her to help me stay positive.`,
                 ];
-                const emotions = ['neutral', 'happy'];
             </script>
 
             <!-- Laziness took hold of me-->
@@ -158,40 +157,20 @@
     <audio id="apparition" src="https://files.catbox.moe/qk17h8.mp3" preload="auto"></audio>
 
     <div id="overlay2"></div>
-
-    <audio autoplay loop id="byYourSide">
-        <source src="https://files.catbox.moe/i08lwy.mp3" preload="auto" type="audio/mpeg">
-        Your browser does not support the audio element!
-    </audio>
-    <script>
-        document.querySelectorAll(".foods").forEach(function (food) {
-            food.addEventListener("click", function () {
-
-                setTimeout(function () {
-                    var healContainer = document.getElementById("healContainer");
-                    healContainer.style.display = "flex";
-                    var healWords = document.getElementById("healWords");
-                    healWords.src = "/assets/MariSitePack/Heal!.gif";
-
-                    healWords.src = "";
-                    healWords.src = "/assets/MariSitePack/Heal!.gif";
-
-                    var overlay2 = document.getElementById("overlay2");
-                    overlay2.classList.add("overlay-visible");
-
-                    setTimeout(function () {
-                        healContainer.style.display = "none";
-                        overlay2.classList.remove("overlay-visible");
-                    }, 2000);
-                }, 2000);
-            });
-        });
-
-        document.getElementById('byYourSide').load();
-        document.getElementById('heal').load();
-        byYourSide.volume = 0.02;
-        heal.volume = 0.1;
-    </script>
+    <div class="lightbox show"></div>
+    <div class="textboxContainer">
+        <div class="textboxWrapper">
+            <div class="topWrapper">
+                <p class="characterName">BASIL</p>
+                <img class="characterIMG" src="../shrines/OMORI/omoriAssets/Basil Sprites/dwbasil_neutral.png">
+            </div>
+            <div class="textbox">
+                <img class="cursor" src="http://127.0.0.1:3000/shrines/OMORI/omoriAssets/cursor.png">
+                <div id="text">These flowers are called lily of the valley. It's said that they're able to ward off evil
+                    spirits and help people see a brighter future...</div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

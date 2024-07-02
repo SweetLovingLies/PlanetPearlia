@@ -9,6 +9,7 @@ body {
 }
 
 body {
+    position: relative;
     background-color: black;
     color: white;
     height: 100vh;
@@ -309,9 +310,28 @@ canvas{
     max-height: 370px;
 }
 
-#debug{
+#debugButton{
     position: absolute;
     bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: black;
+    border: 2px solid black;
+    transition: .25s;
+}
+
+#debugButton:hover{
+    color: white;
+    border: 2px solid white;
+}
+
+#debug{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: none;
+
+    padding: 10px;
 }
 
 /* Media Queries! */

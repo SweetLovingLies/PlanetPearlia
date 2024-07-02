@@ -27,6 +27,8 @@
                     <p>Incorrect KEYS will be discarded to the right.</p>
                 </div>
                 <div id="keysList" class="columnFlex">
+                    <p style="text-decoration: underline 1px;">WIP! Not all keys are distributed yet.</p>
+                    <br>
                     <div class="key-item">
                         <img class="keypreview" src="../omoriAssets/keys/keyA.png">
                         <label for="keyA"></label>
@@ -249,7 +251,8 @@
         document.addEventListener('DOMContentLoaded', updateDownTrianglePosition);
     </script>
 
-    <!-- <div id="debug">
+    <button id="debugButton">Show Debug</button>
+    <div id="debug">
     <img src="../omoriAssets/keys/keyA.png" id="keyA" onclick="collectKey('A');">
     <img src="../omoriAssets/keys/keyB.png" id="keyB" onclick="collectKey('B');">
     <img src="../omoriAssets/keys/keyC.png" id="keyC" onclick="collectKey('C');">
@@ -278,17 +281,33 @@
     <img src="../omoriAssets/keys/keyZ.png" id="keyZ" onclick="collectKey('Z');">
     <br>
     <button id="collectAthruJButton">Collect A-J</button>
+    <button id="collectWTButton">COLLECT WELCOME (T)O </button>
     <button id="collectDFCButton">Collect D(E)AD FAIRY CIRCL(E) </button>
     <button id="collectDFC2Button">Collect DEAD FA(I)RY C(I)RCLE </button>
     <button id="collectALLButton">COLLECT ALL </button>
 
+
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
+
+            var debugButton = document.getElementById('debugButton');
+            var debug = document.getElementById('debug');
+
+            debugButton.addEventListener('click', function() {
+                if (debug.style.display === 'block') {
+                    debug.style.display = 'none';
+                    debugButton.textContent = 'Show Debug';
+                } else {
+                    debug.style.display = 'block';
+                    debugButton.textContent = 'Hide Debug';
+                }
+            });
 
             const collectAthruJButton = document.getElementById('collectAthruJButton');
             const collectDFCButton = document.getElementById('collectDFCButton');
             const collectDFC2Button = document.getElementById('collectDFC2Button');
             const collectALLButton = document.getElementById('collectALLButton');
+            const collectWTButton = document.getElementById('collectWTButton');
 
             collectAthruJButton.addEventListener('click', () => {
                 const keysToCollect = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
@@ -310,9 +329,14 @@
                 keysToCollect.forEach(key => collectKey(key));
                 location.reload();
             });
+            collectWTButton.addEventListener('click', () => {
+                const keysToCollect = ['C', 'E', 'L', 'M', 'N', 'O','W'];
+                keysToCollect.forEach(key => collectKey(key));
+                location.reload();
+            });
         });
     </script>
-</div> -->
+</div>
 
 </body>
 

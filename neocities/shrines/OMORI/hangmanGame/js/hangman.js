@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             letterElement.classList.add('letter');
             letterElement.id = `letter${index + 1}`;
             const letterImg = document.createElement('img');
-            letterImg.src = `${window.location.origin}/shrines/OMORI/omoriAssets/keys/Key${letter}.png`;
+            letterImg.src = `${window.location.origin}/shrines/OMORI/omoriAssets/keys/key${letter}.png`;
             letterImg.alt = letter;
             letterImg.style.display = 'none';
             letterElement.appendChild(letterImg);

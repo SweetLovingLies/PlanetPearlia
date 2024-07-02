@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A thumbnail... Test!" />
+  <title>Thumbnail</title>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (navigator.userAgent.includes('Screenjesus')) {
+      window.location.replace("/thumbnail/");
+    }
+  </script>
+
+  <style>
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background: url(assets/movestarbackgroundF.gif);
+        justify-content: center;
+        align-items: center;
+    }
+    #PlanetPearlia{
+        width: 1400px;
+    }
+  </style>
+
+</head>
+
+<body>
+    <img id="PlanetPearlia" src="assets/myAssets/Planet.png">
+</body>
+
+</html>

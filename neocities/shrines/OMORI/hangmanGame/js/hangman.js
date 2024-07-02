@@ -332,7 +332,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function isCorrectKey(key) { 
-    const word = "DEAD FAIRY CIRCLE";
     const wordLetters = [...new Set(word.replace(/ /g, '').toUpperCase())].sort();
     return wordLetters.includes(key.toUpperCase());
 }

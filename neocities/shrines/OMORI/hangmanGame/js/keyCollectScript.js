@@ -44,9 +44,7 @@ function isKeyCollected(keyId) {
 }
 
 function collectKey(keyId) {
-
-    console.log(`collectKey called with keyId: ${keyId}`);
-
+    keyId = keyId.toUpperCase();
     let keys = JSON.parse(localStorage.getItem('collectedKeys')) || [];
     if (!keys.includes(keyId)) {
         keys.push(keyId);
@@ -73,7 +71,7 @@ function collectKey(keyId) {
             lightbox.classList.add('show');
             setTimeout(() => {
                 const keyImg = document.createElement('img');
-                keyImg.src = `${window.location.origin}/shrines/OMORI/omoriAssets/keys/key${keyId}.png`;
+                keyImg.src = `${window.location.origin}/shrines/OMORI/omoriAssets/keys/Key${keyId}.png`; // Capitalize the first letter of "key"
                 keyImg.alt = keyId;
                 keyImg.classList.add('key-image');
                 lightbox.appendChild(keyImg);
@@ -92,7 +90,7 @@ function collectKey(keyId) {
                     const word = "WELCOME TO DEAD FAIRY CIRCLE";
                     const correctLetters = getUniqueLetters(word);
 
-                    if (correctLetters.has(keyId.toUpperCase())) {
+                    if (correctLetters.has(keyId)) {
                         setTimeout(() => {
                             showTextboxContainer();
                         }, 1000);
@@ -136,8 +134,8 @@ function collectKey(keyId) {
         function calculateCorrectKeysNeeded() {
             const word = "WELCOME TO DEAD FAIRY CIRCLE";
             const totalUniqueKeys = getUniqueLetters(word).size;
-            const collectedKeys = new Set(keys.map(key => key.toUpperCase()));
-            const collectedCorrectKeys = new Set([...collectedKeys].filter(key => word.toUpperCase().includes(key)));
+            const collectedKeys = new Set(keys);
+            const collectedCorrectKeys = new Set([...collectedKeys].filter(key => word.includes(key)));
             return totalUniqueKeys - collectedCorrectKeys.size;
         }
 
@@ -146,6 +144,7 @@ function collectKey(keyId) {
         }
     }
 }
+
 
 function showCorrectKeysMessage(correctKeysNeeded) {
     let prewrittenText;

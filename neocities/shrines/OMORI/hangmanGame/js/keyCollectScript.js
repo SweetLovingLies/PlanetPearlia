@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const keys = JSON.parse(localStorage.getItem('collectedKeys')) || [];
 
     keys.forEach(key => {
-        console.log(`Key from localStorage: ${key}`);
         if (key === 'T') return;
         
         const keyElement = document.getElementById(`key${key}`);
@@ -44,7 +43,7 @@ function isKeyCollected(keyId) {
 }
 
 function collectKey(keyId) {
-    keyId = keyId.toUpperCase();
+    keyId = keyId.toUpperCase(); // Ensure the keyId is uppercase
     let keys = JSON.parse(localStorage.getItem('collectedKeys')) || [];
     if (!keys.includes(keyId)) {
         keys.push(keyId);
@@ -144,7 +143,6 @@ function collectKey(keyId) {
         }
     }
 }
-
 
 function showCorrectKeysMessage(correctKeysNeeded) {
     let prewrittenText;

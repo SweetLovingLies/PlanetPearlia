@@ -332,6 +332,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function isCorrectKey(key) { 
+    const welcomeTo = "WELCOME TO ";
+    const deadFairyCircle = "DEAD FAIRY CIRCLE";
+    const word = welcomeTo + deadFairyCircle;
     const wordLetters = [...new Set(word.replace(/ /g, '').toUpperCase())].sort();
     return wordLetters.includes(key.toUpperCase());
 }

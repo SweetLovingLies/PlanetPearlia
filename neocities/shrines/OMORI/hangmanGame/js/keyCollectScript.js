@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const keys = JSON.parse(localStorage.getItem('collectedKeys')) || [];
 
     keys.forEach(key => {
+        console.log(`Key from localStorage: ${key}`);
         if (key === 'T') return;
         
         const keyElement = document.getElementById(`key${key}`);
@@ -43,6 +44,9 @@ function isKeyCollected(keyId) {
 }
 
 function collectKey(keyId) {
+
+    console.log(`collectKey called with keyId: ${keyId}`);
+
     let keys = JSON.parse(localStorage.getItem('collectedKeys')) || [];
     if (!keys.includes(keyId)) {
         keys.push(keyId);

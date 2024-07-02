@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="blog.css" rel="stylesheet">
+    <link href="blogstyleT.css" rel="stylesheet">
+    <meta name="description" content="Live-blogging my thoughts." />
+    <title>Our Blog</title>
+    <link rel="icon" type="image/x-icon" href="/assets/pixels/hibiscus.webp">
+
+    <script>
+        function hideBar(e){
+        const navbar = document.querySelector(".navbar");
+          e.preventDefault();
+          navbar.classList.remove("show");
+          navbar.classList.add("hide");
+        }
+        function showBar(e){
+          const navbar = document.querySelector(".navbar");
+          e.preventDefault();
+          navbar.classList.remove("hide");
+          navbar.classList.add("show");
+        }
+      </script>
+</head>
+
+<body>
+    <div id="wrapper" class="columnflex">
+        <header>
+            <h1> Welcome to our Blog!</h1>
+            <!-- ADD LATER
+                <form>
+                <input type="search" id="searchbar" name="sitesearch">
+                <button id="searchbtn">🔎</button>
+            </form> -->
+        </header>
+
+        <a class="open-icon" onclick="showBar(event)"><img src="/assets/pixels/hibiscus.webp"></a>
+        <aside class="columnflex navbar show">
+            <a class="close-icon" onclick="hideBar(event)">✖</a>
+            <img id="asideHeader" src="/assets/hibiscus.png">
+            <a href="blog.html"><button class="buttons">Home</button></a>
+            <a href="blogArchive.html"><button class="buttons">Archive</button></a>
+            <a href="/anewbeginning.html"><button class="buttons">Back</button></a>
+        </aside>
+        <img id="headerimg" src="/assets/TropicalRouge.jpg">
+
+        <main>
+            <section class="border">
+                <a href="#"><h2> May 14th 2024: REWORKED ALREADY?</h2></a>
+                <p class="scrollbox">
+                    This is much better than the last layout I feel! I'm glad I did this because I am feeling a lot more refreshed.
+                    <br> 
+                    Anyways, I finished a full paid commission recently and made a LOT off of it. A lot more than I was expecting at least. I can't believe that I can actually do this stuff commercially now. I still feel like an indie web weirdo but I can actually make a profit off this shit.
+                    <br>
+                    <b>VRC FBT is on the way folks!</b>
+                    <br> 
+                    Short post today but I'm going to try to do this more consistently now. See you lot soon!
+                </p>
+
+                <p class="tags">Tags: #reworked #FBT</p>
+                <p class="timestamp">17:05</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- <script>
+        function openPage(pageName, elmnt, theme) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+
+            toggleTheme(theme);
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        function toggleTheme(theme) {
+            let themeLink = document.getElementById('theme');
+            let headerimg = document.getElementById('headerimg');
+            let asideHeader = document.getElementById('asideHeader');
+
+            if (themeLink.getAttribute('href') === theme) {
+                return;
+            }
+            themeLink.setAttribute('href', theme);
+            if (theme === 'blogstyleT.css') {
+                headerimg.src = '/assets/myAssets/PearliaSystemM.png';
+                asideHeader.src = '/assets/hibiscus.png';
+            } else {
+                headerimg.src = '/assets/myAssets/PearliaSystemCQ.png';
+                asideHeader.src = '/assets/umbrella.png';
+            }
+        }
+    </script> -->
+    <audio autoplay loop id="5pm">
+        <source src="https://files.catbox.moe/5mem5v.mp3" type="audio/mpeg">
+        Your browser has not support the audio element.
+      </audio>
+      <script>
+        const five = document.getElementById("5pm");
+        five.volume = 0.04;
+      </script>
+</body>
+
+</html>

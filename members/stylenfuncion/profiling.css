@@ -1,0 +1,250 @@
+/* Only what remains consistent*/
+
+body {
+  color: var(--text);
+  background-image: var(--body-bg-image);
+  margin: 0;
+  background-attachment: fixed;
+  font-size: 1em;
+}
+
+a:link {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--hovertxt);
+}
+a:visited {
+  color: var(--visited);
+}
+
+footer {
+  max-width: 800px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 25px;
+  background-color: var(--brightaccent);
+  color: white;
+  line-height: 100%;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  padding: 1em 0 1em 0;
+  border: 2px solid var(--brightaccent);
+}
+
+img, canvas {
+  max-width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  background-color: var(--brightaccent);
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+  padding: .5em;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.96rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Fix line height when title wraps */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h2 {
+  border-bottom: 2px solid var(--brightaccent);
+}
+
+h4 {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  font-size: 14px;
+  background: var(--brightaccent);
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 100;
+}
+
+h5 {
+  color: var(--brightaccent);
+  margin: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  max-width: 800px;
+  width: 95%;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 5vh;
+  background-color: var(--contentbg);
+  border-left: var(--brightaccent) solid 2px;
+  border-right: var(--brightaccent) solid 2px;
+  border-top: var(--brightaccent) solid 2px;
+  margin-top: 3em;
+  border-radius: 12px 12px 0 0;
+}
+
+.infobox {
+  display: inline;
+  max-width: 24%;
+  width: 100%;
+  padding: .5em;
+  font-size: 13px;
+  float: right;
+  clear: right;
+  border: 1px solid var(--brightaccent);
+  height: 100%;
+  background-color: var(--boxbg);
+  border-radius: 10px;
+  outline: 2px solid var(--contentbg);
+  margin-left: 1em;
+}
+
+.infobox img, .infobox canvas {
+  border-radius: .5em;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.bullet {
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+
+.wiki {
+  display: inline;
+  padding: 1em;
+}
+
+p,
+dl,
+multicol {
+  margin-block-start: 0em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.infobox p {
+  text-indent: 0em;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+  .wiki {
+    flex-direction: column;
+  }
+
+  .infobox {
+    max-width: 95%;
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .wikitext {
+    width: 100%;
+  }
+
+  dotted {
+    border-top: 2px dotted #bbb;
+    margin: 10%;
+  }
+
+  dottedthin {
+    border-top: 1px dotted #bbb;
+    margin: 1px;
+    opacity: 25%;
+  }
+
+  iframe {
+    border: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,173 @@
+@font-face {
+    font-family: peachsundress;
+    src: url('/fonts/peachsundress.ttf');
+}
+
+body {
+    background-image: url('/assets/roesbudtrelbg.gif');
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Helvetica;
+}
+.rowflex{
+    display: flex;
+}
+.columnflex{
+    display: flex;
+    flex-flow: column;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 1000px;
+    border: 5px dashed pink;
+}
+.container h1 {
+    display: flex;
+    margin-bottom: 10px;
+    text-decoration: underline 3px pink;
+    text-decoration: underline 3px pink;
+    text-decoration-style: dashed;
+    color: rgb(160, 116, 136);
+    justify-content: center;
+}
+.container h1::after{
+    content: "";
+    background: url('/assets/pagedolls/itty lamb.png');
+    background-size: contain;
+    width: 48px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.container h2{
+    display: flex;
+    background-color: rgb(255, 230, 234);
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.7em;
+    color: #696969;
+    border: 3px dotted rgb(119, 190, 119);
+}
+
+
+.container h3{
+    display: flex;
+    width: 70%;
+    background-color: rgb(190, 255, 170);
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.2em;
+    color: #696969;
+    margin: 0 auto;
+}
+
+ p {
+    font-size: 1.1em;
+    font-family: Helvetica, sans-serif;
+    color: #696969;
+}
+
+hr {
+    margin: 20px 0;
+    border-top: 3px dashed pink;
+    width: 100%;
+}
+
+.container img {
+    max-width: 40%;
+    margin-top: 10px;
+}
+
+.gallery p {
+    font-size: .9em
+}
+
+.referenceLinks{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.referenceLinks a {
+    display: block;
+    color: green;
+    background-color: rgb(255, 227, 232);
+    padding: 2px;
+    width: 30%;
+    margin: 0 auto;
+    border: 3px solid rgb(212, 212, 212);
+    border-radius: 15px;
+    text-decoration: none;
+}
+.referenceLinks a:hover, .referenceLinks a:visited:hover {
+    color: rgb(90, 185, 90);
+}
+
+.referenceLinks a:visited {
+    color: rgb(61, 145, 61);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 122, 144);
+    width: auto;
+    height: 100px;
+    margin: 10px -20px -20px -20px;
+    border-radius: 0 0 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+}
+footer a{
+    color: rgb(14, 255, 255);
+    text-decoration: none;
+    transition: color .25s;
+}
+footer a:hover, footer a:visited:hover {
+    color: rgb(137, 206, 140);
+}
+
+footer a:visited {
+    color: rgb(14, 255, 255);
+}
+
+.divider {
+    height: 38px;
+    width: auto;
+    background-image:url('/assets/pixels/flowerborder3.webp');
+    background-size: 40%;
+    background-repeat: repeat-x;
+    border-bottom: 2px solid rgb(115, 211, 115);
+    margin: 10px 0;
+}
+
+
+/* General Formatting */
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: peachsundress;
+}

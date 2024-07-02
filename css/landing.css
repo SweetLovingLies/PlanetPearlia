@@ -1,0 +1,351 @@
+:root {
+    --blurple: #b1adff;
+}
+
+@font-face {
+    font-family: basiic;
+    src: url('/fonts/basiic.ttf');
+}
+
+@font-face {
+    font-family: porkys;
+    src: url('/fonts/PORKYS_.TTF');
+}
+
+@font-face {
+    font-family: BILLO;
+    src: url('/fonts/BILLO.TTF');
+}
+
+body {
+    color: #8186B3;
+    font-family: basiic;
+    font-size: 12pt;
+    text-decoration: none;
+    margin: 0;
+    background-image: url(/assets/movestarbackground.gif);
+    background-size: 200px 200px;
+    animation: fadeInAnimation ease .25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Layout */
+
+.wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.content {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+main{
+    padding: 10px;
+}
+
+/* Header */
+
+.topbar {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 3px dashed white;
+    border-radius: 0 0 10px 0px;
+    padding: 5px;
+    max-width: 100%;
+    max-height: 70px;
+    filter: drop-shadow(1px 1px 1px #534aff);
+    background: url(/assets/sparklecloud.gif) center;
+}
+
+.topbar h1 {
+    font-family: billo;
+    font-size: 50px;
+
+    text-shadow: 0 0 7px #534aff,
+        0 0 10px #534aff,
+        0 0 21px #534aff;
+    margin: 0;
+}
+
+.top {
+    position: relative;
+    right: 20px;
+    color: white;
+}
+
+/* Nav */
+
+nav {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: white;
+    border: 3px dashed white;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    bottom: 3px;
+    max-width: 300px;
+    filter: drop-shadow(1px 2px 1px #534aff);
+    max-height: 1024px;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #8186B3;
+    font-size: 20px;
+    border: none;
+    font-family: 'porkys';
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    max-width: 160px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffe6fc;
+}
+
+.time {
+    background-color: var(--blurple);
+    color: white;
+    margin: 7px;
+    border: 2px dashed #534aff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 80%;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    font-size: small;
+    margin: 0;
+}
+footer a{
+    color: #ff4c4c;
+}
+footer a:hover{
+    color: #ff4c4c;
+}
+
+.bottombar {
+    margin: 0px;
+    margin-top: -5px;
+    background-color: var(--blurple);
+    border: 3px dashed white;
+    background: url(/assets/sparklecloud.gif) center;
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 10px 10px 0 0;
+    border: 3px dashed white;
+    filter: drop-shadow(1px 1px 1px #534aff);
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+/* General Styles*/
+
+h1 {
+    font-family: porkys;
+    font-size: 40px;
+    margin-left: 10px;
+    text-shadow: 0 0 7px #b1adff,
+        0 0 10px #b1adff,
+        0 0 21px #b1adff;
+    margin: 0;
+}
+
+h2 {
+    font-family: porkys;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 0 0 7px #b1adff,
+        0 0 10px #b1adff,
+        0 0 21px #b1adff;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: porkys;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+}
+
+.top a:hover {
+    color: #d17dff;
+}
+
+
+/* Other/Decor */
+
+.blockimages {
+    width: 40%;
+    margin: 10px 20px;
+}
+
+#banner {
+    padding: 10px;
+    border: 5px solid #b1adff;
+    border-radius: 20px;
+    width: 80%;
+    height: 2.4em;
+    text-align: right;
+    background-image: url("/assets/myAssets/PearliaSystemM.png");
+    background-size: cover;
+    background-position: left;
+}
+
+/* Custom Cursor from Cursors4U */
+* {
+    cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;
+}
+/* Custom Cursor from Cursors4U */
+
+
+/* Media Queries*/
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        background-image: url(/assets/movestarbackgroundF.gif);
+    }
+    .bottombar,
+    .topbar {
+        background: url(/assets/sparklecloudF.gif) center;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .topbar {
+        flex-direction: column;
+        max-height: 100px;
+        padding-bottom: 20px;
+    }
+
+    .top {
+        right: 0px;
+    }
+
+    .topbar h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-flow: no-wrap;
+        bottom: 10px;
+        justify-content: left;
+        max-width: 100%;
+    }
+
+    .time {
+        display: none;
+    }
+
+    .dropbtn {
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        font-size: 13px;
+    }
+
+}

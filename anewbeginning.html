@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+      ∧＿∧
+　꒰⑅⸝⸝ᵕ ༝ ᵕ⸝⸝⑅꒱  < Kerias the Guide Cat
+┏ーー∪ー∪ーー ┓
+┃＼　　　　 ／ ┃
+┃ ＼　 ♡   ／ ┃
+┃　／＼＿／＼  ┃  Take care! I'll try and add some notes to help you 
+┗ー━ー━ー━ーー ┛  navigate my thought processes. 
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/starlight.css" rel="stylesheet">
+  <meta name="description" content="Welcome to Planet Pearlia! A site to learn about the Pearlia System." />
+  <title> Welcome Home! </title>
+  <link rel="icon" type="image/x-icon" href="assets/pixels/moon.png">
+  <!-- This script is what resizes the iframe when you click the links!! you should mainly avoid inline JS, but it can be done inline as well. -->
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = 0;
+      obj.style.height = obj.contentWindow.document.body.clientHeight + 'px';
+    }
+  </script>
+  <!-- And this script allows you to link specific sections of the iframe. Very helpful! -->
+  <script src="https://melonking.net/scripts/frame-link.js"></script>
+  <!-- This works better than Freezeframe.js. Credits to Graybox.lol on Neocities! -->
+  <script src="js/jaxframeFork.js"></script>
+</head>
+
+<body onload="jaxframe.stop()">
+  <div class="trimt"></div>
+  <div class="wrapper">
+    <div id="headerArea">
+      <div id="header" class="foolloversborder">
+        <div class="hoverme">
+          <div class="pdfront"><img src="/assets/pagedolls/Pagedoll-Faeily.gif"></div>
+          <div class="bubble">Who am I? One of Hana's oldest characters lol. You'll find out more about me later. See
+            ya!</div>
+        </div>
+        <img class="headertxt" src="assets/myAssets/Pearlia_SystemT.png" alt="'Pearlia System'">
+        <div class="pdback"><img src="/assets/pagedolls/Pagedoll-Faeily.gif"></div>
+      </div>
+      <nav id="navbar" class="mainborder" style="margin-bottom: 10px;">
+        <ul class="flex2">
+          <li><img src="/assets/pixels/castle.gif"></li>
+
+          <li><a href="/main.html" target="maincontent" onClick="document.getElementById('3bar').play()">Home</a></li>
+
+          <li><img src="/assets/pixels/glitters.webp"></li>
+
+          <li><a href="/aboutme.html" target="maincontent" onClick="document.getElementById('yume').play()">About Me</a>
+          </li>
+
+          <li><img src="/assets/pixels/glitters.webp"></li>
+
+          <li><a href="/thesystem.html" target="_top">My System ↗</a></li>
+
+          <li><img src="/assets/pixels/glitters.webp"></li>
+
+          <li><a href="#">My Paracosms</a></li>
+
+          <li><img src="/assets/pixels/glitters.webp"></li>
+
+          <li><a href="/blog/blog.html" target="_top">Our Blog ↗</a></li>
+
+          <li><img src="/assets/pixels/glitters.webp"></li>
+
+          <li><a href="/myshrines.html" target="maincontent"
+              onClick="document.getElementById('hotel').play()">Shrines</a></li>
+
+          <li><img src="/assets/pixels/glitters.webp"></li>
+
+          <li><a href="/sitemap.html" target="maincontent" onClick="document.getElementById('sunny').play()">Site
+              Map</a></li>
+
+          <li><img src="/assets/pixels/castle.gif"></li>
+
+          <li>
+            <button class="ffButtons" onclick="sendMessage('start'); jaxframe.start();">Play GIFs</button>
+            <button class="ffButtons" onclick="sendMessage('stop'); jaxframe.stop();">Stop GIFs</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <iframe id="mainframe" name="maincontent" width="100%" height="1000vh" scrolling="no" frameborder="0"
+      onload="resizeIframe(this)" src="/main.html">
+    </iframe>
+
+    <footer id="footer" class="mainborder flex2" style="margin-top: 10px;">
+      <img class="fimgleft" src="/assets/blinkies/dontbeafraidtodream.gif" alt="'Don't be afraid to dream' blinkie">
+      <img class="fimgleft" src="/assets/blinkies/badwebdev.gif" alt="'Bad Website Design' blinkie">
+      <p>Hosted with love on Neocities! </p>
+      <img class="fimgright" src="/assets/blinkies/internetprincess.gif" alt="'Internet Princess' blinkie!">
+      <img class="fimgright" src="/assets/blinkies/hellokitty.gif" alt="'Hello Kitty' blinkie">
+    </footer>
+    <br>
+    <br>
+  </div>
+
+  <!-- This is how you change the music playing when you click the links! -->
+  <audio loop id="yume">
+    <source src="https://files.catbox.moe/pn0597.mp3" type="audio/mpeg">
+    Your browser has not support the audio element.
+  </audio>
+  <audio loop autoplay id="3bar">
+    <source src="https://files.catbox.moe/ggy4vp.mp3" preload="auto" type="audio/mpeg">
+    Your browser has not support the audio element.
+  </audio>
+  <audio loop id="hotel">
+    <source src="https://files.catbox.moe/dn2ows.mp3" type="audio/mpeg">
+    Your browser has not support the audio element.
+  </audio>
+  <audio loop id="sunny">
+    <source src="https://files.catbox.moe/j9s7lq.mp3" type="audio/mpeg">
+    Your browser has not support the audio element.
+  </audio>
+  <audio loop id="wanderingrose">
+    <source src="https://files.catbox.moe/1btcvm.mp3" type="audio/mpeg">
+    Your browser has not support the audio element.
+  </audio>
+  <audio loop id="squall">
+    <source src="https://files.catbox.moe/9w0ddr.mp3" type="audio/mpeg">
+    Your browser has not support the audio element.
+  </audio>
+  <!--<audio loop autoplay id="myTime">
+        <source src="https://files.catbox.moe/zt40uy.mp3" type="audio/mpeg">
+        Your browser has not support the audio element.
+        const audio0 = document.getElementById("myTime")
+            audio0.volume = 0.04;
+      </audio>-->
+
+  <!-- Here's the script for that. -->
+  <script src="/js/audiojs.js"></script>
+  <!-- Let's not blast out people's ears now. Mhm -->
+  <script>
+    const audio1 = document.getElementById("3bar");
+    const audio2 = document.getElementById("yume");
+    const audio3 = document.getElementById("hotel");
+    const audio4 = document.getElementById("sunny");
+    const audio5 = document.getElementById("wanderingrose");
+    const audio6 = document.getElementById("squall");
+    const audio7 = document.getElementById("5pm");
+    audio1.volume = 0.04;
+    audio2.volume = 0.02;
+    audio3.volume = 0.05;
+    audio4.volume = 0.03;
+    audio5.volume = 0.02;
+    audio6.volume = 0.02;
+    audio7.volume = 0.05;
+  </script>
+
+  <div class="trimb"></div>
+</body>
+
+<script>
+  function sendMessage(action) {
+    var iframe = document.getElementById('mainframe');
+    iframe.contentWindow.postMessage(action, '*');
+  }
+</script>
+
+</html>

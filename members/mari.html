@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Sister</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/pixels/lilyofvalley2.webp">
+    <link href="stylenfuncion/picnicblanket.css" rel="stylesheet" type="text/css" media="all">
+    <script>
+        function hover(element) {
+            element.setAttribute('src', 'https://pearliasystem.neocities.org/shrines/OMORI/omoriAssets/something_disappear.gif');
+
+            setTimeout(
+                function hide() {
+                    element.remove();
+                }, 1500)
+        }
+    </script>
+    <script src="/js/jaxframeFork.js"></script>
+</head>
+
+<body onload="jaxframe.stop()">
+    <div>
+        <a href="/thesystem.html"><img id="back" src="/assets/pixels/sweetback.webp"></a>
+        <div class="picnicblanket">
+            <img class="cornerimg foods" id="picnic" onclick="heal.play();"
+                src="/assets/MariSitePack/Mari-Border_0000_Picnic.png">
+            <img class="cornerimg" id="lily" src="/assets/MariSitePack/Mari-Border_0001_Lily.png">
+            <img class="cornerimg foods" id="fruits" onclick="heal.play();"
+                src="/assets/MariSitePack/Mari-Border_0002_Fruits.png">
+            <img class="cornerimg foods" id="drinks" onclick="heal.play();"
+                src="/assets/MariSitePack/Mari-Border_0003_Drinks-Cooler.png">
+
+            <audio id="heal">
+                <source src="https://files.catbox.moe/x5902n.mp3" preload="auto" type="audio/mpeg">
+                Your browser does not support the audio element!
+            </audio>
+
+            <main class="rLace">
+                <aside class="leftside">
+                    <img class=" icon" src='/assets/mari.gif' alt="Mari from OMORI" onclick="jaxframe.start()">
+
+                    <div class="details">
+                        <div class="filler">
+                            <h1>MARI</h1>
+                        </div>
+                        <p><b>System Role:</b>
+                            <br>Core/Host<br>
+                        </p>
+                        <p> <b>First Appearance:</b>
+                            <br>2023<br>
+                        <p>
+
+                        <p><b>Age:</b>
+                            <br>
+                            18yrs
+                        </p>
+                        <p><b>Pronouns:</b>
+                            <br>
+                            She/Her
+                        </p>
+                        <p><b>Gender:</b>
+                            <br>
+                            Female
+                        </p>
+                        <p><b>Orientation:</b>
+                            <br>
+                            Straight / Taken
+                        </p>
+                    </div>
+                </aside>
+                <section>
+                    <div>
+                        <img src="/assets/pixels/flowersbig.webp" class="lfloated">
+                        <p>
+                            <b>Hi! I'm MARI.</b> I'm really only here to take care of the body and help others when they
+                            are
+                            down. I'm not a frequent fronter, but if you see me around, don't be afraid to talk to me!
+                        </p>
+                        <div class="flowers"></div>
+                    </div>
+                    <h4>Hobbies:</h4>
+                    <p>
+                        I do a lot of cooking when I am fronting. I enjoy the process and the laughs it brings
+                        with the family!
+                        <br>
+                        Decorating is also fun! I like scrapbooking and planning out home layouts in the Sims 4!
+                        <br>
+                        I have also recently picked up programming, which is quite a nightmare, but I think it's
+                        a necessary evil to learn considering the nature of this system.
+                        <br>
+                        Unlike my source, I am absolute rubbish at playing the piano... We have one though, so
+                        it might change!
+                    </p>
+                    <h4>Favorite Food:</h4>
+                    <p>
+                        I love fruits of all kinds! However, I do enjoy grapes a lot.
+                    </p>
+
+                    <img id="garden" src="/assets/pixels/garden.webp" class="rfloated">
+
+                    <h4>Other:</h4>
+                    <p>
+                        <img class="bullet" src="/assets/pixels/LilyofValley1.webp" alt="bullet">Of course, my family
+                        will always be SUNNY, BASIL, KEL, and AUBREY.
+                        <br>
+                        <img class="bullet" src="/assets/pixels/LilyofValley1.webp" alt="bullet">Taken by my beloved
+                        HERO!
+                        <br>
+                        <img class="bullet" src="/assets/pixels/LilyofValley1.webp" alt="bullet"> Recently was made
+                        aware of HANA, and I enjoy her company.
+                    </p>
+                    <p>
+                        <img class="bullet" src="/assets/pixels/umbrella.webp" alt="bullet"> You can add more here when
+                        you're ready, girl. - HANA
+                    </p>
+
+                    <div>
+                        <img src="/assets/stamps/glitterrainbow.png" alt="Glitter Rainbow Stamp!">
+                        <img src="/assets/stamps/itsalmostliminalkidcore.png" alt="Kidcore Liminal Stamp!">
+                        <img src="/assets/stamps/wtfunicorns.gif" alt="Unicorns Stamp!">
+                        <img src="/assets/stamps/pastel (14).png" alt="Rainbow Stamp!">
+                        <img src="/assets/stamps/ilovesnacking.gif" alt="'I love snacking' Stamp!">
+                        <img src="/assets/stamps/blackandwhiteflowers.png" alt="Black and White Flowers Stamp!">
+                        <img src="/assets/stamps/loveclub.png" alt="'Love Club' Stamp!">
+                    </div>
+                </section>
+            </main>
+            <div class="basil-container" id="basilContainer">
+                <img id="basilsWords" src="/assets/MariSitePack/BasilsWords.gif"
+                    alt=" These flowers are called lily of the valley. It's said that they're able to ward off evil spirits and help people see a brighter future...  I guess that's why they remind me of MARI. I can always count on her to help me stay positive.">
+            </div>
+            <div class="heal-container" id="healContainer">
+                <img id="healWords" src="/assets/MariSitePack/Heal!.gif" alt="You and your friends feel like new!">
+            </div>
+        </div>
+    </div>
+
+    <img id="something" src="../shrines/OMORI/omoriAssets/something.webp"
+        onmouseover="apparition.play(); hover(this); apparition.volume = 0.2;">
+    <audio id="apparition" src="https://files.catbox.moe/qk17h8.mp3" preload="auto"></audio>
+
+    <div id="overlay"></div>
+    <div id="overlay2"></div>
+
+    <audio autoplay loop id="byYourSide">
+        <source src="https://files.catbox.moe/i08lwy.mp3" preload="auto" type="audio/mpeg">
+        Your browser does not support the audio element!
+    </audio>
+    <script>
+        document.getElementById('byYourSide').load();
+        document.getElementById('heal').load();
+        byYourSide.volume = 0.02;
+        heal.volume = 0.1;
+    </script>
+    <script>
+        document.getElementById("lily").addEventListener("click", function () {
+            var basilContainer = document.getElementById("basilContainer");
+            basilContainer.style.display = "flex";
+            var basilsWords = document.getElementById("basilsWords");
+            basilsWords.src = "/assets/MariSitePack/BasilsWords.gif";
+
+            basilsWords.src = "";
+            basilsWords.src = "/assets/MariSitePack/BasilsWords.gif";
+
+            var overlay = document.getElementById("overlay");
+            overlay.classList.add("overlay-visible");
+
+            setTimeout(function () {
+                basilContainer.style.display = "none";
+                overlay.classList.remove("overlay-visible");
+            }, 8000);
+        });
+    </script>
+    <script>
+        document.querySelectorAll(".foods").forEach(function (food) {
+            food.addEventListener("click", function () {
+
+                setTimeout(function () {
+                    var healContainer = document.getElementById("healContainer");
+                    healContainer.style.display = "flex";
+                    var healWords = document.getElementById("healWords");
+                    healWords.src = "/assets/MariSitePack/Heal!.gif";
+
+                    healWords.src = "";
+                    healWords.src = "/assets/MariSitePack/Heal!.gif";
+
+                    var overlay2 = document.getElementById("overlay2");
+                    overlay2.classList.add("overlay-visible");
+
+                    setTimeout(function () {
+                        healContainer.style.display = "none";
+                        overlay2.classList.remove("overlay-visible");
+                    }, 2000);
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>

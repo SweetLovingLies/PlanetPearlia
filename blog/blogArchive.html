@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="blog.css" rel="stylesheet">
+    <link id="theme" href="blogstyleCQ.css" rel="stylesheet">
+    <meta name="description" content="Live-blogging my thoughts." />
+    <title>The Archive</title>
+    <link rel="icon" type="image/x-icon" href="/assets/pixels/heels.webp">
+
+    <script>
+        function hideBar(e){
+        const navbar = document.querySelector(".navbar");
+          e.preventDefault();
+          navbar.classList.remove("show");
+          navbar.classList.add("hide");
+        }
+        function showBar(e){
+          const navbar = document.querySelector(".navbar");
+          e.preventDefault();
+          navbar.classList.remove("hide");
+          navbar.classList.add("show");
+        }
+      </script>
+</head>
+
+<body>
+    <div id="wrapper" class="columnflex">
+        <header>
+            <h1>Old Posts Archive!</h1>
+
+            <!-- ADD LATER
+                <form>
+                <input type="search" id="searchbar" name="sitesearch">
+                <button id="searchbtn">🔎</button>
+            </form> -->
+        </header>
+
+        <a class="open-icon" onclick="showBar(event)"><img src="/assets/pixels/bowheart.gif"></a>
+        <aside class="columnflex navbar show">
+            <a class="close-icon" onclick="hideBar(event)">✖</a>
+            <img id="asideHeader" src="/assets/umbrella.png">
+            <a href="blog.html"><button class="buttons">Home</button></a>
+            <a href="blogArchive.html"><button class="buttons">Archive</button></a>
+            <a href="/anewbeginning.html"><button class="buttons">Back</button></a>
+        </aside>
+        <img id="headerimg" src="/assets/myAssets/PearliaSystemCQ.png">
+
+        <main>
+            <section class="border">
+                <h2> Feb 18th 2024: It's time to wrap up the weekend</h2>
+                <p class="scrollbox">
+                    This weekend has been the biggest rollercoaster of emotions OMG<br>
+                    On Saturday, I went out with my sister to see a movie. She ended up getting me a giftbag full of
+                    stuff as
+                    well! I got a unicorn plushie that I haven't named yet.. I'll get a picture later. <br>
+                    Today, I got some driving practice in by driving me and my father to the Tim Hortons. I managed to
+                    thoroughly
+                    stress myself out, but I am alive! I have not gotten my license yet because my anxiety has kept me
+                    from taking
+                    the test. I recently became more consistent with practicing, and I'll be on the road by myself here
+                    in a
+                    couple of months. Hurrah! <br>
+                    That's all for now. Take care of yourselves and have a good evening per usual!
+                </p>
+
+                <p class="tags">Tags: #archive</p>
+                <p class="timestamp">19:33</p>
+            </section>
+
+            <section class="border">
+                <h2> Feb 15th 2024: I finally got around to making this thing!</h2>
+                <p class="scrollbox">
+                    The layout for the blog is complete finally YAY! I kind of took design inspo from the colorful
+                    designs of
+                    Pastel Goth !! I really hope I did it justice. As for today, I went skating with an IRL and my
+                    mother. We're
+                    trying to go consistently as a way to help me get out more. It was fun! It always is fun.
+                    <br>
+                    Tonight, I plan to do some more work on the layout. While helping Pastel Goth with her site layout,
+                    I ended up
+                    learning some things that could help clean up the css on the main layout. Expect updates later!
+                    <br>
+                    Alright, that's all for now. Take care of yourselves and have a good evening!
+                </p>
+
+                <p class="tags">Tags: #archive</p>
+                <p class="timestamp">16:50</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- <script>
+        function openPage(pageName, elmnt, theme) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+
+            toggleTheme(theme);
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        function toggleTheme(theme) {
+            let themeLink = document.getElementById('theme');
+            let headerimg = document.getElementById('headerimg');
+            let asideHeader = document.getElementById('asideHeader');
+
+            if (themeLink.getAttribute('href') === theme) {
+                return;
+            }
+            themeLink.setAttribute('href', theme);
+            if (theme === 'blogstyleT.css') {
+                headerimg.src = '/assets/myAssets/PearliaSystemM.png';
+                asideHeader.src = '/assets/hibiscus.png';
+            } else {
+                headerimg.src = '/assets/myAssets/PearliaSystemCQ.png';
+                asideHeader.src = '/assets/umbrella.png';
+            }
+        }
+    </script> -->
+    <audio autoplay loop id="5pm">
+        <source src="https://files.catbox.moe/5mem5v.mp3" type="audio/mpeg">
+        Your browser has not support the audio element.
+      </audio>
+      <script>
+        const five = document.getElementById("5pm");
+        five.volume = 0.04;
+      </script>
+</body>
+
+</html>

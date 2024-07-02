@@ -1,0 +1,181 @@
+@font-face {
+    font-family: basiic;
+    src: url('/fonts/basiic.ttf');
+}
+
+@font-face {
+    font-family: porkys;
+    src: url('/fonts/PORKYS_.TTF');
+}
+
+@font-face {
+    font-family: KINKEE;
+    src: url('/fonts/KINKIE__.TTF');
+}
+
+@font-face {
+    font-family: Garden;
+    src: url('/fonts/FleursDeLiane-2wZl.ttf');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background: url('/assets/HowlsMovingCastle/CloudsSeamless.png');
+    background-size: cover;
+    animation: cloudAnim 120s infinite;
+
+    font-family: basiic;
+}
+
+@keyframes cloudAnim {
+
+    0%,
+    100% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 100vw;
+    }
+
+}
+
+/* Howl and Sophie */
+
+#HMCWrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bottom,
+#top,
+#us {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    right: 0;
+
+    pointer-events: none;
+}
+
+#bottom,
+#top {
+    animation: vertmove 1s ease-in-out infinite;
+}
+
+@keyframes vertmove {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+}
+
+#bottom {
+    background: url("/assets/HowlsMovingCastle/Bottom.png") no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+#top {
+    background: url("/assets/HowlsMovingCastle/top.png") no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+
+#us {
+    background: url('/assets/HowlsMovingCastle/HowlandSophie.png') no-repeat;
+    background-size: 30%;
+    background-position: 34.7vw .1vh;
+
+    animation: move 1s infinite ease-in-out;
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(.6deg) translateY(6px);
+    }
+
+}
+
+/* Main */
+
+main {
+    flex: 1 0 470px;
+
+    background-color: lightcoral;
+    color: #571313;
+
+    min-height: 700px;
+    margin: 20px 30px;
+    padding: 10px 20px;
+
+    border-width: 9px;
+    border-style: solid;
+    border-image: url("/assets/borders/pinkHearts.png") 7 round;
+    background-clip: padding-box;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Garden;
+    font-size: 5em;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 580px) {
+
+    #bottom,
+    #top{
+        background-position: center 53.7vh;
+        background-size: 200%;
+    }
+
+    #us {
+        background-position: 20vw 53.7vh;
+        background-size: 60%;
+    }
+
+    #HMCWrapper{
+        width: unset;
+    }
+
+    main{
+        flex: 1 1;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 3.8em;
+    }
+}

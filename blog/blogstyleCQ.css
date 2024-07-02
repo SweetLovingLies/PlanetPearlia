@@ -1,0 +1,90 @@
+body {
+    background: url('/assets/roesbudtrelbg.gif');
+    background-size: 7em;
+}
+
+header {
+    background: url('/assets/blueplaid.png');
+    background-size: 10em;
+}
+
+#searchbar {
+    border-top: 3px solid #ffd7e6;
+    border-left: 3px solid #ffd7e6;
+    border-bottom: 3px solid #ffd7e6;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+#searchbtn{
+    background: white;
+    border-top: 3px solid #ffd7e6;
+    border-right: 3px solid #ffd7e6;
+    border-bottom: 3px solid #ffd7e6;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+aside {
+    background: url('/assets/blueplaid.png');
+    background-size: 10em;
+}
+
+.open-icon{
+    background-color: #ffffff;
+    border-right: 5px solid #ffd7e6;
+    border-bottom: 5px solid #ffd7e6;
+}
+
+
+.buttons {
+    background-color: #ffbece;
+    border: 3px white solid;
+}
+
+.buttons::after {
+    border: 2px solid #ffbece;
+}
+
+.buttons:hover {
+    background-color: #ff96b0;
+}
+
+.buttons:active{
+    background-color: #ff6c91;
+}
+
+#asideHeader {
+    -webkit-filter: drop-shadow(3px 3px 0 #ffffff) drop-shadow(-3px -3px 0 #ffffff);
+    filter: drop-shadow(3px 3px 0 #ffffff) drop-shadow(-3px -3px 0 #ffffff);
+}
+
+h1 {
+    background-color: white;
+    color: #FFC5E1;
+    -webkit-text-stroke: white 1px;
+}
+
+.border {
+    border-width: 8px;
+    border-style: solid;
+    border-image: url("/assets/borders/buttonberry.png") 8 fill round;
+}
+
+.border2 {
+    border-width: 12px;
+    border-style: solid;
+    border-image: url("/assets/borders/pinkborder.png") 11 fill round;
+}
+
+
+h2 {
+    font-family: porkys;
+    background-color: white;
+    color: #ffaed6;
+    border: pink 3px dashed;
+    border-bottom: tan 3px dashed;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    min-width: fit-content;
+}

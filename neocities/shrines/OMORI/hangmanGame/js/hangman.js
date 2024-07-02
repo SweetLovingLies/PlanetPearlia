@@ -4,21 +4,18 @@ let isHangmanFunctionCalled = false;
 document.addEventListener('DOMContentLoaded', (event) => {
     const keys = JSON.parse(localStorage.getItem('collectedKeys')) || [];
     const uniqueKeys = new Set(keys);
-    console.log("Unique keys:", uniqueKeys);
 
     const welcomeTo = "WELCOME TO ";
     const deadFairyCircle = "DEAD FAIRY CIRCLE";
     const hangmanWordContainer = document.getElementById('hangmanWord');
-    const word = welcomeTo + deadFairyCircle; // Define the word here
+    const word = welcomeTo + deadFairyCircle;
 
     hangmanWordContainer.innerHTML = '';
 
-    // Create a wrapper for the "WELCOME TO" section
     const welcomeToWrapper = document.createElement('div');
     welcomeToWrapper.classList.add('word-section');
     hangmanWordContainer.appendChild(welcomeToWrapper);
 
-    // Generate the word "WELCOME TO"
     welcomeTo.split('').forEach((letter, index) => {
         const letterElement = document.createElement('div');
         if (letter === ' ') {
@@ -36,12 +33,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         welcomeToWrapper.appendChild(letterElement);
     });
 
-    // Create a wrapper for the "DEAD FAIRY CIRCLE" section
     const deadFairyCircleWrapper = document.createElement('div');
     deadFairyCircleWrapper.classList.add('word-section');
     hangmanWordContainer.appendChild(deadFairyCircleWrapper);
 
-    // Generate the word "DEAD FAIRY CIRCLE"
     deadFairyCircle.split('').forEach((letter, index) => {
         const letterElement = document.createElement('div');
         if (letter === ' ') {

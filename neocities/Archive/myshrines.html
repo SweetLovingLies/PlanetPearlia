@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/starlight.css" rel="stylesheet">
+  <link href="css/shrines.css" rel="stylesheet">
+  <meta name="description" content="My favorite things" />
+  <title>My Shrines</title>
+  <script src="/js/jaxframeFork.js"></script>
+</head>
+
+<body onload="jaxframe.stop()" style="background-image:none; background-color:transparent;">
+  <main class="wrapper flex">
+    <div class="flex">
+      <!-- <aside id="leftSidebar" class="mainborder">
+                    <h2>my shrines</h2>
+                    <div class="bowdetails"></div>
+                    <ul style="padding-left:10px; max-height:240px; overflow:auto; list-style: none;">
+                          <a href="#"><li style= "color: red; margin-bottom:7px;">Studio Ghibli</li></a>
+                          <a href="#"><li style= "color: red; margin-bottom:7px;">FNAF</li></a>
+                          <a href="#"><li style= "color: red; margin-bottom:7px;">UT/DR</li></a>
+                          <a href="#"><li style= "color: red; margin-bottom:7px;">cybr.grl</li></a>
+                    </ul>
+                </aside> -->
+      <section class="mainborder basebg">
+        <h1>MY SHRINES</h1>
+        <p> I plan to make one of these for all of my favorite medias so this might be a while; lots of work to do.<br>
+          These are the next 4 I intend to work on in the future. Who knows when I will start but I do intend to
+          complete these at some point.
+        </p>
+        <div class="strawbDivider"></div>
+        <div id="shrineLinks">
+          <a href="#">
+            <div class="tooltipWrapper">
+              <img id="omori" class="shrineButtonsUNS" src="/shrines/OMORI/omoriAssets/wakeup.jpeg">
+              <div class="tooltip"> WIP 10% </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="tooltipWrapper">
+              <img id="msBeelzebub" class="shrineButtonsUNS" src="/shrines/shrineButtons/AMBLI.png">
+              <div class="tooltip"> WIP 5% </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="tooltipWrapper">
+              <div id="loreOlympus" class="shrineButtonsUNS"></div>
+              <div class="tooltip"> Unstarted </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="tooltipWrapper">
+              <div><img id="helluvaBoss" class="shrineButtonsUNS" src="/shrines/shrineButtons/HB.png"></div>
+              <div class="tooltip"> Unstarted </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <aside2 class="rightSidebar mainborder">
+        <div class="bowdetails"></div>
+        <div class="marq2">
+          <div class="itscrolls2">
+            <img src="/assets/stamps/helluvaboss.png" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="'Helluva Boss' Logo Stamp!">
+            <img src="/assets/stamps/chihiro.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="Chihiro from Spirited Away Stamp!">
+            <img src="/assets/stamps/howlandsophie.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="'Howl and Sophie from Howl's Moving Castle Stamp!">
+            <img src="/assets/stamps/OMORI.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="OMORI friends Stamp!">
+            <img src="/assets/stamps/cybrgrl.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="Cyber Girl Stamp!">
+            <img src="/assets/stamps/UTDR.webp" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="Undertale x Deltarune Stamp!">
+          </div>
+          <div class="itscrolls2">
+            <img src="/assets/stamps/helluvaboss.png" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="'Helluva Boss' Logo Stamp!">
+            <img src="/assets/stamps/chihiro.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="Chihiro from Spirited Away Stamp!">
+            <img src="/assets/stamps/howlandsophie.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="'Howl and Sophie from Howl's Moving Castle Stamp!">
+            <img src="/assets/stamps/OMORI.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="OMORI friends Stamp!">
+            <img src="/assets/stamps/cybrgrl.gif" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="Cyber Girl Stamp!">
+            <img src="/assets/stamps/UTDR.webp" style="width:120px; height:auto; margin-bottom: 10px;"
+              alt="Undertale x Deltarune Stamp!">
+          </div>
+        </div>
+        <div class="bowdetails"></div>
+      </aside2>
+    </div>
+  </main>
+  <script>
+    window.addEventListener('message', function(event) {
+      if (event.origin !== window.origin) return;
+  
+      if (event.data === 'start') {
+        jaxframe.start();
+      } else if (event.data === 'stop') {
+        jaxframe.stop();
+      }
+    });
+  </script>
+  
+</body>
+
+</html>

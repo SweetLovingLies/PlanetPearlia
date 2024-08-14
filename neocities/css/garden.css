@@ -1,0 +1,592 @@
+@import url("fronterCard.css"); @import url("marquee.css"); @import url("jaxframe.css");
+
+:root {
+    --duration: 15s;
+    --scroll-start: 0;
+    --scroll-end: -100%;
+}
+
+/* Main Fonts */
+@font-face {
+    font-family: basiic;
+    src: url('/fonts/basiic.ttf');
+}
+
+@font-face {
+    font-family: peach;
+    src: url('/fonts/peachsundress.ttf');
+}
+
+@font-face {
+    font-family: rotterburg;
+    src: url('/fonts/RotterburgStylish.otf');
+}
+
+@font-face {
+    font-family: Dellina;
+    src: url('/fonts/DellinaMonogram.ttf');
+}
+
+/* Other Fonts */
+
+@font-face {
+    font-family: porkys;
+    src: url('/fonts/PORKYS_.TTF');
+}
+
+@font-face {
+    font-family: NORMAL;
+    src: url('/fonts/OMORI_GAME2.ttf');
+}
+
+@font-face {
+    font-family: NOTFINE;
+    src: url('/fonts/OMORI_GAME.ttf');
+}
+
+@font-face {
+    font-family: TeenIdle;
+    src: url('/fonts/Teenidle-7mjl.ttf');
+}
+
+@font-face {
+    font-family: LemonPopsicle;
+    src: url('/fonts/LemonPopsicle-ALav7.otf');
+}
+
+@font-face {
+    font-family: omekashi;
+    src: url('/fonts/omekashi.ttf');
+}
+
+@font-face {
+    font-family: KINKIE;
+    src: url('/fonts/KINKIE__.TTF');
+}
+
+/* ==== Base ==== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'basiic';
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 1.05em;
+
+    height: 120vh;
+
+    background-image: url(/assets/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png);
+    background-size: 30%;
+    background-attachment: fixed;
+    animation: fadeInAnimation ease .55s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.columnFlex {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.scrollbox {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* ==== Layout ==== */
+
+/* Header */
+header {
+    background-image: url(/assets/sugaryflower.jpg);
+    width: 100%;
+    height: 150px;
+    border-bottom: 10px white solid;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.headerFilter {
+    background-color: #005e56;
+    opacity: 40%;
+    height: 140px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 4;
+}
+
+.headertxt {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+    font-size: 7em;
+    font-family: dellina;
+    color: white;
+    filter: drop-shadow(1px 3px 0px #f72b91) drop-shadow(-1px -3px #008185);
+    -webkit-text-stroke: 1px #f698ff;
+    transition: all .25s ease-in-out;
+
+   
+    float: right;
+    margin-right: 20px;
+}
+
+.headertxt span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.headertxt:hover span {
+    animation: wave 1.2s ease-in-out infinite;
+}
+
+.headertxt:hover span:nth-child(odd) {
+    animation-delay: 0s;
+}
+
+.headertxt:hover span:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Main */
+
+#bodyWrapper {
+    gap: 20px;
+}
+
+/* Sidebar Formatting */
+
+aside {
+    padding: 20px;
+    flex: 1 1 250px;
+}
+
+.asideDesign {
+    background: url('/assets/flowers2.png');
+    border: 5px solid white;
+    color: #474747;
+
+    padding: 5px;
+}
+
+.asideDesign h1 {
+    color: #115c49;
+}
+
+/* Main Formatting */
+
+main {
+    width: 1000px;
+    flex: 1 1;
+    padding: 20px;
+    gap: 10px;
+}
+
+/* Specific Formatting */
+
+#welcome {
+    padding: 10px;
+    background: url(/assets/linedpaper.jpg);
+    border-radius: 20px;
+}
+
+#buttonSpot {
+    height: 200px;
+    gap: 30px;
+}
+
+#buttonSpot p {
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+#buttonSpot h2 {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    color: white;
+}
+
+#buttonNEW,
+#buttonOLD {
+    flex: 0 1 50%;
+    padding: 20px;
+
+}
+
+#buttonNEW {
+    border: 1px solid #00b5ad;
+    background: url("/assets/2.png");
+    position: relative;
+}
+
+#buttonNEWFilter {
+    background-color: #004680;
+    opacity: 30%;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 4;
+}
+
+#buttonOLD {
+    border: 1px solid #7964F5;
+    background: url("/assets/movestarbackground.gif");
+}
+
+#oldSiteButton {
+    margin: 10px 0;
+    align-self: center;
+    width: 88px;
+}
+
+/* Patch Notes */
+
+#patchnotes {
+    background: url("/assets/fleurs.webp");
+    border: 3px solid white;
+}
+
+.patchnotes h4 {
+    position: relative;
+    font-family: porkys;
+    background-color: lightblue;
+    color: #9e9e9e;
+    border: #ffffff 3px dashed;
+    border-bottom: #21863a 3px dashed;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+
+    margin: 5px 0;
+}
+
+.patchnotesFlowers {
+    position: absolute;
+    display: block;
+    top: 17px;
+    background: url('/assets/pixels/flowerborder.webp');
+    background-repeat: repeat;
+    background-size: auto;
+    height: 35px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 13%;
+    margin-left: -3px;
+    pointer-events: none;
+}
+
+.patchnotes p {
+    background: url('/assets/shrooms1.gif');
+    background-size: 10%;
+    box-shadow: 0px 0px 5px 7px white inset;
+    padding: 10px;
+    border-radius: 10px;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+.patchnotes p:first-of-type {
+    background: url('/assets/shrooms2.gif');
+    background-size: 10%;
+    color: black;
+    font-weight: bold;
+}
+
+.patchnotes p:last-of-type {
+    color: #147900;
+}
+
+/* Navigation */
+
+.navigationDesign {
+    background: url('/assets/e.v__14_.jpg');
+    border: 5px solid white;
+    color: #474747;
+    padding: 5px;
+}
+
+.navigationDesign h1 {
+    color: #000000;
+}
+
+.navigationDesign a {
+    display: block;
+    transition: all .25s;
+
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-image: linear-gradient(90deg, #00b5ad 0%, #ffa5d9 50%, #ffffff 100%);
+    color: white;
+    text-decoration: none;
+}
+
+.navigationDesign a:hover {
+    background: linear-gradient(90deg, #6efff9 0%, #ffd8ef 50%, #ffffff 100%);
+    color: gray;
+}
+
+.navigationDesign a:before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url(/assets/pixels/chatbubble\(sun\).gif);
+    background-size: contain;
+    margin-right: 5px;
+}
+
+
+.todo {
+    max-height: 290px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.todo li:before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url(/assets/pixels/flower9.webp);
+    background-size: contain;
+    margin-right: 5px;
+}
+
+/* Footer */
+
+.footer-hidden {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+
+    background: url('/assets/77words_patterns6_001.gif');
+    border-top: 3px solid white;
+
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transition: bottom 0.5s ease;
+    z-index: 100;
+
+}
+
+.footer-visible {
+    bottom: 0;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .fimgleft {
+    margin-right: 10px
+  }
+  
+  .fimgright {
+    margin-left: 10px
+  }
+
+/* Other Formatting */
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #ff3075;
+    text-decoration: none;
+}
+
+.unf{
+    color: red !important;
+}
+.unf:hover{
+    color: darkred !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: peach;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #ff617b;
+}
+
+/* Decor */
+
+/* ===== Scrollbar CSS ===== */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #22838a;
+    background-size: 1600%;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #22838a #ffffff;
+}
+
+/* Colored Selection */
+
+::-moz-selection {
+    color: #22838a;
+    background: #c3d6ff;
+}
+
+::selection {
+    color: #22838a;
+    background: #c3d6ff;
+}
+
+/*Dividers */
+
+.dividerBows {
+    background: url('/assets/pixels/bowborder3.webp');
+    background-size: 60%;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 40px;
+
+    margin: 10px 0;
+}
+
+.dividerPinkFlowers {
+    background: url('/assets/pixels/flowerborder3.webp') bottom;
+    background-color: lightblue;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    width: auto;
+    height: 40px;
+    border-top: 2px solid white;
+    border-bottom: 2px green solid;
+    border-radius: 5px 5px 0 0;
+
+    margin: 5px 0;
+}
+
+/* For the vines later */
+
+/* .trimt {
+    background-image: url('/assets/borders/trimt.gif');
+    position: fixed;
+    z-index: 10;
+    width: 1920px;
+    height: 33px;
+    top: -5px;
+  }
+  
+  .trimb {
+    background-image: url('/assets/borders/trimb.gif');
+    position: fixed;
+    z-index: 10;
+    width: 1920px;
+    height: 33px;
+    bottom: -5px;
+  } */
+
+.textPageDoll {
+    float: right;
+    width: 150px;
+    height: auto;
+    image-rendering: crisp-edges;
+}
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1000px) {
+    .flex {
+        flex-flow: column wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .headertxt {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {}

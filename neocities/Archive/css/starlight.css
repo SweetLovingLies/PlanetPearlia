@@ -565,6 +565,11 @@ strong {
   border: 2px ridge #b685ff;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b685ff;
+}
+
 
 /* Colored Selection */
 

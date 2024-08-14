@@ -1,0 +1,134 @@
+.marqueeFlex{
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+marqueebar {
+    background-color: white;
+    padding: 3px;
+  }
+  
+  .marquee {
+    overflow: hidden;
+  }
+  
+  .marqueeitems {
+    animation: scroll-x var(--duration) linear infinite;
+    flex-shrink: 0;
+  }
+  .marqueeitems img, .marqueeitems canvas{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .marqueetrain {
+    width: 88px;
+  }
+  
+  @keyframes scroll-x {
+    from {
+      transform: translateX(var(--scroll-start));
+    }
+  
+    to {
+      transform: translateX(var(--scroll-end));
+    }
+  }
+  
+  /* Grow and Rotate site buttons on hover */
+  
+  .hvr-grow-rotate {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  
+  .hvr-grow-rotate:hover,
+  .hvr-grow-rotate:focus,
+  .hvr-grow-rotate:active {
+    -webkit-transform: scale(1.5) rotate(4deg);
+    transform: scale(1.2) rotate(4deg);
+  }
+  
+  /* Vertical Marquee */
+  
+  .marq,
+  .marq2 {
+    overflow: hidden;
+  }
+  
+  .marq {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .marq2 {
+    height: 350px;
+  }
+  
+  .itscrolls {
+    animation: marqueeup 6s linear infinite;
+  }
+  
+  .itscrolls2 {
+    animation: marqueeup 15s linear infinite;
+  }
+  .itscrolls2 img, .itscrolls2 canvas{
+    width: 120px;
+    height: auto;
+  }
+  
+  @keyframes marqueeup {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Freeze Marquee on Hover / reduced motion settings */
+  
+  @media (prefers-reduced-motion: reduce) {
+  
+    .marqueeitems,
+    .itscrolls,
+    .itscrolls2 {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+  }
+  
+  .marquee:hover .marqueeitems {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .marq:hover .itscrolls {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .marq2:hover .itscrolls2 {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  

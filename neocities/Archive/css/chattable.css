@@ -3,7 +3,7 @@
   }
 
 #top_banner {
-    background: #00b5ad;
+    background: #7964F5;
 }
 
 #top_banner:before {
@@ -11,7 +11,7 @@
     width: 15pt;
     height: 15pt;
     content: ' ';
-    background-image: url('https://pearliasystem.neocities.org/assets/pixels/lily2.webp');
+    background-image: url('https://pearliasystem.neocities.org/assets/pixels/saturn3.webp');
     background-size: 100% 100%;
     margin-right: 5px;
 }
@@ -32,7 +32,7 @@
 
 .senderInfo {
     font-weight: bold;
-    color: #ff6095;
+    color: #FF9AE4;
 }
 
 .mod,
@@ -78,17 +78,17 @@
 }
 
 #textInput {
-    background: #00b5ad;
+    background: #7964F5;
 }
 
 #settings {
     margin-right: 5px;
-    color: #00b5ad;
+    color: #7964F5;
 }
 
 .mod:before {}
 
 .owner:before {
     margin-right: 5px;
-    color: #00b5ad;
+    color: #7964F5;
 }

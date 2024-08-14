@@ -11,6 +11,7 @@ var jaxframe = {
             "https://planetpearlia.com/assets/MariSitePack/BasilsWords.gif",
             "https://pearliasystem.neocities.org/assets/MariSitePack/Heal!.gif",
             "https://planetpearlia.com/assets/MariSitePack/Heal!.gif",
+            "https://planetpearlia.com/assets/coolsites/planetpearlia.gif",
             // Make sure you use the neocities link rather than the new domain link!
             // ??? Maybe I'm wrong?
         ];

@@ -1,3 +1,5 @@
+@import url("jaxframe.css");
+
 @font-face {
     font-family: basiic;
     src: url('/fonts/basiic.ttf');
@@ -28,8 +30,9 @@
   }
   
   #container {
-    background: url('/assets/58GSoaC.gif');
+    background: url('/assets/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png');
     background-repeat: repeat;
+    background-size: 50%;
     position: relative;
     height: 1000px;
     width: 1000px;
@@ -199,18 +202,6 @@
   
   strong {
     color: #c79fc4;
-  }
-  
-  .ffButtons{
-    color: white;
-    background-color: #39a377;
-    border: 1px solid #FF9AE4;
-    font-family: basiic;
-    padding: 3px 5px;
-    transition: background-color .25s;
-  }
-  .ffButtons:hover{
-    background-color: #22838a;
   }
   
   /* Custom Cursor from Cursors4U */

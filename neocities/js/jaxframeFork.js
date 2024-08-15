@@ -12,8 +12,6 @@ var jaxframe = {
             "https://pearliasystem.neocities.org/assets/MariSitePack/Heal!.gif",
             "https://planetpearlia.com/assets/MariSitePack/Heal!.gif",
             "https://planetpearlia.com/assets/coolsites/planetpearlia.gif",
-            // Make sure you use the neocities link rather than the new domain link!
-            // ??? Maybe I'm wrong?
         ];
     
         var images = document.querySelectorAll("img");

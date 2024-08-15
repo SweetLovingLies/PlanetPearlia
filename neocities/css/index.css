@@ -9,6 +9,11 @@
     font-family: peach;
     src: url('/fonts/peachsundress.ttf');
   }
+
+  @font-face {
+    font-family: Dellina;
+    src: url('/fonts/DellinaMonogram.ttf');
+}
   
   body {
     font-family: 'basiic';
@@ -129,9 +134,20 @@
   }
   
   #enter {
-    width: 200px;
+
+    font-family: Dellina;
+    font-size: 3.5em;
+    text-align: center;
+
+    color: #f72b91;
+    border: 5px solid #22838a;
+    border-radius: 5px;
+
     height: auto;
     display: block;
+
+    margin: 0;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -181,6 +197,10 @@
   
   #filler {
     margin-bottom: 240px;
+  }
+
+  a{
+    text-decoration: none;
   }
   
   h1,
@@ -269,6 +289,9 @@
     }
   
     #border {
+      display: none;
+    }
+    .grass{
       display: none;
     }
   

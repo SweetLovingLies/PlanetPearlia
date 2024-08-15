@@ -70,7 +70,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -85,7 +84,7 @@ body {
     background-image: url(/assets/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png);
     background-size: 30%;
     background-attachment: fixed;
-    animation: fadeInAnimation ease .55s;
+    animation: fadeInAnimation ease .55s, cloudAnim 180s infinite;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -97,6 +96,17 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes cloudAnim {
+    0%,
+    100% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 100vw;
     }
 }
 
@@ -572,6 +582,45 @@ hr {
 }
 
 /* MEDIA QUERIES */
+
+@media (prefers-reduced-motion: reduce) {
+
+    body{
+        animation: none;
+    }
+
+    #buttonOLD {
+        background: url('/assets/movestarbackgroundF.gif');
+    }
+
+    .marqueeitems {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+  }
+  
+  .marquee:hover .marqueeitems {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .marq:hover  {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .marq2:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
 
 
 @media only screen and (max-width: 1000px) {

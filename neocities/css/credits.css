@@ -35,7 +35,6 @@ body {
 }
 
 @keyframes cloudAnim {
-
     0%,
     100% {
         background-position: 0;
@@ -44,7 +43,6 @@ body {
     50% {
         background-position: 100vw;
     }
-
 }
 
 h2 {
@@ -116,4 +114,11 @@ hr {
 
 hr:hover {
     width: 55%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    body{
+        animation: none;
+    }
 }

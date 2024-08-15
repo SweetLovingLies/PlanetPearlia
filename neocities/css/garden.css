@@ -1,4 +1,7 @@
-@import url("fronterCard.css"); @import url("marquee.css"); @import url("jaxframe.css");
+@import url("fronterCard.css");
+@import url("marquee.css");
+@import url("jaxframe.css");
+@import url("nowplaying!.css");
 
 :root {
     --duration: 15s;
@@ -100,6 +103,7 @@ body {
 }
 
 @keyframes cloudAnim {
+
     0%,
     100% {
         background-position: 0;
@@ -175,7 +179,7 @@ header {
     -webkit-text-stroke: 1px #f698ff;
     transition: all .25s ease-in-out;
 
-   
+
     float: right;
     margin-right: 20px;
 }
@@ -198,9 +202,12 @@ header {
 }
 
 @keyframes wave {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -215,6 +222,7 @@ header {
 /* Sidebar Formatting */
 
 aside {
+    z-index: 10;
     padding: 20px;
     flex: 1 1 250px;
 }
@@ -243,6 +251,7 @@ main {
 /* Specific Formatting */
 
 #welcome {
+    width: 800px;
     padding: 10px;
     background: url(/assets/linedpaper.jpg);
     border-radius: 20px;
@@ -251,6 +260,7 @@ main {
 #buttonSpot {
     height: 200px;
     gap: 30px;
+    z-index: 10;
 }
 
 #buttonSpot p {
@@ -416,6 +426,22 @@ main {
     margin-right: 5px;
 }
 
+.fronterDesign {
+    background: url('/assets/haibisukasu01b.gif');
+    background-size: 20%;
+    border: 5px solid white;
+
+    padding: 5px;
+}
+
+.chattableDesign {
+    background: url('/assets/maydaybkg2.gif');
+    background-size: 20%;
+    border: 5px solid white;
+
+    padding: 5px;
+}
+
 /* Footer */
 
 .footer-hidden {
@@ -446,15 +472,15 @@ main {
 footer img {
     width: 150px;
     height: auto;
-  }
-  
-  .fimgleft {
+}
+
+.fimgleft {
     margin-right: 10px
-  }
-  
-  .fimgright {
+}
+
+.fimgright {
     margin-left: 10px
-  }
+}
 
 /* Other Formatting */
 
@@ -467,10 +493,11 @@ a {
     text-decoration: none;
 }
 
-.unf{
+.unf {
     color: red !important;
 }
-.unf:hover{
+
+.unf:hover {
     color: darkred !important;
 }
 
@@ -575,17 +602,20 @@ hr {
   } */
 
 .textPageDoll {
-    float: right;
-    width: 150px;
+    right: -170px;
+    bottom: -100px;
+    position: absolute;
+    z-index: 6;
+
+    width: 400px;
     height: auto;
-    image-rendering: crisp-edges;
 }
 
 /* MEDIA QUERIES */
 
 @media (prefers-reduced-motion: reduce) {
 
-    body{
+    body {
         animation: none;
     }
 
@@ -594,33 +624,33 @@ hr {
     }
 
     .marqueeitems {
-      -webkit-animation-play-state: paused;
-      -moz-animation-play-state: paused;
-      -o-animation-play-state: paused;
-      animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
     }
-  }
-  
-  .marquee:hover .marqueeitems {
+}
+
+.marquee:hover .marqueeitems {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused;
-  }
-  
-  .marq:hover  {
+}
+
+.marq:hover {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused;
-  }
-  
-  .marq2:hover {
+}
+
+.marq2:hover {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused;
-  }
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -637,7 +667,7 @@ hr {
         width: 100%;
     }
 
-    main { 
+    main {
         width: 100%;
     }
 
@@ -647,10 +677,36 @@ hr {
 
     #buttonSpot {
         height: unset;
-      }
-      .footer-hidden {
+    }
+
+    .footer-hidden {
         display: block;
-      }
+    }
+
+    .dividerPinkFlowers {
+        background-size: 50%;
+    }
+
+    #welcome {
+        width: 75%;
+    }
+
+    .fronterDesign {
+        background-size: 10%;
+    }
+
+    .chattableDesign {
+        background-size: 10%;
+    }
+    .textPageDoll {
+        right: -150px;
+        bottom: -100px;
+        position: absolute;
+        z-index: 6;
+    
+        width: 400px;
+        height: auto;
+    }
 }
 
 

@@ -1,0 +1,44 @@
+.now-playing {
+    position: fixed;
+    bottom: 50px;
+    right: -400px;
+    z-index: 100;
+
+    padding: 10px;
+    width: 300px;
+    height: 65px;
+    box-sizing: border-box;
+
+    background-color: #008185b3;
+    color: white;
+    border: 4px solid #f72b91;
+    border-radius: 30px 0px 0px 30px;
+
+    font-family: 'basiic';
+    transition: transform 0.5s ease;
+
+}
+
+.now-playing.visible {
+    transform: translateX(-396px);
+}
+
+.now-playing.hidden {
+    transform: translateX(0);
+}
+
+#nowplayingLotus {
+    position: fixed;
+    bottom: 14px;
+    left: 80px;
+
+    width: 150px;
+    pointer-events: none;
+
+    filter: drop-shadow(1px 3px 0px #f72b91) drop-shadow(-1px -3px #008185);
+}
+
+.now-playing p{
+    margin: 0;
+    padding: 0;
+}

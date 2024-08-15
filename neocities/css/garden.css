@@ -585,8 +585,18 @@ hr {
     }
 
     .headertxt {
-        width: 90%;
+        font-size: 5.3em;
     }
+
+    #buttonSpot {
+        height: unset;
+      }
 }
 
-@media only screen and (max-width: 500px) {}
+
+@media only screen and (max-width: 500px) {
+    .headertxt {
+        margin-top: auto;
+        font-size: 2.3em;
+    }
+}

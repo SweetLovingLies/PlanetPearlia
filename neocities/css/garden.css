@@ -70,6 +70,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -79,7 +80,7 @@ body {
     background-color: #fff;
     font-size: 1.05em;
 
-    height: 120vh;
+    min-height: 120vh;
 
     background-image: url(/assets/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png);
     background-size: 30%;
@@ -410,6 +411,7 @@ main {
 .footer-hidden {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: -100px;
     left: 0;
@@ -423,6 +425,7 @@ main {
     padding: 10px 0;
     transition: bottom 0.5s ease;
     z-index: 100;
+    box-sizing: border-box;
 
 }
 
@@ -572,6 +575,11 @@ hr {
 
 
 @media only screen and (max-width: 1000px) {
+
+    body {
+        padding-bottom: 100px;
+    }
+
     .flex {
         flex-flow: column wrap;
     }
@@ -580,7 +588,7 @@ hr {
         width: 100%;
     }
 
-    main {
+    main { 
         width: 100%;
     }
 
@@ -590,6 +598,9 @@ hr {
 
     #buttonSpot {
         height: unset;
+      }
+      .footer-hidden {
+        display: block;
       }
 }
 

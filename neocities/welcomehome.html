@@ -444,9 +444,13 @@
   </script>
 
 <script>
-    window.addEventListener("scroll", function() {
+window.addEventListener('scroll', function() {
     const footer = document.querySelector('.footer-hidden');
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const clientHeight = window.innerHeight;
+
+    if (scrollTop + clientHeight >= scrollHeight - 50) {
         footer.classList.add('footer-visible');
     } else {
         footer.classList.remove('footer-visible');

@@ -240,8 +240,14 @@ aside {
     padding: 5px;
 }
 
-.asideDesign h1 {
-    color: #115c49;
+.asideDesign h2:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(/assets/pixels/flower18.webp);
+    background-size: contain;
+    margin-right: 10px;
 }
 
 /* Main Formatting */
@@ -286,7 +292,6 @@ main {
 #buttonOLD {
     flex: 0 1 50%;
     padding: 20px;
-
 }
 
 #buttonNEW {
@@ -322,6 +327,16 @@ main {
 #patchnotes {
     background: url("/assets/fleurs.webp");
     border: 3px solid white;
+}
+
+#patchnotes h2:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(/assets/pixels/hydrangeas.webp);
+    background-size: contain;
+    margin-right: 10px;
 }
 
 .patchnotes h4 {
@@ -384,10 +399,6 @@ main {
     padding: 5px;
 }
 
-.navigationDesign h1 {
-    color: #000000;
-}
-
 .navigationDesign a {
     display: block;
     transition: all .25s;
@@ -413,6 +424,16 @@ main {
     background-size: contain;
     margin-right: 5px;
 }
+.navigationDesign h2:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(/assets/pixels/flower17.webp);
+    background-size: contain;
+    margin-right: 10px;
+}
+
 
 
 .todo {
@@ -447,10 +468,20 @@ main {
     padding: 5px;
 }
 
-.chattableDesign h2{
+.chattableDesign h2 {
     color: #ff1b7a;
-    
+
     filter: drop-shadow(-2px 2px 0px #3e6149);
+}
+
+.chattableDesign h2:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(/assets/pixels/flower2.webp);
+    background-size: contain;
+    margin-right: 10px;
 }
 
 /* Footer */
@@ -512,29 +543,31 @@ a {
     color: darkred !important;
 }
 
-#h1styling{
+#h1styling {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-h1{
+h1 {
     color: #ff90d1;
     font-family: RMScript, sans-serif;
     -webkit-text-stroke: .3px #b97cff;
+
+    filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(1px 1px 0px #ff8ec6);
 
     border-top: 4px solid #8ca5c7;
     border-left: 4px solid #8ca5c7;
 
 
-    padding: 5px;
+    padding: 14px 10px 0px;
 }
 
-#h1styling img{
+#h1styling img {
     width: 80px;
 }
 
-h2{
+h2 {
     margin: 0;
     font-weight: none;
     font-size: 1.4em;
@@ -545,22 +578,16 @@ h2{
     filter: drop-shadow(-2px 2px 0px #f72b91);
 }
 
-h2:before{
-    content: '';
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background-image: url(/assets/pixels/flower17.webp);
-    background-size: contain;
-    margin-right: 10px;
+h3{
+    margin: 0 0 10px 0;
+    color: #006c7a;
+    font-family: RMScript, sans-serif ;
 }
 
-h3,
 h4,
 h5,
 h6 {
     margin: 0;
-
     color: black;
     font-family: peach;
 }
@@ -723,6 +750,7 @@ hr {
 
     main {
         width: 100%;
+        overflow: hidden;
     }
 
     .headertxt {
@@ -731,6 +759,12 @@ hr {
 
     #buttonSpot {
         height: unset;
+    }
+
+    #buttonNEW,
+    #buttonOLD {
+        height: 200px;
+        flex: none;
     }
 
     .footer-hidden {
@@ -752,12 +786,13 @@ hr {
     .chattableDesign {
         background-size: 10%;
     }
+
     .textPageDoll {
         right: -150px;
         bottom: -100px;
         position: absolute;
         z-index: 6;
-    
+
         width: 400px;
         height: auto;
     }

@@ -292,10 +292,6 @@
       display: none;
     }
   
-    .planet {
-      display: none;
-    }
-  
     #border {
       display: none;
     }
@@ -307,7 +303,8 @@
       width: 170px;
     }
   
-    #enter {
+    .warnings{
+      flex-flow: row wrap;
     }
   
     #filler {

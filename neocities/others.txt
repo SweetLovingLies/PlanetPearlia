@@ -1,0 +1,5 @@
+Welcome to the start of my art project! I began working on this site in hopes to escape the cesspool of social media as well as having a place to practice my web design skills! Things will improve here as I learn new things about web development as well as come up with new ideas. I'm glad you have chosen to join me in that journey by visiting! Thank you!
+
+I also hope for this site to be a place where you can learn a thing or two about coding, so please feel free to hop into inspect element and take a look at how I do things! Although I admit that I'm not the greatest, I do my best to make things as functional as possible, and I'm always looking for ways to improve and declutter my code. I try to keep things clean and readable to make sure things are easy to understand but if it's not clear to you, please feel free to ask me in my chat or send me an email! I'm always down to help people learn to code websites because it's one of the greatest methods of self expression in tech!
+
+Although this site will always be a work in progress, I hope you can enjoy what I'm building, as well as the multiple individuals behind it. All good faith identities are welcomed here!

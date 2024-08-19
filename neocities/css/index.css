@@ -14,6 +14,8 @@
     font-family: Dellina;
     src: url('/fonts/DellinaMonogram.ttf');
 }
+
+/* Main Layout */
   
   body {
     font-family: 'basiic';
@@ -56,7 +58,6 @@
   
   main {
     display: flex;
-    flex: 1;
     flex-flow: row nowrap;
     background-color: transparent;
     padding: 10px;
@@ -84,7 +85,7 @@
     border-radius: 10px;
     margin-right: 5px;
     padding: 20px;
-    height: 250px;
+    height: 350px;
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -105,16 +106,32 @@
   rightside::-webkit-scrollbar {
     display: none;
   }
-  
-  .planet {
-    position: absolute;
-    left: -120px;
-    top: 300px;
-    width: 25em;
-    height: auto;
-    z-index: 100;
-    transform: rotate(-30deg);
-    pointer-events: none;
+
+  .warnings{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #ffd4e6;
+    border: 5px solid #009721;
+    border-radius: 10px 0 10px 10px;
+    padding: 10px;
+  }
+
+  .warnings p{
+    color: #22838a;
+    text-align: center;
+    margin: 0;
+  }
+
+  .warningsIMGs{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+    border-bottom: 2px solid #22838a;
   }
   
   #counter {
@@ -122,15 +139,6 @@
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  #welcome {
-    width: 250px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
   }
   
   #enter {
@@ -151,14 +159,14 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   #divider {
     width: 25s0px;
     height: auto;
     display: block;
     margin-left: auto;
   }
-  
+
   #border {
     width: 1000px;
     height: 1000px;
@@ -196,7 +204,7 @@
   }
   
   #filler {
-    margin-bottom: 240px;
+    margin-bottom: 200px;
   }
 
   a{
@@ -211,7 +219,7 @@
   }
   
   h1 {
-    font-size: 37px;
+    font-size: 2em;
     margin: 0;
   }
   
@@ -300,7 +308,6 @@
     }
   
     #enter {
-      width: 130px;
     }
   
     #filler {

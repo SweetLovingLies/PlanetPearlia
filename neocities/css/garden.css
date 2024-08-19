@@ -21,8 +21,13 @@
 }
 
 @font-face {
-    font-family: rotterburg;
-    src: url('/fonts/RotterburgStylish.otf');
+    font-family: BTS;
+    src: url('/fonts/BackToSchool.ttf');
+}
+
+@font-face {
+    font-family: RMScript;
+    src: url('/fonts/RainbowmemoriesScript.ttf');
 }
 
 @font-face {
@@ -243,7 +248,6 @@ aside {
 
 main {
     width: 1000px;
-    flex: 1 1;
     padding: 20px;
     gap: 10px;
 }
@@ -251,7 +255,7 @@ main {
 /* Specific Formatting */
 
 #welcome {
-    width: 800px;
+    width: 770px;
     padding: 10px;
     background: url(/assets/linedpaper.jpg);
     border-radius: 20px;
@@ -270,11 +274,12 @@ main {
 }
 
 #buttonSpot h2 {
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     position: relative;
     z-index: 5;
     color: white;
+    filter: drop-shadow(-2px 2px 0px #0a838b);
 }
 
 #buttonNEW,
@@ -442,6 +447,12 @@ main {
     padding: 5px;
 }
 
+.chattableDesign h2{
+    color: #ff1b7a;
+    
+    filter: drop-shadow(-2px 2px 0px #3e6149);
+}
+
 /* Footer */
 
 .footer-hidden {
@@ -501,16 +512,59 @@ a {
     color: darkred !important;
 }
 
-h1,
-h2,
+#h1styling{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+h1{
+    color: #ff90d1;
+    font-family: RMScript, sans-serif;
+    -webkit-text-stroke: .3px #b97cff;
+
+    border-top: 4px solid #8ca5c7;
+    border-left: 4px solid #8ca5c7;
+
+
+    padding: 5px;
+}
+
+#h1styling img{
+    width: 80px;
+}
+
+h2{
+    margin: 0;
+    font-weight: none;
+    font-size: 1.4em;
+    padding-left: 10px;
+
+    color: #ff6bc1;
+    font-family: BTS, sans-serif;
+    filter: drop-shadow(-2px 2px 0px #f72b91);
+}
+
+h2:before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(/assets/pixels/flower17.webp);
+    background-size: contain;
+    margin-right: 10px;
+}
+
 h3,
 h4,
 h5,
 h6 {
+    margin: 0;
+
     color: black;
     font-family: peach;
-    margin: 0;
 }
+
 
 hr {
     border: 1px solid #ff617b;

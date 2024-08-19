@@ -23,6 +23,10 @@
     gap: 5px;
   }
   
+  #fronterCard h2 {
+    filter: none;
+  }
+  
   #fronterCard p {
     color: white;
     margin: 0;
@@ -74,7 +78,7 @@
     -webkit-text-stroke-color: #c5ffc0;
   
     letter-spacing: 3px;
-    font-size: xx-large;
+    line-height: 1em;
   }
   
   .sad{
@@ -112,6 +116,7 @@
   .vibin{
     font-family: omekashi;
     font-size: 1.6em;
+    line-height: 1.3em;
 
     background: linear-gradient(
     to right,
@@ -130,6 +135,7 @@
   -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
   }
 
   @keyframes vibing {

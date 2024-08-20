@@ -303,7 +303,7 @@ main {
 #buttonNEWFilter {
     background-color: #004680;
     opacity: 30%;
-    height: 200px;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -511,7 +511,7 @@ main {
     bottom: 0;
 }
 
-footer img {
+footer img, canvas {
     width: 150px;
     height: auto;
 }
@@ -563,7 +563,7 @@ h1 {
     padding: 14px 10px 0px;
 }
 
-#h1styling img {
+#h1styling img, canvas {
     width: 80px;
 }
 
@@ -763,7 +763,6 @@ hr {
 
     #buttonNEW,
     #buttonOLD {
-        height: 200px;
         flex: none;
     }
 

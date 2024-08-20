@@ -8,27 +8,74 @@
   <title>Thumbnail</title>
 
   <style>
-    html, body{
-        margin: 0;
-        padding: 0;
+    @font-face {
+      font-family: Dellina;
+      src: url('/fonts/DellinaMonogram.ttf');
     }
-    body{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        background: url(/assets/movestarbackgroundF.gif);
-        justify-content: center;
-        align-items: flex-start;
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
-    #PlanetPearlia{
-        width: 1300px;
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+
+      display: flex;
+      flex-flow: column wrap;
+
+      justify-content: center;
+      align-items: center;
+
+      background: url(/assets/water.jpg);
+      background-size: 10%;
+    }
+
+    #bodyFilter{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      
+      background-color: #008a5c93;
+      background-blend-mode: color;
+
+      z-index: 1;
+    }
+
+    #lotus {
+      z-index: 2;
+      width: 600px;
+      
+      filter: drop-shadow(1px 3px 1px #f72b91) drop-shadow(1px 3px 1px #f72b91) drop-shadow(1px 3px 1px #f72b91) drop-shadow(-1px -3px 1px #ffffff) drop-shadow(-1px -3px 1px #ffffff)drop-shadow(-1px -3px 1px #ffffff); 
+    }
+
+    h1 {
+      position: absolute;
+      bottom: 180px;
+      font-size: 8em;
+      
+      font-family: dellina;
+
+      color: #ff0077;
+
+      -webkit-text-stroke: .3px #fff3836c;
+
+      filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(1px 1px 0px #006e8a);
+
+      z-index: 3;
     }
   </style>
 
 </head>
 
 <body>
-    <img id="PlanetPearlia" src="/assets/myAssets/Planet.png">
+  <div id="bodyFilter"></div>
+  <img id="lotus" src="/assets/pinklotus.png">
+  <h1>Planet Pearlia</h1>
 </body>
 
 </html>

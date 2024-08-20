@@ -565,6 +565,7 @@ h1 {
 
 #h1styling img, canvas {
     width: 80px;
+    max-height: 65px;
 }
 
 h2 {

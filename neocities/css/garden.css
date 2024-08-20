@@ -693,6 +693,19 @@ hr {
     height: auto;
 }
 
+.blockimages {
+    display: block;
+    width: 50%;
+    margin: 10px auto 10px auto;
+  }
+  
+  .bullet {
+    width: 20px;
+    height: auto;
+    vertical-align: text-top;
+    margin-right: 5px;
+  }
+
 /* MEDIA QUERIES */
 
 @media (prefers-reduced-motion: reduce) {

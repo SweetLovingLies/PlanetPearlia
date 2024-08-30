@@ -268,7 +268,7 @@ main {
 }
 
 #buttonSpot {
-    height: 200px;
+    min-height: 200px;
     gap: 30px;
     z-index: 10;
 }
@@ -720,36 +720,7 @@ hr {
     #buttonOLD {
         background: url('/assets/movestarbackgroundF.gif');
     }
-
-    .marqueeitems {
-        -webkit-animation-play-state: paused;
-        -moz-animation-play-state: paused;
-        -o-animation-play-state: paused;
-        animation-play-state: paused;
-    }
 }
-
-.marquee:hover .marqueeitems {
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-}
-
-.marq:hover {
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-}
-
-.marq2:hover {
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-}
-
 
 @media only screen and (max-width: 1000px) {
 

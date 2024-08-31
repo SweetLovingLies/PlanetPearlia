@@ -126,3 +126,16 @@ hr:hover {
     }
     
 }
+
+@media only screen and (max-width: 500px) {
+
+    h2 {
+        width: 70%;
+    }
+    
+    h2:hover {
+        letter-spacing: .5em;
+        width: 90%;
+    }
+
+}

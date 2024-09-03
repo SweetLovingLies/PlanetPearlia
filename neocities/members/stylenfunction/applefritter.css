@@ -230,6 +230,8 @@ strong {
     height: 100px;
     width: 110%;
     margin-left: -40px;
+
+    pointer-events: none;
 }
 
 /* Other */
@@ -246,4 +248,60 @@ strong {
 ::-moz-selection {
     background: #b8734b;
     color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body, #wrapper{
+        flex-flow: column wrap;
+    }
+    body{
+        width: 100vw;
+        height: unset;
+        padding: 0;
+        overflow: auto;
+    }
+    .icon {
+        width: 95%;
+        margin: 0;
+        z-index: 0;
+    }
+
+    .icon img{
+        width: 100%;
+    }
+
+    .container{
+        width: unset;
+        height: unset;
+    }
+
+    #title{
+        font-size: 2em;
+        margin-top: -75px;
+    }
+    #title img{
+        width: 12%;
+    }
+
+    .roseborder{
+        border: none;
+    }
+
+    #links{
+        flex-flow: row wrap;
+        width: unset;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #links a{
+        width: unset;
+        border: 5px dashed white;
+        border-radius: 10px;
+    }
+
+    #content-three img {
+        max-width: 250px;
+      }
 }

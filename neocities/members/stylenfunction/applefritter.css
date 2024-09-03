@@ -179,22 +179,22 @@ strong {
     transition: all .3s ease-in-out;
 }
 
-.tab-link.active {
+#links a .tab-link.active {
     font-weight: bold;
     color: #1a7c22;
     text-decoration: underline dashed 1px white;
 }
 
-.tab-link.active:hover {
+#links a .tab-link.active:hover {
     text-shadow: -1px 0 #6b3636, 0 1px #6b3636, 1px 0 #6b3636, 0 -1px #6b3636;
 }
 
-#back {
+#links a #back {
     color: orange;
     text-shadow: -1px 0 #8d2e2b, 0 1px #8d2e2b, 1px 0 #8d2e2b, 0 -1px #8d2e2b;
 }
 
-#back:hover {
+#links a #back:hover {
     color: #ffd769;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

@@ -96,7 +96,7 @@ body {
 }
 
 #top {
-    background: url("/assets/HowlsMovingCastle/top.png") no-repeat;
+    background: url("/assets/HowlsMovingCastle/Top.png") no-repeat;
     background-size: contain;
     z-index: 2;
 }

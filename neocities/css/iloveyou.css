@@ -127,12 +127,12 @@ body {
 main {
     flex: 1 0 470px;
 
-    background-color: lightcoral;
+    background: url(/assets/linedpaper.jpg);
     color: #571313;
 
     min-height: 700px;
     margin: 20px 30px;
-    padding: 10px 20px;
+    padding: 5px 20px;
 
     border-width: 9px;
     border-style: solid;
@@ -151,6 +151,8 @@ h1 {
 
 p {
     margin: 0;
+    line-height: 1.3em;
+    margin-bottom: 2px;
 }
 
 @media only screen and (max-width: 580px) {

@@ -7,6 +7,18 @@
   <title>System Landing Page</title>
   <link rel="shortcut icon" type="image/jpg" href="/assets/pixels/saturn3.webp">
   <link href="css/landing.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+    #mobiletext {
+      display: none;
+    }
+
+    @media only screen and (max-width: 500px) {
+      #mobiletext {
+        display: inline;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -32,7 +44,7 @@
           <div class="dropdown">
             <button class="dropbtn">The Solari</button>
             <div class="dropdown-content">
-              <a href="#" style="color: red;">Geraldine</a>
+              <a href="members/geraldine.html">Geraldine</a>
               <a href="#" style="color: red;">Gwendolline</a>
               <a href="#" style="color: red;">Angela</a>
               <a href="#" style="color: red;">Iris</a>
@@ -60,55 +72,50 @@
               <a href="/members/mari.html">MARI</a>
             </div>
           </div>
-          <span class="time"><strong>Last completed: </strong><br>Millie & Mari V2<br>
-            <strong>Last updated: </strong>May 9th, 2024</span>
+          <span class="time"><strong>Last completed: </strong><br>Geraldine<br>
+            <strong>Last updated: </strong>Sept 2nd, 2024</span>
         </nav>
       </div>
-        <main>
-          <h2 id="banner">A peek into <br> Planet Pearlia</h2>
-          <p>Welcome in! Click any of the links to discover a bit about <i>some</i> of the members of the (sub)systems!
-            The list will slowly fill up as things are completed, so please bare with us until then! All red links are
-            incomplete.</p>
+      <main>
+        <h2 id="banner">A peek into <br> Planet Pearlia</h2>
+        <p>Welcome in! Click any of the links to discover a bit about <i>some</i> of the members of the (sub)systems!
+          The list will slowly fill up as things are completed, so please bare with us until then! All red links are
+          incomplete.</p>
 
-          <p>For the freezeframeJS, if it is present on a page, click the biggest image you see. If it's animated, it will unfreeze everything!</p>
+        <p>For the freezeframeJS, if it is present on a page, click the biggest image you see. If it's animated, it will
+          unfreeze everything!</p>
 
-          <p>There is a way back here from every page! Or you can just use the back arrow. Take care and enjoy your stay!!</p>
+        <p>There is a way back here from every page! Or you can just use the back arrow. Take care and enjoy your stay!!
+        </p>
 
-          <div id="mobiletext" style="color: blue">
-            <p>
-              There is a bug on mobile browsers where if you click Pearlia first and then another section, all of them
-              will close. I believe this is due to the height of the container and I have not found a way to fix it yet.
-              Thank you for your patience while I figure all the bugs out.
-            </p>
-          </div>
-          <!-- <img src="" id="helloFromPearlia"> 
+        <div id="mobiletext" style="color: blue">
+          <p>
+            There is a bug on mobile browsers where if you click Pearlia first and then another section, all of them
+            will close. I believe this is due to the height of the container and I have not found a way to fix it yet.
+            Thank you for your patience while I figure all the bugs out.
+          </p>
+        </div>
+        <!-- <img src="" id="helloFromPearlia"> 
           This is where the sims 4 image will go btw-->
-          </main>
+      </main>
     </div>
     <footer class="bottombar">
-      <p>Template credit goes to <a href="https://scumsuck.com/petpage/">Scumsuck</a>. I've modified it quite heavily.</p>
+      <p>Template credit goes to <a href="https://scumsuck.com/petpage/">Scumsuck</a>. I've modified it quite heavily.
+      </p>
     </footer>
-    <audio autoplay loop id="outerspace">
+    <audio autoplay loop id="outerspace" class="song" data-title="I Will Catch Up!" data-writer="OMORI OST" data-volume="0.06">
       <source src="https://files.catbox.moe/r9za17.mp3" preload="auto" type="audio/mpeg">
       Your browser does not support the audio element!
     </audio>
-    <script>
-      document.getElementById('outerspace').load();
-      outerspace.volume = 0.06;
-    </script>
   </div>
 
-  <style>
-    #mobiletext {
-      display: none;
-    }
-
-    @media only screen and (max-width: 500px) {
-      #mobiletext {
-        display: inline;
-      }
-    }
-  </style>
+  <div id="nowPlaying" class="now-playing hidden">
+    <div class="now-playing-inner">
+      <img src="/assets/pinklotus.png" id="nowplayingLotus">
+      <p id="songInfo"></p>
+    </div>
+  </div>
+  <script src="/js/nowplaying!.js"></script>
 </body>
 
 </html>

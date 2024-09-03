@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Millie's Lair!</title>
     <link rel="shortcut icon" type="image/png" href="/assets/pixels/rose.gif">
-    <link href="stylenfuncion/localIMP.css" rel="stylesheet" type="text/css" media="all">
+    <link href="stylenfunction/localIMP.css" rel="stylesheet" type="text/css" media="all">
     <script src="../js/jaxframeFork.js"></script>
 </head>
 
@@ -113,15 +113,20 @@
     </main>
     <a onclick="history.back()"><img id="back" src="/assets/pixels/homeBack.webp"></a>
 </div>
-    <audio autoplay loop id="hushMarias">
+    <audio loop id="Hush" class="song" data-title="Hush" data-writer="The Marias" data-volume="0.02">
         <source src="https://files.catbox.moe/mbr1bd.mp3" preload="auto" type="audio/mpeg">
-        Your browser does not support the audio element!
-        <!-- https://files.catbox.moe/moqyya.mp3 (Escapism)-->
     </audio>
-    <script>
-        document.getElementById('hushMarias').load();
-        hushMarias.volume = 0.02;
-    </script>
+    <audio loop id="Escapism" class="song" data-title="Escapism" data-writer="Raye, Shake 030" data-volume="0.02">
+        <source src="https://files.catbox.moe/moqyya.mp3" preload="auto" type="audio/mpeg">
+    </audio>
+    <script src="/js/nowplaying!.js"></script>
+
+    <div id="nowPlaying" class="now-playing hidden">
+        <div class="now-playing-inner">
+            <img src="/assets/pinklotus.png" id="nowplayingLotus">
+            <p id="songInfo"></p>
+        </div>
+
 </body>
 
 </html>

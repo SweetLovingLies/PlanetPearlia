@@ -1,3 +1,5 @@
+@import url("/css/nowplaying!.css");
+    
     :root {
       --mainbg: url('/assets/D3C0RAGRL/heartgrid.gif');
     }
@@ -292,6 +294,9 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;
+
+      -webkit-text-stroke-width: .3px;
+      -webkit-text-stroke-color: #dfccff;
     }
     
     .rainbowdivider {
@@ -340,6 +345,11 @@
            border-radius: 10px;
            border: 2px dotted #844abd;
       }
+
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #f2b1ff #ffffff;
+    }
       
     /* ===== Scrollbar CSS end ===== */
     

@@ -19,8 +19,25 @@
 }
 
 .lightbox.show {
-    z-index: 15;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox2 {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 9999;
+}
+
+.lightbox2.show {
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .cursor {

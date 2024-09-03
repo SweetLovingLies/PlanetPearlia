@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Localhost</title>
-  <link href="stylenfuncion/localhost.css" rel="stylesheet" type="text/css" media="all">
+  <link href="stylenfunction/localhost.css" rel="stylesheet" type="text/css" media="all">
   <link rel="shortcut icon" type="image/png" href="/assets/pixels/pnkflower.gif">
   <script>
     function stranger(element) {
@@ -86,17 +86,6 @@
           <br>
           Favorite Food:
           I really love apples! I have for years!
-          <br>
-          <br>
-          I'm a
-          <a href="https://beelzebubjou-no-okinimesu-mama.fandom.com/wiki/Beelzebub">Miss Beelzebub,</a>
-          <a href="https://hazbinhotel.fandom.com/wiki/Beelzebub"> Queen Beelzebub,</a>
-          <a href="https://omori.fandom.com/wiki/SUNNY"> Sunny</a>/
-          <a href="https://omori.fandom.com/wiki/OMORI">OMORI,</a>
-          <a href="https://ghibli.fandom.com/wiki/Chihiro_Ogino"> Chihiro,</a>
-          and
-          <a href="https://cuphead.fandom.com/wiki/Cala_Maria"> Cala Maria</a>
-          kinnie! It's strange, I'm aware. LOL
         </div>
         <img id="running" src="/assets/running.gif" onclick="jaxframe.start()">
       </div>
@@ -178,17 +167,22 @@
       </div>
     </aside>
   </div>
-  <audio autoplay loop id="winter">
+
+  <div id="nowPlaying" class="now-playing hidden">
+    <div class="now-playing-inner">
+        <img src="/assets/pinklotus.png" id="nowplayingLotus">
+        <p id="songInfo"></p>
+    </div>
+</div>
+
+  <audio autoplay loop id="winter" class="song" data-title="Snow Forest - A Single Flower Blooms" data-writer="OMORI OST" data-volume="0.02">
     <source src="https://files.catbox.moe/1jf9yt.mp3" preload="auto" type="audio/mpeg">
-    Your browser does not support the audio element!
   </audio>
-  <script>
-    document.getElementById('winter').load();
-    winter.volume = 0.02;
-  </script>
+
+  <script src="/js/nowplaying!.js"></script>
+
   <script>
     function openPage(pageName, elmnt) {
-      // Hide all elements with class="tabcontent" by default */
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -201,9 +195,10 @@
       document.getElementById(pageName).style.display = "block"
     }
 
-    // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
   </script>
+
+
 </body>
 
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CRINGEFAIL HEADMATE-CORE</title>
-  <link href="stylenfuncion/wtfisthat.css" rel="stylesheet">
+  <link href="stylenfunction/wtfisthat.css" rel="stylesheet">
   <meta name="description" content="THE REALM OF D3C0RAGIRL!" />
   <link rel="icon" type="image/x-icon" href="/assets/D3C0RAGRL/kyandi.webp">
   <script>
@@ -103,7 +103,6 @@
         <p><span class="sparkles">Hello friends!</span> I'm Tia, but you can call me <span style="color: #db99ff;">Pastel Goth !! (!! included)</span> or <span style="color: #ff9ee1;">DECORA GIRL</span>. I've been a member of this system since 2012, along side my older sister.</p>
         <p>I'm a very big party animal, boasting a LOT of energy and an inherent need to make people smile. I've become one with the cringe resulting from that: I use typing quirks a lot (mostly replacing letters with numbers and TYPING IN ALL CAPS WITH LOTS OF !!!!) for the fun of it, and I love overdecorating things. People like to call me obnoxious and that is what I live for!</p>
         <p>Sysphobic people like to use headmates like me as an example of what headmates should <i>not</i> be like and I think that's a load of bullshit! <span class="sparkles">Cringe culture is <b>DEAD!</b></span> Be whoever you want folks. You're going to piss off people regardless of what you do.</p>
-        <p> ps. The song is <a href="https://www.youtube.com/watch?v=ys9-XRHk1Xc">Sparkle by Snail's House!</a> </p>
         <div class="rainbowdivider"><br></div>
         <p></p>
         </div>
@@ -144,13 +143,16 @@
   <div id="lightbox" class="lightbox" onclick="closeLightbox()">
     <img id="lightbox-image" class="lightbox-image" src="">
   </div>
-  <audio autoplay loop id="audio_id">
+
+  <div id="nowPlaying" class="now-playing hidden">
+    <div class="now-playing-inner">
+        <img src="/assets/pinklotus.png" id="nowplayingLotus">
+        <p id="songInfo"></p>
+    </div>
+    
+  <audio autoplay loop id="sparkleSnailsHouse" class="song" data-title="Sparkle" data-writer="Snail's House" data-volume="0.02">
     <source src="https://files.catbox.moe/c0mwes.mp3" preload="auto" type="audio/mpeg">
-    Your browser does not support the audio element!
   </audio>
-  <script>
-    document.getElementById('audio_id').load();
-    audio_id.volume = 0.02;
-  </script>
+  <script src="/js/nowplaying!.js"></script>
 </body>
 </html>

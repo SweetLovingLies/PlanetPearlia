@@ -1,3 +1,6 @@
+@import url("/css/nowplaying!.css");
+
+
 @font-face {
     font-family: NORMAL;
     src: url('/fonts/OMORI_GAME2.ttf');
@@ -160,6 +163,11 @@ mark {
     display: none;
 }
 
+* {
+    scrollbar-width: none;
+}
+
+
 ::selection {
     background: #9A71FB;
     color: white;
@@ -242,37 +250,6 @@ mark {
     right: 0;
 }
 
-#overlay2 {
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    pointer-events: none;
-    transition: opacity .25s ease;
-    z-index: 15;
-}
-#overlay2.overlay-visible {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.heal-container {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 20;
-    pointer-events: none;
-}
-
-#healWords {
-    margin: auto;
-    width: 640px;
-}
 
 /* Start https://www.cursors-4u.com */
 * {

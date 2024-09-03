@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Sister</title>
     <link rel="shortcut icon" type="image/png" href="/assets/pixels/lilyofvalley2.webp">
-    <link href="stylenfuncion/picnicblanket.css" rel="stylesheet" type="text/css" media="all">
+    <link href="stylenfunction/picnicblanket.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/OMORIboxes.css" rel="stylesheet" type="text/css" media="all">
     <script>
         function hover(element) {
@@ -28,20 +28,22 @@
         <a onclick="history.back()"><img id="back" src="/assets/pixels/sweetback.webp"></a>
         <div class="picnicblanket">
 
-            <img class="cornerimg foods" id="picnic" onclick="heal.play();"
-                src="/assets/MariSitePack/Mari-Border_0000_Picnic.png">
-
+            <img class="cornerimg foods" id="picnic" src="/assets/MariSitePack/Mari-Border_0000_Picnic.png"
+                onclick="healup(healWords, 'none', ['none'], false, true);">
             <img class="cornerimg" id="lily" src="/assets/MariSitePack/Mari-Border_0001_Lily.png"
-                onclick="typewriter(basilsWords, 'DWBASIL', emotions);">
+                onclick="typewriter(basilsWords, 'DWBASIL', emotions, true, false);">
+            <img class="cornerimg foods" id="fruits" src="/assets/MariSitePack/Mari-Border_0002_Fruits.png"
+                onclick="healup(healWords, 'none', ['none'], false, true);">
+            <img class="cornerimg foods" id="drinks" src="/assets/MariSitePack/Mari-Border_0003_Drinks-Cooler.png"
+                onclick="healup(healWords, 'none', ['none'], false, true);">
 
-            <img class="cornerimg foods" id="fruits" onclick="heal.play();"
-                src="/assets/MariSitePack/Mari-Border_0002_Fruits.png">
 
-            <img class="cornerimg foods" id="drinks" onclick="heal.play();"
-                src="/assets/MariSitePack/Mari-Border_0003_Drinks-Cooler.png">
-
+            <audio id="picnicjingle">
+                <source src="https://files.catbox.moe/j98d0n.ogg" preload="auto" type="audio/mpeg">
+                Your browser does not support the audio element!
+            </audio>
             <audio id="heal">
-                <source src="https://files.catbox.moe/x5902n.mp3" preload="auto" type="audio/mpeg">
+                <source src="https://files.catbox.moe/n6fn6x.ogg" preload="auto" type="audio/mpeg">
                 Your browser does not support the audio element!
             </audio>
 
@@ -136,20 +138,18 @@
                 </section>
             </main>
 
-            <!-- <img id="basilsWords" src="/assets/MariSitePack/BasilsWords.gif"
-                    alt="These flowers are called lily of the valley. It's said that they're able to ward off evil spirits and help people see a brighter future...  I guess that's why they remind me of MARI. I can always count on her to help me stay positive."> -->
             <script>
                 const basilsWords = [
                     `These flowers are called lily of the valley. It's said that they're able to ward off evil spirits and help people see a brighter future...`,
                     `I guess that's why they remind me of MARI. I can always count on her to help me stay positive.`,
                 ];
-                const emotions = ['neutral', 'happy'];
-            </script>
+                let emotions = ['neutral', 'happy'];
 
-            <!-- Laziness took hold of me-->
-            <div class="heal-container" id="healContainer">
-                <img id="healWords" src="/assets/MariSitePack/Heal!.gif" alt="You and your friends feel like new!">
-            </div>
+                const healWords = [
+                    `You and your friends feel like new!`
+                ]
+
+            </script>
         </div>
     </div>
 
@@ -159,39 +159,25 @@
 
     <div id="overlay2"></div>
 
-    <audio autoplay loop id="byYourSide">
+    <div id="nowPlaying" class="now-playing hidden">
+        <div class="now-playing-inner">
+            <img src="/assets/pinklotus.png" id="nowplayingLotus">
+            <p id="songInfo"></p>
+        </div>
+
+    <audio autoplay loop id="byYourSide" class="song" data-title="By Your Side" data-writer="OMORI OST" data-volume="0.02">
         <source src="https://files.catbox.moe/i08lwy.mp3" preload="auto" type="audio/mpeg">
-        Your browser does not support the audio element!
     </audio>
+    <script src="/js/nowplaying!.js"></script>
     <script>
-        document.querySelectorAll(".foods").forEach(function (food) {
-            food.addEventListener("click", function () {
-
-                setTimeout(function () {
-                    var healContainer = document.getElementById("healContainer");
-                    healContainer.style.display = "flex";
-                    var healWords = document.getElementById("healWords");
-                    healWords.src = "/assets/MariSitePack/Heal!.gif";
-
-                    healWords.src = "";
-                    healWords.src = "/assets/MariSitePack/Heal!.gif";
-
-                    var overlay2 = document.getElementById("overlay2");
-                    overlay2.classList.add("overlay-visible");
-
-                    setTimeout(function () {
-                        healContainer.style.display = "none";
-                        overlay2.classList.remove("overlay-visible");
-                    }, 2000);
-                }, 2000);
-            });
-        });
-
         document.getElementById('byYourSide').load();
+        document.getElementById('picnicjingle').load();
         document.getElementById('heal').load();
         byYourSide.volume = 0.02;
-        heal.volume = 0.1;
+        picnicjingle.volume = 0.3;
+        heal.volume = 0.3;
     </script>
+    
 </body>
 
 </html>

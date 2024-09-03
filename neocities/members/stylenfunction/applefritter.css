@@ -1,0 +1,249 @@
+@import url("/css/nowplaying!.css");
+
+:root {}
+
+@font-face {
+    font-family: hug;
+    src: url(https://dl.dropbox.com/s/lkx18y1mqiuxt63/Hug%20Me%20Tight%20-%20TTF.ttf);
+}
+
+@font-face {
+    src: url(/fonts/Thickjungle.ttf);
+    font-family: ThickJungle;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: #ffebeb;
+    background: url(/assets/butterfliesNflowers.png) repeat;
+
+    color: #424242;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+
+    padding: 10px;
+}
+
+#wrapper {
+    animation: fadeEffect 1s;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+    background-color: #a3b697;
+    padding: 10px;
+    border-radius: 10px;
+
+    z-index: 10;
+}
+
+.inner {
+    border: 2px dotted #af8a94;
+    background-color: white;
+}
+
+.icon {
+    margin-right: -20px;
+    padding: 10px;
+    background: url("/assets/tumblr_ac3cbb2c9217f912305cd84ea241db78_7c331052_250.png");
+    z-index: 20;
+
+    border-radius: 20px;
+}
+
+.icon img {
+    width: 400px;
+    height: auto;
+    display: block;
+
+    border-radius: 20px;
+}
+
+#title {
+    font-family: "ThickJungle";
+    font-size: 3.3em;
+    position: absolute;
+    color: #ff9900;
+    margin-top: -85px;
+    text-shadow: -1px 0 #17471a, 0 1px #17471a, 1px 0 #17471a, 0 -1px #17471a;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+#content-three {
+    overflow: auto;
+}
+
+#content-three img {
+    max-width: 200px;
+    margin: 10px 20px;
+
+    border: 2px dotted white;
+    background-color: #387928;
+    border-radius: 10px;
+}
+
+#content-four img {
+    float: left;
+    margin-right: 10px;
+}
+
+/* General Styles*/
+
+h2{
+    font-family: hug;
+    font-size: 1.6em;
+    margin-bottom: 0;
+    color: #ff5454;
+    -webkit-text-stroke: .5px #17471a;
+}
+
+h3{
+    font-family: hug;
+    margin-bottom: 0;
+    color: #ff5454;
+    -webkit-text-stroke: .5px #17471a;
+}
+
+strong {
+    color: #ff9900;
+    -webkit-text-stroke: .5px #17471a;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+
+#links a {
+    font-family: "hug";
+
+    border: 5px dashed white;
+    border-left: none;
+
+    background-color: #ff5335;
+    margin: 20px 0px;
+    padding: 10px;
+    width: 100px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+
+    border-radius: 0 10px 10px 0;
+}
+
+#links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+    text-shadow: -1px 0 #d9bbba, 0 1px #d9bbba, 1px 0 #d9bbba, 0 -1px #d9bbba;
+}
+
+#links a:hover {
+    cursor: help;
+    color: #97c761;
+    text-shadow: -1px 0 #7f6a68, 0 1px #7f6a68, 1px 0 #7f6a68, 0 -1px #7f6a68;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover {
+    width: 120px;
+    transition: all .3s ease-in-out;
+}
+
+.tab-link.active {
+    font-weight: bold;
+    color: #1a7c22;
+    text-decoration: underline dashed 1px white;
+}
+
+.tab-link.active:hover {
+    text-shadow: -1px 0 #6b3636, 0 1px #6b3636, 1px 0 #6b3636, 0 -1px #6b3636;
+}
+
+#back {
+    color: orange;
+    text-shadow: -1px 0 #8d2e2b, 0 1px #8d2e2b, 1px 0 #8d2e2b, 0 -1px #8d2e2b;
+}
+
+#back:hover {
+    color: #ffd769;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Decor */
+
+.emoji {
+    margin: 0 5px;
+}
+
+.cherryborder {
+    border-width: 27px;
+    border-style: solid;
+    border-image: url("/assets/borders/cherryborder.png") 27 round;
+    border-radius: 20px;
+    border-image-outset: 15px;
+}
+
+.roseborder {
+    border-width: 35px;
+    border-style: solid;
+    border-image: url("/assets/borders/roseborder.png") 35 round;
+    border-radius: 20px;
+    border-image-outset: 17px;
+}
+
+#flowers {
+    position: absolute;
+    display: block;
+    bottom: -20px;
+    background: url('/assets/pixels/yellowflowers.webp');
+    background-repeat: repeat-x;
+    height: 100px;
+    width: 110%;
+    margin-left: -40px;
+}
+
+/* Other */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: #b8734b;
+    color: white;
+}
+
+::-moz-selection {
+    background: #b8734b;
+    color: white;
+}

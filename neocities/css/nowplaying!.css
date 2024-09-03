@@ -6,7 +6,7 @@
 
     padding: 10px;
     width: 300px;
-    height: 65px;
+    min-height: 65px;
     box-sizing: border-box;
 
     background-color: #008185b3;
@@ -16,7 +16,6 @@
 
     font-family: 'basiic';
     transition: transform 0.5s ease;
-
 }
 
 .now-playing.visible {
@@ -27,9 +26,14 @@
     transform: translateX(0);
 }
 
+.now-playing-inner {
+    position: relative;
+    height: 100%;
+}
+
 #nowplayingLotus {
-    position: fixed;
-    bottom: 40px;
+    position: absolute;
+    top: -95px; 
     left: 80px;
 
     width: 150px;
@@ -38,7 +42,7 @@
     filter: drop-shadow(1px 3px 0px #f72b91) drop-shadow(-1px -3px #008185);
 }
 
-.now-playing p{
+.now-playing p {
+    font-size: 18px;
     margin: 0;
-    padding: 0;
 }

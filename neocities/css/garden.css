@@ -323,11 +323,23 @@ main {
     height: 30px;
 }
 
+/* Second Level */
+
+#lvl2 {
+    display: flex;
+    gap: 30px;
+}
+
 /* Patch Notes */
 
 #patchnotes {
     background: url("/assets/fleurs.webp");
     border: 3px solid white;
+    width: 50%;
+    overflow-y: auto;
+    max-height: 300px;
+    padding: 5px;
+
 }
 
 #patchnotes h2:before {
@@ -389,6 +401,24 @@ main {
 
 .patchnotes p:last-of-type {
     color: #147900;
+}
+
+/* Fronter Song of the Year */
+
+#webcam {
+    position: relative;
+    width: 50%;
+    background: url('/assets/h001-2.gif');
+    border-radius: 40px;
+}
+
+#webcam sup,
+#webcam a {
+    color: #4932C9;
+}
+
+#webcam a {
+    font-weight: bold;
 }
 
 /* Navigation */
@@ -710,6 +740,26 @@ hr {
     margin-right: 5px;
 }
 
+.flborder1 {
+    border-width: 36px;
+    border-style: solid;
+    border-image: url("/assets/borders/flborder.png") 36 round;
+    margin: 17px;
+    border-image-outset: 5px;
+}
+
+.wildflowersborder {
+    background-color: lightblue;
+    border-top: 2px solid white;
+    border-bottom: 2px green solid;
+    border-radius: 5px 5px 0 0;
+
+    background-image: url('/assets/pixels/wildflowers2.webp');
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 58px;
+}
+
 /* MEDIA QUERIES */
 
 @media (prefers-reduced-motion: reduce) {
@@ -786,6 +836,18 @@ hr {
         width: 400px;
         height: auto;
     }
+
+    #lvl2 {
+        flex-flow: column wrap;
+    }
+
+    #patchnotes, #webcam{
+        width: 100%;
+    }
+
+    .flborder1{
+        margin: 0;
+    }
 }
 
 
@@ -806,8 +868,9 @@ hr {
     #welcome {
         width: 100%;
     }
+
     h1 {
         font-size: 1.3em;
         padding: 14px 10px 0px;
-      }
+    }
 }

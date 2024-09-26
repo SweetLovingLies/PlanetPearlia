@@ -199,8 +199,10 @@
     z-index: 999;
     width: 3000px;
     height: 200px;
-    bottom: 0;
+    bottom: -20px;
     left: -120px;
+
+    pointer-events: none;
   }
   
   #filler {

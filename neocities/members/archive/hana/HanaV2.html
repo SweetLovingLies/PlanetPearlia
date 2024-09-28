@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Light of Dream</title>
-  <link href="stylenfunction/lightofdream.css" rel="stylesheet" type="text/css" media="all">
-  <link rel="shortcut icon" type="image/png" href="/assets/pixels/stars2.webp">
+  <title>Localhost</title>
+  <link href="../css/localhost.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="shortcut icon" type="image/png" href="/assets/pixels/pnkflower.gif">
   <script>
     function stranger(element) {
       setTimeout(
@@ -15,12 +15,14 @@
         }, 1400)
     }
   </script>
+  <script src="/js/jaxframeFork.js"></script>
 </head>
-  <img id="stranger" src="https://pearliasystem.neocities.org/shrines/OMORI/omoriAssets/STRANGER.png">
+  <img id="stranger" src="https://pearliasystem.neocities.org/shrines/OMORI/omoriAssets/STRANGER.png"
+    onmouseover="stranger(this);">
 
-<body>
+<body onload="jaxframe.stop()">
   <div id="wrapper">
-    <a onclick="history.back()"><img id="back" src="/assets/pixels/carousel.webp"></a>
+    <a onclick="history.back()"><img id="back" src="/assets/pixels/backrainbow.webp"></a>
     <aside class="leftside">
       <div class="mainoutline">
         <div id="home" class="main tabcontent">
@@ -36,25 +38,36 @@
               <div>!</div>
             </span>
           </h1>
-          <p>Hi there! I'm the host and the most frequent fronter. I'll be doing the bulk of the web design work as well as the story telling. <br>
-            I have a massive love of all things pastel, colorful, and maximalist in nature. This is reflected in almost all of my art projects! <br>
-            I am also a business owner! I design brands, build websites, and make apps for people. I also find some time to do vector art inbetween these projects too. <br>
-          </p>
+          <p>Hi there! I'm the most frequent fronter/Host. I'll be doing most of the web design work as well as the story telling. Feel free to ask me about programming and/or the system. I may not be qualified to answer every question, we can absolutely learn together!</p>
           <p style="margin-top: 20px">
             Click the "More Details" button to find out more about me.
           </p>
         </div>
         <div id="more" class="main tabcontent">
-          <h3> What more do you need?</h3>
+          <h1>
+            <span class="bg">
+              <div style="margin-right: 15px;">I</div>
+              <div>A</div>
+              <div style="margin-right: 15px;">M</div>
+              <div>H</div>
+              <div>A</div>
+              <div>N</div>
+              <div>A</div>
+              <div>!</div>
+            </span>
+          </h1>
+          <p>
+            Anything else?
+          </p>
           <ul>
             <li>
-              Usable Names: Hana, Chihiro
+              Usable Names: Hana, Chihiro, Beelzebub
             </li>
             <li>
               Age: 20 years old
             </li>
             <li>
-              Pronouns: Any Pronouns!
+              Pronouns: Any/Hearts
             </li>
             <li>
               My first appearence was made in 2012
@@ -65,16 +78,16 @@
             <li>
               Orientation: Biromantic Demisexual
             </li>
-            <li>
-                I am a massive fan of the RV / van lifestyle. In the future, I see myself in a fully decorated van or RV running my business and being happy doing it!
-            </li>
           </ul>
           Hobbies: Programming, Web Design, Gaming <br>
+          <sup>I am entirely self taught ^^" I WANT to go to school for it but here I am stuck learning how to program
+            with Swift. I HATE it here</sup>
+          <br>
           <br>
           Favorite Food:
           I really love apples! I have for years!
         </div>
-        <img id="sakurasky" src="/assets/sakurasky.gif">
+        <img id="running" src="/assets/running.gif" onclick="jaxframe.start()">
       </div>
 
       <div class="stamps">
@@ -92,24 +105,24 @@
         <img src="/assets/stamps/BPD.png" alt="'Borderline Personality Disorder' Stamp!">
         <img src="/assets/stamps/iheartprettyrainbows.gif" alt="'I heart pretty rainbows' Stamp!">
         <img src="/assets/stamps/isabellefan.gif" alt="'Isabelle Fan' Animal Crossing Stamp!">
-        <img src="/assets/stamps/classicunicorns.png" alt="Classic Style Alicorns Stamp!">
+        <img src="/assets/stamps/Pansexual.png" alt="'Pansexual' Stamp!">
         <img src="/assets/stamps/fuckyesimgirly.gif" alt="'Fuck yes, I'm girly' Stamp!">
         <img src="/assets/stamps/ilovefairykei.png" alt="'I love fairy kei' Stamp!">
         <img src="/assets/stamps/CuTe.png" alt="'Cute' Stamp!">
         <img src="/assets/stamps/menhera.png" alt="Menhera Stamp!">
         <img src="/assets/stamps/carebears.png" alt="'Carebears' Stamp!">
         <img src="/assets/stamps/fulltimedreamer.gif" alt="'Full Time Dreamer' Stamp!">
-        <img src="/assets/stamps/amethyst prism.png" alt="'Webkinz' Stamp!">
+        <img src="/assets/stamps/webkinz.png" alt="'Webkinz' Stamp!">
         <img src="/assets/stamps/strawberryaddicted.gif" alt="'Strawberry addicted' Stamp!">
         <img src="/assets/stamps/converseaes.png" alt="Aesthetic Converse Stamp!">
         <img src="/assets/stamps/dream.png" alt="'Dream' Stamp!">
-        <img src="/assets/stamps/stars.gif" alt="Stars Stamp!">
       </div>
-      <img src="../assets/pagedolls/MikuV2.png" id="pagedoll" class="hvr-wobble-vertical">
+      <img src="../assets/pagedolls/NijinoYume.png" id="pagedoll" class="hvr-wobble-vertical">
     </aside>
     <aside class="rightsidebar">
       <span class="icon">
-        <img id="icon" src="/assets/icons/frieren.jpg">
+        <img id="icon" src="/assets/myAssets/calaMaria.png">
+        <p id="disclaimer">‼THIS IS NOT A <span class="rainbow">PRIDE FLAG</span>‼</p>
       </span>
       <nav class="box navbox">
         <a class="tablink" onclick="openPage('home', this)" id="defaultOpen">home</a>
@@ -121,7 +134,7 @@
         <h2>
           <span>
             <div>M</div>
-            <div>y</div>
+            <div>Y</div>
           </span>
         </h2>
         <h2>
@@ -137,13 +150,13 @@
             <div>!</div>
           </span>
         </h2>
-        <h4>Intrasystem</h4>
+        <h3>Intrasystem</h3>
         <p>Hanako - My main source</p>
         <p>Shio - My big brother</p>
         <p>Millie - is a pain in the ass but its ok!</p>
         <p>Saturnalia - My main parent figure forever.</p>
 
-        <h4>Extrasystem</h4>
+        <h3>Extrasystem</h3>
         <p>Circé - You are my other half, always. Whether that be platonically or romantically, you will always have a
           place in my heart.</p>
         <p>Ronnie - You're a loser!!!!!!!!!!</p>

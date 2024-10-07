@@ -180,6 +180,7 @@ header {
     font-size: 7em;
     font-family: dellina;
     color: white;
+    -webkit-filter: drop-shadow(1px 3px 0px #f72b91) drop-shadow(-1px -3px #008185);
     filter: drop-shadow(1px 3px 0px #f72b91) drop-shadow(-1px -3px #008185);
     -webkit-text-stroke: 1px #f698ff;
     transition: all .25s ease-in-out;

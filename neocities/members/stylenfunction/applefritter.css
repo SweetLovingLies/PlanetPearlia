@@ -26,7 +26,7 @@ body {
     overflow: hidden;
 
     background-color: #ffebeb;
-    background: url(/assets/butterfliesNflowers.png) repeat;
+    background: url(/assets/backgrounds/butterfliesNflowers.png) repeat;
 
     color: #424242;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,7 +64,7 @@ body {
 .icon {
     margin-right: -20px;
     padding: 10px;
-    background: url("/assets/tumblr_ac3cbb2c9217f912305cd84ea241db78_7c331052_250.png");
+    background: url("/assets/backgrounds/tumblr_ac3cbb2c9217f912305cd84ea241db78_7c331052_250.png");
     z-index: 20;
 
     border-radius: 20px;
@@ -96,11 +96,12 @@ body {
 }
 
 #content-three {
+    height: 100%;
     overflow: auto;
 }
 
 #content-three img {
-    max-width: 200px;
+    max-width: 190px;
     margin: 10px 20px;
 
     border: 2px dotted white;

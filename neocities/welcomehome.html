@@ -50,7 +50,6 @@
                     <a href="blog/blog.html">Our Blog</a>
                     <a href="#" class="unf">Shrines</a>
                     <a href="buttonwall.html">Sites I Love</a>
-                    <a href="Archive/indexOLD.html">V1 Archive</a>
                     <a href="credits.html">Credits</a>
                 </div>
                 <div class="dividerPinkFlowers"></div>
@@ -298,8 +297,8 @@
                         <audio id="apparition" src="https://files.catbox.moe/qk17h8.mp3" preload="auto"></audio>
                     </div>
                     <div id="webcam" class="flborder1">
-                        <div style="position: relative; height: 100%;">
-                            <iframe style="border: 0; width: 100%;height: 100%;display: block; border-radius: 10px;"
+                        <div id="kangelWrapper">
+                            <iframe id="kangel"
                                 src="https://lilithdev.neocities.org/shrine/vg/nso/apps/webcam?volume=16"></iframe>
                             <img src="/shrines/OMORI/omoriAssets/keys/keyK.png" id="keyK" onclick="collectKey('K');">
                         </div>
@@ -313,67 +312,67 @@
                 <div class="fronterDesign scrollbox" style="max-height: 412px;">
                     <h2 style="text-align: center;">Who's Currently Fronting?</h2>
                     <div class="flex" style="flex-flow: row wrap; gap: 10px;">
-                        <div id="fronterCard">
-                            <div id="fronterEmotion">
-                                <h5 id="fronterTAG">F:</h5>
+                        <div class="fronterCard">
+                            <div class="fronterEmotion">
+                                <h5 class="fronterTAG">F:</h5>
                                 <h5 class="lovesick">Hana</h5>
                             </div>
-                            <a href="members/hana.html"><img id="fronterIMG" src="/assets/myAssets/calaMaria.png"></a>
+                            <a href="members/hana.html"><img class="fronterIMG" src="/members/memberSpecific/Hana/calaMaria.png"></a>
                             <div class="FronterCardDivider"></div>
                             <div class="FronterCardStats">
                                 <img src="/shrines/OMORI/omoriAssets/heart.png">
-                                <div id="FronterCardHealth" class="statBarText">
+                                <div class="FronterCardHealth statBarText">
                                     <p>222/222</p>
                                 </div>
                             </div>
                             <div class="FronterCardDivider"></div>
                             <div class="FronterCardStats">
                                 <img src="/shrines/OMORI/omoriAssets/juice.png">
-                                <div id="FronterCardJuice" class="statBarText">
+                                <div class="FronterCardJuice statBarText">
                                     <p>444/444</p>
                                 </div>
                             </div>
                         </div>
-                        <div id="fronterCard">
-                            <div id="fronterEmotion">
-                                <h5 id="fronterTAG">F:</h5>
+                        <div class="fronterCard">
+                            <div class="fronterEmotion">
+                                <h5 class="fronterTAG">F:</h5>
                                 <h5 class="happy">Gera</h5>
                             </div>
-                            <a href="members/geraldine.html"><img id="fronterIMG"
-                                    src="/members/FaceClaims/Geraldine/GeraldinePicrew5.png"></a>
+                            <a href="members/geraldine.html"><img class="fronterIMG"
+                                    src="/members/memberSpecific/Geraldine/Picrews/GeraldinePicrew5.png"></a>
                             <div class="FronterCardDivider"></div>
                             <div class="FronterCardStats">
                                 <img src="/shrines/OMORI/omoriAssets/heart.png">
-                                <div id="FronterCardHealth" class="statBarText">
+                                <div class="FronterCardHealth statBarText">
                                     <p>200/200</p>
                                 </div>
                             </div>
                             <div class="FronterCardDivider"></div>
                             <div class="FronterCardStats">
                                 <img src="/shrines/OMORI/omoriAssets/juice.png">
-                                <div id="FronterCardJuice" class="statBarText">
+                                <div class="FronterCardJuice statBarText">
                                     <p>100/100</p>
                                 </div>
                             </div>
                         </div>
-                        <div id="fronterCard">
-                            <div id="fronterEmotion">
-                                <h5 id="fronterTAG">F:</h5>
+                        <div class="fronterCard">
+                            <div class="fronterEmotion">
+                                <h5 class="fronterTAG">F:</h5>
                                 <h5 class="vibin">Tia</h5>
                             </div>
-                            <a href="members/pastelgoth.html"><img id="fronterIMG"
-                                    src="/members/FaceClaims/PastelGoth/1.jpg"></a>
+                            <a href="members/pastelgoth.html"><img class="fronterIMG"
+                                    src="/members/memberSpecific/PastelGoth/Inspo1.jpg"></a>
                             <div class="FronterCardDivider"></div>
                             <div class="FronterCardStats">
                                 <img src="/shrines/OMORI/omoriAssets/heart.png">
-                                <div id="FronterCardHealth" class="statBarText">
+                                <div class="FronterCardHealth statBarText">
                                     <p>200/200</p>
                                 </div>
                             </div>
                             <div class="FronterCardDivider"></div>
                             <div class="FronterCardStats">
                                 <img src="/shrines/OMORI/omoriAssets/juice.png">
-                                <div id="FronterCardJuice" class="statBarText">
+                                <div class="FronterCardJuice statBarText">
                                     <p>100/100</p>
                                 </div>
                             </div>
@@ -411,7 +410,7 @@
 
     <div id="nowPlaying" class="now-playing hidden">
         <div class="now-playing-inner">
-            <img src="/assets/pinklotus.png" id="nowplayingLotus">
+            <img src="/assets/other/pinklotus.png" id="nowplayingLotus">
             <p id="songInfo"></p>
         </div>
     </div>

@@ -87,7 +87,7 @@ body {
 
     min-height: 120vh;
 
-    background-image: url(/assets/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png);
+    background: url(/assets/backgrounds/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png);
     background-size: 30%;
     background-attachment: fixed;
     animation: fadeInAnimation ease .55s, cloudAnim 180s infinite;
@@ -154,7 +154,7 @@ header {
     display: flex;
     justify-content: flex-end;
 
-    background-image: url(/assets/sugaryflower.jpg);
+    background-image: url(/assets/backgrounds/sugaryflower.jpg);
     width: 100%;
     height: 150px;
     border-bottom: 10px white solid;
@@ -233,7 +233,7 @@ aside {
 }
 
 .asideDesign {
-    background: url('/assets/flowers2.png');
+    background: url('/assets/backgrounds/flowers2.png');
     border: 5px solid white;
     color: #474747;
 
@@ -263,7 +263,7 @@ main {
 #welcome {
     width: 770px;
     padding: 10px;
-    background: url(/assets/linedpaper.jpg);
+    background: url(/assets/backgrounds/linedpaper.jpg);
     border-radius: 20px;
 }
 
@@ -296,7 +296,7 @@ main {
 
 #buttonNEW {
     border: 1px solid #00b5ad;
-    background: url("/assets/2.png");
+    background: url("/assets/backgrounds/2.png");
     position: relative;
 }
 
@@ -313,7 +313,7 @@ main {
 
 #buttonOLD {
     border: 1px solid #7964F5;
-    background: url("/assets/movestarbackground.gif");
+    background: url("/assets/backgrounds/movestarbackground.gif");
 }
 
 #oldSiteButton {
@@ -333,7 +333,7 @@ main {
 /* Patch Notes */
 
 #patchnotes {
-    background: url("/assets/fleurs.webp");
+    background: url("/assets/backgrounds/fleurs.webp");
     border: 3px solid white;
     width: 50%;
     overflow-y: auto;
@@ -383,7 +383,7 @@ main {
 }
 
 .patchnotes p {
-    background: url('/assets/shrooms1.gif');
+    background: url('/assets/backgrounds/shrooms1.gif');
     background-size: 10%;
     box-shadow: 0px 0px 5px 7px white inset;
     padding: 10px;
@@ -393,7 +393,7 @@ main {
 }
 
 .patchnotes p:first-of-type {
-    background: url('/assets/shrooms2.gif');
+    background: url('/assets/backgrounds/shrooms2.gif');
     background-size: 10%;
     color: black;
     font-weight: bold;
@@ -408,7 +408,7 @@ main {
 #webcam {
     position: relative;
     width: 50%;
-    background: url('/assets/h001-2.gif');
+    background: url('/assets/backgrounds/h001-2.gif');
     border-radius: 40px;
 }
 
@@ -421,10 +421,22 @@ main {
     font-weight: bold;
 }
 
+#kangelWrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+#kangel {
+    flex: 1 1 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
 /* Navigation */
 
 .navigationDesign {
-    background: url('/assets/e.v__14_.jpg');
+    background: url('/assets/backgrounds/e.v__14_.jpg');
     border: 5px solid white;
     color: #474747;
     padding: 5px;
@@ -485,7 +497,7 @@ main {
 }
 
 .fronterDesign {
-    background: url('/assets/haibisukasu01b.gif');
+    background: url('/assets/backgrounds/haibisukasu01b.gif');
     background-size: 20%;
     border: 5px solid white;
 
@@ -493,7 +505,7 @@ main {
 }
 
 .chattableDesign {
-    background: url('/assets/maydaybkg2.gif');
+    background: url('/assets/backgrounds/maydaybkg2.gif');
     background-size: 20%;
     border: 5px solid white;
 
@@ -527,7 +539,7 @@ main {
     left: 0;
     width: 100%;
 
-    background: url('/assets/77words_patterns6_001.gif');
+    background: url('/assets/backgrounds/77words_patterns6_001.gif');
     border-top: 3px solid white;
 
     color: white;
@@ -769,7 +781,7 @@ hr {
     }
 
     #buttonOLD {
-        background: url('/assets/movestarbackgroundF.gif');
+        background: url('/assets/backgrounds/movestarbackgroundF.gif');
     }
 }
 
@@ -841,12 +853,19 @@ hr {
         flex-flow: column wrap;
     }
 
-    #patchnotes, #webcam{
+    #patchnotes,
+    #webcam {
         width: 100%;
     }
 
-    .flborder1{
+    .flborder1 {
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    #kangel {
+        height: 20em
     }
 }
 
@@ -872,5 +891,14 @@ hr {
     h1 {
         font-size: 1.3em;
         padding: 14px 10px 0px;
+    }
+
+    #kangelWrapper {
+        display: block;
+    }
+
+    #kangel{
+        height: unset;
+        width: 100%;
     }
 }

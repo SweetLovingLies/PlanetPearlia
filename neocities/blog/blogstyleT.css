@@ -1,10 +1,10 @@
 body {
-    background: url('/assets/haibisukasu01b.gif');
+    background: url('/assets/backgrounds/haibisukasu01b.gif');
     background-size: 7em;
 }
 
 header {
-    background: url('/assets/haibisukasu01g.gif');
+    background: url('/assets/backgrounds/haibisukasu01g.gif');
     background-size: 5em;
 }
 
@@ -28,7 +28,7 @@ header {
 }
 
 aside {
-    background: url('/assets/haibisukasu01g.gif');
+    background: url('/assets/backgrounds/haibisukasu01g.gif');
     background-size: 5.5em;
 }
 

@@ -1,7 +1,7 @@
 @import url("/css/nowplaying!.css");
 
 :root {
-  --mainbg: url('/assets/D3C0RAGRL/heartgrid.gif');
+  --mainbg: url('/members/memberSpecific/PastelGoth/heartgrid.gif');
 }
 
 @font-face {
@@ -17,7 +17,7 @@
 body {
   font-family: basiic;
   background-color: white;
-  background-image: url('/assets/D3C0RAGRL/PASTELGOTHBG.jpg');
+  background-image: url('/members/memberSpecific/PastelGoth/PASTELGOTHBG.jpg');
   background-attachment: fixed;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 a {
-  background-image: url('/assets/D3C0RAGRL/blingeeglitz2.gif');
+  background-image: url('/members/memberSpecific/PastelGoth/blingeeglitz2.gif');
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -292,7 +292,7 @@ blockquote {
 }
 
 .rainbowtxt {
-  background-image: url('/assets/D3C0RAGRL/rainbow gradient.gif');
+  background-image: url('/members/memberSpecific/PastelGoth/rainbow gradient.gif');
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -301,7 +301,7 @@ blockquote {
 }
 
 .sparkles {
-  background-image: url('/assets/D3C0RAGRL/blingeeglitz.gif');
+  background-image: url('/members/memberSpecific/PastelGoth/blingeeglitz.gif');
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -312,7 +312,7 @@ blockquote {
 }
 
 .rainbowdivider {
-  background-image: url('/assets/D3C0RAGRL/rainbow!.webp');
+  background-image: url('/members/memberSpecific/PastelGoth/rainbow!.webp');
   background-size: 50%;
   background-repeat: repeat-x;
   width: 100%;
@@ -321,7 +321,7 @@ blockquote {
 }
 
 .sweetsdivider {
-  background-image: url('/assets/D3C0RAGRL/sweets.webp');
+  background-image: url('/members/memberSpecific/PastelGoth/sweets.webp');
   background-size: 50%;
   background-repeat: repeat-x;
   width: 100%;
@@ -358,7 +358,7 @@ blockquote {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-image: url('/assets/D3C0RAGRL/pastels2.gif');
+  background-image: url('/members/memberSpecific/PastelGoth/pastels2.gif');
   background-size: 100%;
   background-position: center;
   border-radius: 10px;

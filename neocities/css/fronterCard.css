@@ -1,6 +1,6 @@
 /* Fronter Card */
 
-#fronterCard {
+.fronterCard {
     position: relative;
     background-color: lightgray;
     border: 3px black solid;
@@ -23,16 +23,16 @@
     gap: 5px;
   }
   
-  #fronterCard h2 {
+  .fronterCard h2 {
     filter: none;
   }
   
-  #fronterCard p {
+  .fronterCard p {
     color: white;
     margin: 0;
   }
   
-  #fronterEmotion{
+  .fronterEmotion{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -53,12 +53,12 @@
     box-sizing: content-box;
   }
   
-  #fronterEmotion h1 {
+  .fronterEmotion h1 {
     flex: 0 0;
     margin: 0;
   }
   
-  #fronterTAG{
+  .fronterTAG{
     font-family: Normal;
     color: white;
     font-size: 1.3em;
@@ -162,7 +162,7 @@
   
   /* Fronter IMG */
   
-  #fronterIMG {
+  .fronterIMG {
     max-width: fit-content;
     width: 125px;
     height: 125px;
@@ -170,10 +170,10 @@
     border: 3px black solid;
     transition: all .5s;
 
-    background: url('/assets/movestarbackground.gif')
+    background: url('/assets/backgrounds/movestarbackground.gif')
   }
   
-  #fronterIMG:hover {
+ .fronterIMG:hover {
     border: 3px solid;
     border-image: conic-gradient(from var(--angle), #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #ffadad) 1;
     animation: 1s rotate linear infinite;
@@ -233,12 +233,12 @@
         1px -1px 0 #000;
   }
   
-  #FronterCardHealth {
+  .FronterCardHealth {
     border: 1px black solid;
     background-color: #e03030;
   }
   
-  #FronterCardJuice {
+  .FronterCardJuice {
     border: 1px black solid;
     background-color: #31d1d6;
   }

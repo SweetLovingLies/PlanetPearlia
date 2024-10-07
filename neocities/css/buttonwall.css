@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-image: url(/assets/forest.jpeg);
+    background-image: url(/assets/backgrounds/forest.jpeg);
     background-size: cover;
     background-attachment: fixed;
     animation: fadeInAnimation ease .55s;

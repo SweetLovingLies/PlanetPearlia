@@ -126,7 +126,7 @@ body {
 main {
     flex: 1 0 470px;
 
-    background: url(/assets/linedpaper.jpg);
+    background: url(/assets/backgrounds/linedpaper.jpg);
     color: #571313;
 
     min-height: 700px;

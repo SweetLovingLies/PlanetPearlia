@@ -1,5 +1,7 @@
 @import url("/css/nowplaying!.css");
 
+@import url("/css/OMORIboxes.css");
+
 
 @font-face {
     font-family: NORMAL;
@@ -59,7 +61,7 @@ body {
 
     width: 1100px;
     height: 620px;
-    background: url('/assets/MariSitePack/Base\ Layer.png') no-repeat;
+    background: url('/members/memberSpecific/MARI/MariSitePack/picnicblanket.png') no-repeat;
     background-size: contain;
     overflow: hidden;
 }

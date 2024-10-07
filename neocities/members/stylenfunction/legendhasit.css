@@ -14,7 +14,7 @@ body{
     display: flex;
     flex: 0 1;
     background-attachment: fixed;
-    background: linear-gradient(to top, #a4e2ffbb, #a4e2ffbb), url("/assets/oceanbg.jpg");
+    background: linear-gradient(to top, #a4e2ffbb, #a4e2ffbb), url("/assets/backgrounds/oceanbg.jpg");
     background-size: cover;
     background-color: #FFFFFF;
     justify-content: center;
@@ -98,7 +98,7 @@ main{
 }
 
 .water {
-    background-image: url(/assets/water.gif);
+    background-image: url(/assets/backgrounds/water.gif);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -107,7 +107,7 @@ main{
 }
 
 #kokomi{
-    background: url("/assets/kokomi.png");
+    background: url("/members/memberSpecific/Hanako/kokomiArt.png");
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -179,7 +179,7 @@ p{
  }
        
   *::-webkit-scrollbar-thumb {
-      background-image: url('/assets/bg_clouds.jpg');
+      background-image: url('/assets/backgrouds/bg_clouds.jpg');
       background-size:500%;
       background-position: center;
       border-radius: 10px;
@@ -191,6 +191,14 @@ p{
 
 
 /* Media Queries*/
+
+@media (prefers-reduced-motion: reduce) {
+    .water {
+        background-image: url(/assets/backgrounds/waterframe0.gif);
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     #kokomi{
         height: 200px;

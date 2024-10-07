@@ -37,7 +37,7 @@
   }
   
   #container {
-    background: url('/assets/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png');
+    background: url('/assets/backgrounds/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png');
     background-repeat: repeat;
     background-size: 50%;
     position: relative;
@@ -253,7 +253,7 @@
   
   @media only screen and (max-width: 830px) {
     body {
-      background-image: url('/assets/RuKoA1C.png');
+      background-image: url('/assets/backgrounds/RuKoA1C.png');
       overflow: scroll;
     }
   

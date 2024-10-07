@@ -4,6 +4,7 @@
     font-family: Femme;
     src: url('/fonts/FEMMEF.ttf');
 }
+
 @font-face {
     font-family: peach;
     src: url('/fonts/peachsundress.ttf');
@@ -24,7 +25,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     background-color: black;
-    background: url('/assets/roses.gif');
+    background: url('/assets/backgrounds/roses.gif');
 }
 
 @keyframes fadeEffect {
@@ -81,27 +82,29 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     margin: 0;
 }
 
-h1{
+h1 {
     font-family: Femme;
     font-size: 3em;
     border-bottom: 2px solid black;
 }
-h3{
+
+h3 {
     font-size: 1.7em;
     margin: 6px 0;
     font-family: peach;
 }
-h4{
+
+h4 {
     font-size: 1.4em;
     margin: 6px 0;
     font-family: peach;
 }
 
-p{
+p {
     margin: 10px 0;
 }
 
@@ -138,7 +141,7 @@ mark {
     color: white;
 }
 
-hr{
+hr {
     background-image: url(/assets/pixels/chainborder.webp);
     background-size: 50%;
     background-repeat: repeat-x;
@@ -154,8 +157,9 @@ hr{
     border-style: solid;
     border-width: 10px;
     border-image: url("/assets/borders/blacklace-Solaria.png") 14 round;
-  }
-.rLace{
+}
+
+.rLace {
     border-style: solid;
     border-width: 10px;
     border-image: url("/assets/borders/redlace-SolariaE.png") 14 round;
@@ -168,22 +172,23 @@ hr{
     width: 400px;
     height: auto;
 
-    -webkit-filter: drop-shadow(3px 3px 0 #ffffff)
-        drop-shadow(-3px -3px 0 #818181);
-        filter: drop-shadow(3px 3px 0 #818181)
-        drop-shadow(-3px -3px 0 #ffffff);
+    -webkit-filter: drop-shadow(3px 3px 0 #ffffff) drop-shadow(-3px -3px 0 #818181);
+    filter: drop-shadow(3px 3px 0 #818181) drop-shadow(-3px -3px 0 #ffffff);
 }
 
-#back{
+#back {
     align-self: flex-start;
 }
 
-/* Start https://www.cursors-4u.com */ 
-* {cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat791.cur), auto !important;} 
+/* Start https://www.cursors-4u.com */
+* {
+    cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat791.cur), auto !important;
+}
+
 /* End https://www.cursors-4u.com */
 
 @media (prefers-reduced-motion: reduce) {
-    hr{
+    hr {
         background-image: url(/assets/pixels/chainborderF.png);
     }
 }
@@ -194,6 +199,7 @@ hr{
         justify-content: center;
         align-items: unset;
     }
+
     main {
         flex-flow: column nowrap;
         width: auto;

@@ -7,10 +7,6 @@ var jaxframe = {
             "https://planetpearlia.com/shrines/OMORI/omoriAssets/something.webp",
             "https://planetpearlia.com/shrines/OMORI/omoriAssets/something_disappear.gif",
             "https://pearliasystem.neocities.org/pixels/backrainbow.webp",
-            "https://pearliasystem.neocities.org/MariSitePack/BasilsWords.gif",
-            "https://planetpearlia.com/assets/MariSitePack/BasilsWords.gif",
-            "https://pearliasystem.neocities.org/assets/MariSitePack/Heal!.gif",
-            "https://planetpearlia.com/assets/MariSitePack/Heal!.gif",
             "https://planetpearlia.com/assets/coolsites/planetpearlia.gif",
         ];
     
@@ -27,17 +23,9 @@ var jaxframe = {
                     width = img.naturalWidth,
                     height = img.naturalHeight,
                     ratio = width / height;
-    
-                if (img.closest('.marqueeitems')) {
-                    var canvasWidth = 88;
-                    var canvasHeight = canvasWidth / ratio;
-
-                    canvas.width = canvasWidth;
-                    canvas.height = canvasHeight;
-                } else {
                     canvas.width = width;
                     canvas.height = height;
-                }
+                
     
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     

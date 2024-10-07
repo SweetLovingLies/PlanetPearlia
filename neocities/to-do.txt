@@ -1,17 +1,19 @@
-- Rework systems section 
-- Reconceptualize button wall
-- Create shrine's section 
-- Create paracosm section 
-
-- Maybe animate Cure Felice?
 - Add global music pause button and volume slider 
   - Make the "Now Playing!" pop up stay when it's being hovered over
   - Make pop up reopenable!
 
+- Fix Jaxframe
+
+- Reconceptualize button wall
+- Create shrine's section 
+- Create paracosm section 
+- Come back and add things to the reworked system section
+
+! ! ??? ! !
+
+- Maybe animate Cure Felice?
+
   System's Section:
-
-  - Tia
-
   - Alex
   - Hail
   - Shio

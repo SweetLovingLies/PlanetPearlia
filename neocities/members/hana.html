@@ -15,10 +15,12 @@
         }, 1400)
     }
   </script>
-</head>
-  <img id="stranger" src="https://pearliasystem.neocities.org/shrines/OMORI/omoriAssets/STRANGER.png">
 
-<body>
+  <script src="js/jaxframeFork.js"></script>
+</head>
+<img id="stranger" src="https://pearliasystem.neocities.org/shrines/OMORI/omoriAssets/STRANGER.png">
+
+<body onload="jaxframe.stop()">
   <div id="wrapper">
     <a onclick="history.back()"><img id="back" src="/assets/pixels/carousel.webp"></a>
     <aside class="leftside">
@@ -36,9 +38,12 @@
               <div>!</div>
             </span>
           </h1>
-          <p>Hi there! I'm the host and the most frequent fronter. I'll be doing the bulk of the web design work as well as the story telling. <br>
-            I have a massive love of all things pastel, colorful, and maximalist in nature. This is reflected in almost all of my art projects! <br>
-            I am also a business owner! I design brands, build websites, and make apps for people. I also find some time to do vector art inbetween these projects too. <br>
+          <p>Hi there! I'm the host and the most frequent fronter. I'll be doing the bulk of the web design work as well
+            as the story telling. <br>
+            I have a massive love of all things pastel, colorful, and maximalist in nature. This is reflected in almost
+            all of my art projects! <br>
+            I am also a business owner! I design brands, build websites, and make apps for people. I also find some time
+            to do vector art inbetween these projects too. <br>
           </p>
           <p style="margin-top: 20px">
             Click the "More Details" button to find out more about me.
@@ -66,7 +71,8 @@
               Orientation: Biromantic Demisexual
             </li>
             <li>
-                I am a massive fan of the RV / van lifestyle. In the future, I see myself in a fully decorated van or RV running my business and being happy doing it!
+              I am a massive fan of the RV / van lifestyle. In the future, I see myself in a fully decorated van or RV
+              running my business and being happy doing it!
             </li>
           </ul>
           Hobbies: Programming, Web Design, Gaming <br>
@@ -157,12 +163,13 @@
 
   <div id="nowPlaying" class="now-playing hidden">
     <div class="now-playing-inner">
-        <img src="/assets/other/pinklotus.png" id="nowplayingLotus">
-        <p id="songInfo"></p>
+      <img src="/assets/other/pinklotus.png" id="nowplayingLotus">
+      <p id="songInfo"></p>
     </div>
-</div>
+  </div>
 
-  <audio autoplay loop id="winter" class="song" data-title="Snow Forest - A Single Flower Blooms" data-writer="OMORI OST" data-volume="0.02">
+  <audio autoplay loop id="winter" class="song" data-title="Snow Forest - A Single Flower Blooms"
+    data-writer="OMORI OST" data-volume="0.02">
     <source src="https://files.catbox.moe/1jf9yt.mp3" preload="auto" type="audio/mpeg">
   </audio>
 

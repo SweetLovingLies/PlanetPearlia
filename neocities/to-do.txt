@@ -1,8 +1,8 @@
+- Fix Jaxframe
+
 - Add global music pause button and volume slider 
   - Make the "Now Playing!" pop up stay when it's being hovered over
   - Make pop up reopenable!
-
-- Fix Jaxframe
 
 - Reconceptualize button wall
 - Create shrine's section 

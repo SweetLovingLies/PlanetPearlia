@@ -556,8 +556,7 @@ main {
     bottom: 0;
 }
 
-footer img,
-canvas {
+footer img, footer canvas {
     width: 150px;
     height: auto;
 }
@@ -609,16 +608,15 @@ h1 {
     padding: 14px 10px 0px;
 }
 
-#h1styling img,
-canvas {
+#h1styling img, #h1styling canvas {
     width: 80px;
     max-height: 65px;
 }
 
 h2 {
     margin: 0;
-    font-weight: none;
-    font-size: 1.4em;
+    font-weight: 400;
+    font-size: 1.4rem;
     padding-left: 10px;
 
     color: #ff6bc1;
@@ -749,7 +747,7 @@ hr {
 .bullet {
     width: 20px;
     height: auto;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
     margin-right: 5px;
 }
 

@@ -1,4 +1,5 @@
 @import url("jaxframe.css");
+@import url("/css/nowplaying!.css");
 
 @font-face {
     font-family: basiic;
@@ -148,6 +149,9 @@
     text-align: center;
 
     color: #f72b91;
+    -webkit-text-stroke: .2px #494949;
+
+    background: #ffd4e6;
     border: 5px solid #22838a;
     border-radius: 5px;
 

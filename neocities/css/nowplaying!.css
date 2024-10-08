@@ -1,3 +1,22 @@
+:root{
+  --button-shadow: unset;
+  --button-shadow-active: unset;
+  --button-border: unset;
+  --button-border-color: unset;
+  --button-border-color-default: unset;
+  --button-border-color-hovered: unset;
+  --button-border-color-active: unset;
+  --button-border-color-disabled: unset;
+  --button-text-color-disabled: unset;
+  --button-gradient: unset;
+  --button-gradient-hovered: unset;
+  --button-gradient-active: unset;
+  --element-spacing: 0;
+  --grouped-element-spacing: 0;
+  --border-radius: 0;
+  --border-width: 0;
+}
+
 .now-playing {
     position: fixed;
     bottom: 50px;
@@ -5,7 +24,7 @@
     z-index: 100;
 
     padding: 10px;
-    width: 300px;
+    width: 330px;
     min-height: 65px;
     box-sizing: border-box;
 
@@ -31,6 +50,11 @@
     height: 100%;
 }
 
+.controlsWrapper{
+    display: flex;
+    gap: 10px;
+}
+
 #nowplayingLotus {
     position: absolute;
     top: -95px; 
@@ -46,3 +70,67 @@
     font-size: 18px;
     margin: 0;
 }
+
+#MusicPauseButton {
+
+    all: unset;
+
+    display: block;
+    width: 32px;
+    background-color: #f72b91;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    text-align: center;
+
+    transition: background-color .25s;
+}
+
+#MusicPauseButton:hover {
+    background-color: #d7207e;
+}
+
+#volumeSlider {
+    flex: 1 1;
+    margin-top: 10px;
+
+    height: 10px; 
+    border-radius: 5px;
+    outline: none; 
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+
+#volumeSlider::-webkit-slider-runnable-track {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #f72b91;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+    width: 20px; 
+    height: 20px; 
+    background: #f72b91; 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+#volumeSlider::-moz-range-track {
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #f72b91;
+}
+
+#volumeSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #f72b91;
+    border-radius: 50%;
+    cursor: pointer;
+}
+

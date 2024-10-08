@@ -1,4 +1,6 @@
-- Reconceptualize button wall
+
+
+- Restylize button wall
 - Create shrine's section 
 - Create paracosm section 
 - Come back and add things to the reworked system section

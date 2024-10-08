@@ -11,19 +11,19 @@
     <link rel="icon" type="image/x-icon" href="/assets/pixels/hibiscus.webp">
 
     <script>
-        function hideBar(e){
-        const navbar = document.querySelector(".navbar");
-          e.preventDefault();
-          navbar.classList.remove("show");
-          navbar.classList.add("hide");
+        function hideBar(e) {
+            const navbar = document.querySelector(".navbar");
+            e.preventDefault();
+            navbar.classList.remove("show");
+            navbar.classList.add("hide");
         }
-        function showBar(e){
-          const navbar = document.querySelector(".navbar");
-          e.preventDefault();
-          navbar.classList.remove("hide");
-          navbar.classList.add("show");
+        function showBar(e) {
+            const navbar = document.querySelector(".navbar");
+            e.preventDefault();
+            navbar.classList.remove("hide");
+            navbar.classList.add("show");
         }
-      </script>
+    </script>
 </head>
 
 <body>
@@ -49,14 +49,19 @@
 
         <main>
             <section class="border">
-                <a href="#"><h2> May 14th 2024: REWORKED ALREADY?</h2></a>
+                <a href="#">
+                    <h2> May 14th 2024: REWORKED ALREADY?</h2>
+                </a>
                 <p class="scrollbox">
-                    This is much better than the last layout I feel! I'm glad I did this because I am feeling a lot more refreshed.
-                    <br> 
-                    Anyways, I finished a full paid commission recently and made a LOT off of it. A lot more than I was expecting at least. I can't believe that I can actually do this stuff commercially now. I still feel like an indie web weirdo but I can actually make a profit off this shit.
+                    This is much better than the last layout I feel! I'm glad I did this because I am feeling a lot more
+                    refreshed.
+                    <br>
+                    Anyways, I finished a full paid commission recently and made a LOT off of it. A lot more than I was
+                    expecting at least. I can't believe that I can actually do this stuff commercially now. I still feel
+                    like an indie web weirdo but I can actually make a profit off this shit.
                     <br>
                     <b>VRC FBT is on the way folks!</b>
-                    <br> 
+                    <br>
                     Short post today but I'm going to try to do this more consistently now. See you lot soon!
                 </p>
 
@@ -104,14 +109,11 @@
             }
         }
     </script> -->
-    <audio autoplay loop id="5pm">
+    <audio loop id="5pm" class="song" data-title="5pm" data-writer="ACNH OST"
+        data-volume="0.04">
         <source src="https://files.catbox.moe/5mem5v.mp3" type="audio/mpeg">
-        Your browser has not support the audio element.
-      </audio>
-      <script>
-        const five = document.getElementById("5pm");
-        five.volume = 0.04;
-      </script>
+    </audio>
+    <script src="/js/nowplaying!.js"></script>
 </body>
 
 </html>

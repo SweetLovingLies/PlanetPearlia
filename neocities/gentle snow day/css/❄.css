@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: aspire;
-    src: url(/fonts๑/aspire.ttf);
+    src: url(/fonts/aspire.ttf);
 }
 
 @font-face {
     font-family: vestardia;
-    src: url(/fonts๑/vestardia.ttf);
+    src: url(/fonts/vestardia.ttf);
 }
 
 html, body{
@@ -23,7 +23,7 @@ html, body{
 }
 
 body{
-    background: var(--iceblue) url('/assets๑/backgrounds/ice.jpg');
+    background: var(--iceblue) url('/assets/backgrounds/ice.jpg');
     background-size: 15%;
 
     height: 100vh;
@@ -194,7 +194,7 @@ mark {
 /* Decor */
 
 .blueborder{
-    background: url(/assets๑/pixels/adornedborder.png) repeat-x;
+    background: url(/assets/pixels/adornedborder.png) repeat-x;
     background-size: 50%;
     height: 35px;
     margin: 10px 0;

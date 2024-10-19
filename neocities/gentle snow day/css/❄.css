@@ -1,0 +1,280 @@
+:root{
+    --iceblue: #e1e9f8;
+    --waterblue: #a8ceff;
+    --graymist: #7e889c;
+    --darkmist: #555d6d;
+    --stardust: #a0b0ca;
+    --angelic: #5b73b4;
+}
+
+@font-face {
+    font-family: aspire;
+    src: url(/fonts/aspire.ttf);
+}
+
+@font-face {
+    font-family: vestardia;
+    src: url(/fonts/vestardia.ttf);
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: var(--iceblue) url('/assets/backgrounds/ice.jpg');
+    background-size: 15%;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--darkmist);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#wrapper{
+    position: relative;
+    flex: 0 1 600px;
+    padding: 20px;
+
+    background-color: var(--waterblue);
+    border: 40px solid var(--stardust);
+}
+
+/* Styles */
+
+#title {
+    align-items: center; 
+}
+
+#time{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding: 3px;
+    vertical-align: middle;
+
+    -webkit-text-stroke: .3px var(--graymist);
+}
+
+#home{
+    align-items: start;
+}
+
+.selca{
+    display: flex;
+    border: 5px solid white;
+    outline: 5px solid var(--stardust);
+    margin-left: 5px;
+    align-items: start;
+}
+
+.selca img{
+    min-width: 240px;
+    width: 100%;
+    border: 5px solid var(--stardust);
+}
+
+#socials{
+    padding-top: 10px;
+}
+
+#socialswrapper{
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+i{
+    border-radius: 5px;
+    font-size: 1.5em;
+    filter: drop-shadow(-1px 2px 0px white)
+}
+
+/* Default Styles */
+
+h2{
+    color: var(--graymist);
+    height: 20px;
+    flex: 1 1;
+    align-items: center;
+
+    font-size: 2em;
+    background-color: white;
+    border-top: 1px solid var(--stardust);
+    border-left: 1px solid var(--stardust);
+    padding: 4px;
+}
+
+h3{
+    color: var(--angelic);
+    font-size: 1.7em;
+    text-decoration: underline dashed white;
+}
+
+nav{
+    font-family: 'aspire', Times, serif;
+    font-size: 1.7em;
+    border-bottom: 1px solid var(--stardust);
+    border-left: 1px solid var(--stardust);
+}
+
+.txt{
+    overflow: auto;
+    max-height: 267px; 
+    padding: 0 20px 0 10px;
+
+    border-left: 4px solid white;
+}
+
+
+/* Default Mods */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'aspire', Times, serif;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    padding: 0 1em;
+    margin: .4em 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: var(--graymist);
+    font-weight: bold;
+    transition: color .25s;
+}
+a:hover{
+    color: var(--stardust);
+}
+
+hr{
+    border: none;
+}
+
+mark {
+    color: white;
+    background: var(--stardust);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex2{
+    display: flex;
+}
+
+.flex3{
+    display: flex;
+}
+
+.favicon{
+    max-width: 20px;
+    vertical-align: middle;
+    margin: 0px 3px;
+}
+
+/* Decor */
+
+.blueborder{
+    background: url(/assets/pixels/adornedborder.png) repeat-x;
+    background-size: 50%;
+    height: 35px;
+    margin: 10px 0;
+}
+
+.whitebg{
+    background-color: white;
+    padding: 0px 4px;
+}
+
+li:before {
+    content: '❄';
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* ===== Custom Scrollbar ===== */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--angelic);
+    border-radius: 10px;
+}
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--angelic) #ffffff;
+}
+
+/* Colored Selection */
+
+::-moz-selection {
+    color: white;
+    background: #c3d6ff;
+}
+
+::selection {
+    color: white;
+    background: #c3d6ff;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        height: unset;
+    }
+
+    #wrapper{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .flex{
+        flex-flow: column nowrap;
+    }
+
+    .flex3{
+        flex-flow: column-reverse nowrap;
+    }
+
+    nav, h2{
+        border: 1px solid var(--stardust);
+    }
+
+    #time{
+        display: none;
+    }
+
+    footer{
+        left: 18%;
+    }
+}

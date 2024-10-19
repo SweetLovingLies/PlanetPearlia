@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- ꒰ Boring stuff goes here! ꒱ -->
+    <meta charset="UTF-8">
+    <!-- ꒰ Tells the website how to display text properly ꒱ -->
+    <!-- 웹사이트에 텍스트를 올바르게 표시하는 방법을 알려줍니다-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ꒰ Tells the website how to display on phones ꒱ -->
+    <!-- 웹사이트에 휴대폰에 표시하는 방법을 알려줍니다-->
+
+    <title>gentle snow day</title>
+    <meta name="description" content="a cute site idea for you" />
+    <link rel="icon" type="image/x-icon" href="assets/pixels/snow.webp">
+    <!-- ꒰ The little favicon in the corner of the tab ꒱ -->
+    <!-- 웹사이트 탭 모서리에 있는 아이콘입니다 -->
+
+    <!-- ꒰ My Styles / 내 스타일 ꒱-->
+    <link href="css/❄.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="title" class="flex2">
+            <h2 class="flex2">gentle snow day <img class="favicon" src="assets/pixels/snowflake2.webp"></h2>
+            <div id="time">when snow falls...</div>
+        </div>
+        <div class="blueborder"></div>
+        <section id="home" class="flex3">
+            <aside>
+                <nav class="whitebg">
+                    <a onclick="showSection('home')">home</a>
+                    <strong>|</strong>
+                    <a onclick="showSection('about')">about</a>
+                    <strong>|</strong>
+                    <a onclick="showSection('other')">other</a>
+                </nav>
+
+                <hr> <!-- Line Break -->
+
+                <h3>Hello | 안녕하세요</h3>
+                <div class="txt">
+                    <p>
+                        <strong>Welcome to my carrd!</strong> <br>
+                        Do nulla duis exercitation Lorem sint incididunt eiusmod sunt nulla ad. Dolore culpa esse dolore
+                        qui veniam dolore amet consectetur consequat cillum quis. Officia magna <mark>in do do
+                            reprehenderit labore</mark> quis Lorem minim. Fugiat sit consequat quis est adipisicing
+                        aliqua.
+                        Deserunt ut pariatur consequat voluptate proident sint adipisicing occaecat eiusmod do
+                        exercitation ullamco. Nulla non quis do minim aliqua dolore pariatur voluptate dolore sunt ut
+                        labore. Dolore ea sint amet est reprehenderit anim id nulla ad. Pariatur excepteur ea pariatur
+                        Lorem non esse elit esse.
+                        Ea culpa pariatur commodo minim velit voluptate tempor veniam minim minim est nisi officia.
+                        Dolore anim aliqua cupidatat officia. Elit aliquip sint dolore dolor occaecat non non elit
+                        laborum adipisicing aliqua.
+                    </p>
+                </div>
+            </aside>
+            <div class="selca">
+                <img src="assets/selcas/soojin.jpg" alt="Lee Soojin from Weeekly">
+            </div>
+        </section>
+        <section id="about" class="flex3" style="display: none;">
+            <aside>
+                <nav class="whitebg">
+                    <a onclick="showSection('home')">home</a>
+                    <strong>|</strong>
+                    <a onclick="showSection('about')">about</a>
+                    <strong>|</strong>
+                    <a onclick="showSection('other')">other</a>
+                </nav>
+
+                <hr> <!-- Line Break -->
+
+                <h3>I'm Hana!</h3>
+                <div class="txt">
+                    <ul>
+                        <li>
+                            20
+                        </li>
+                        <li>
+                            Black
+                        </li>
+                        <li>
+                            I make YouTube videos and Code!
+                        </li>
+                    </ul>
+                    <p>
+                        Aliquip cillum et ex adipisicing. Eiusmod sit cupidatat esse sunt aliquip labore nulla quis
+                        ipsum id sint excepteur ea non. Aute minim culpa ea ullamco anim ad nisi ad ullamco. Id deserunt
+                        est elit dolor laboris nisi deserunt dolore proident id minim incididunt magna incididunt. Ex
+                        ipsum incididunt laboris reprehenderit in laboris sunt.
+                        Non velit exercitation deserunt pariatur. Dolor ipsum commodo culpa qui magna minim exercitation
+                        eiusmod ullamco mollit nostrud occaecat enim. Non ex ea non cillum sit velit voluptate esse
+                        cillum voluptate in voluptate. Adipisicing qui esse ut esse esse minim Lorem veniam eiusmod anim
+                        incididunt veniam do. Cillum ea enim incididunt cupidatat quis esse aliqua ullamco est ea ipsum.
+                        Laborum voluptate enim nostrud occaecat cillum officia anim eiusmod nisi est aute.
+                    </p>
+                </div>
+            </aside>
+            <div class="selca">
+                <img src="assets/selcas/soojin2.jpg" alt="Lee Soojin from Weeekly">
+            </div>
+        </section>
+
+        <section id="other" class="flex3" style="display: none;">
+            <aside>
+                <nav class="whitebg">
+                    <a onclick="showSection('home')">home</a>
+                    <strong>|</strong>
+                    <a onclick="showSection('about')">about</a>
+                    <strong>|</strong>
+                    <a onclick="showSection('other')">other</a>
+                </nav>
+
+                <hr> <!-- Line Break -->
+
+                <h3>Anything Else?</h3>
+                <div class="txt">
+                    <p>
+                        Nulla amet labore officia sint aute laboris officia deserunt aute. Sint minim occaecat cillum in est ipsum proident occaecat cillum non consequat Lorem. Enim reprehenderit consequat qui irure amet excepteur ea cupidatat nostrud do exercitation consequat sint. Lorem laborum fugiat occaecat aute nisi deserunt Lorem aliqua sit cillum est. Laborum ipsum sunt enim quis dolor. Pariatur dolor officia et enim anim deserunt sit qui deserunt. Proident cupidatat excepteur officia deserunt aliqua esse cupidatat.
+                        Eu quis occaecat anim reprehenderit eiusmod et magna veniam culpa. Dolore consectetur ullamco officia velit velit. Ipsum laborum elit aliqua id eu. Consequat laborum aliquip irure nostrud tempor duis excepteur proident.
+                    </p>
+                </div>
+            </aside>
+            <div class="selca">
+                <img src="assets/selcas/soojin3.jpg" alt="Lee Soojin from Weeekly">
+            </div>
+        </section>
+        <div id="socials">
+            <h2 class="flex2">socials <img class="favicon" src="assets/pixels/snowflake2.webp"></h2>
+            <div id="socialswrapper" class="flex2">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-cat"></i></a>
+                <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitch"></i></a>
+            </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+<!-- ꒰ My Scripts / 내 코드 스크립트 ꒱-->
+<script src="js/❄.js"></script>
+
+</html>

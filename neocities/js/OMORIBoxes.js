@@ -1,3 +1,4 @@
+// Added mobile fallback finally
 function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharacter, useWhiteLightbox) {
     const soundUrls = [
         'https://fallenhuman.neocities.org/seni/text1.ogg',
@@ -7,63 +8,20 @@ function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharact
         'https://fallenhuman.neocities.org/seni/text5.ogg'
     ];
 
-    // Determine which lightbox to create
-    const lightbox = document.createElement('div');
-    if (useWhiteLightbox) {
-        lightbox.id = 'lightbox2';
-        lightbox.classList.add('lightbox2', 'show');
-    } else {
-        lightbox.classList.add('lightbox', 'show');
-    }
+    const audioObjects = soundUrls.map(url => {
+        const audio = new Audio(url);
+        audio.preload = 'auto';
+        return audio;
+    });
+
+    const lightbox = createLightbox(useWhiteLightbox);
     document.body.appendChild(lightbox);
-    void lightbox.offsetWidth; // Trigger reflow to apply initial styles
 
     let output = document.getElementById("text");
     if (!output) {
-        const textboxContainer = document.createElement('div');
-        textboxContainer.classList.add('textboxContainer');
-
-        const textboxWrapper = document.createElement('div');
-        textboxWrapper.classList.add('textboxWrapper');
-
-        const topWrapper = document.createElement('div');
-        topWrapper.classList.add('topWrapper');
-
-        // Only add the character name and image if showCharacter is true
-        if (showCharacter) {
-            const characterName = document.createElement('p');
-            characterName.classList.add('characterName');
-
-            // Extract the relevant part of characterDisplayName
-            const characterDisplayNameWithoutDW = characterDisplayName.replace(/^DW/i, ''); // Remove Dark World Modifier for name
-            characterName.textContent = characterDisplayNameWithoutDW;
-
-            const charName = characterDisplayName.toLowerCase().replace(/\s/g, '');
-            const characterIMG = document.createElement('img');
-            characterIMG.classList.add('characterIMG');
-            characterIMG.src = `${window.location.origin}/shrines/OMORI/omoriAssets/Sprites/${charName}_${emotions[0]}.gif`;
-
-            topWrapper.appendChild(characterName);
-            topWrapper.appendChild(characterIMG);
-        }
-
-        const textbox = document.createElement('div');
-        textbox.classList.add('textbox');
-
-        const cursorImg = document.createElement('img');
-        cursorImg.classList.add('cursor');
-        cursorImg.src = `${window.location.origin}/shrines/OMORI/omoriAssets/cursor.png`;
-        textbox.appendChild(cursorImg);
-
-        output = document.createElement('div');
-        output.id = 'text';
-        output.textContent = prewrittenTexts[0]; // Initialize with first text
-        textbox.appendChild(output);
-
-        textboxWrapper.appendChild(topWrapper);
-        textboxWrapper.appendChild(textbox);
-        textboxContainer.appendChild(textboxWrapper);
-        document.body.appendChild(textboxContainer);
+        const textboxData = createTextbox(characterDisplayName, showCharacter, emotions[0]);
+        output = textboxData.output; // ~ Get the output from the created textbox
+        document.body.appendChild(textboxData.textboxContainer);
     }
 
     let textIndex = 0;
@@ -73,16 +31,9 @@ function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharact
     let playSoundFlag = true;
     let waitingForEnter = true;
 
-    const audioObjects = soundUrls.map((soundUrl) => {
-        const audio = new Audio();
-        audio.src = soundUrl;
-        audio.preload = "auto";
-        return audio;
-    });
-
     function playSound() {
         if (playSoundFlag) {
-            const randomIndex = Math.floor(Math.random() * audioObjects.length);
+            const randomIndex = Math.floor(Math.random() * audioObjects.length); // ! Randomly select from the audioURLs
             audioObjects[randomIndex].currentTime = 0;
             audioObjects[randomIndex].play();
         }
@@ -90,56 +41,38 @@ function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharact
     }
 
     function typeNextChar() {
-        if (i >= textToDisplay.length) {
+        if (i >= textToDisplay.length) { // ~ If the text is too long, create a new textbox, and wait for enter key press to continue
             clearInterval(interval);
-
             if (textIndex + 1 < prewrittenTexts.length) {
                 waitingForEnter = true;
                 document.addEventListener('keydown', handleEnterKey);
+                document.addEventListener('touchend', handleTap); // ! Mobile Fallback
             } else {
-                setTimeout(closeTextbox, 2000);
+                setTimeout(closeTextbox, 2000); // ? 2sec
             }
-
             return;
         }
 
         const letterToShow = textToDisplay[i];
         if (letterToShow === "{" && textToDisplay[i + 1] === "$" && textToDisplay[i + 2] === "b" && textToDisplay[i + 3] === "}") {
-            setTimeout(function () {
-                i += 4;
-                typeNextChar();
-            }, 500);
+            setTimeout(() => { i += 4; typeNextChar(); }, 500);
             return;
         }
 
-        if (output) {
-            output.textContent += letterToShow;
-        } else {
-            console.error("Element with id='text' not found.");
-            return;
-        }
-
+        output.textContent += letterToShow; 
         playSound();
         i++;
 
-        interval = setTimeout(typeNextChar, 20);
+        interval = setTimeout(typeNextChar, 20); // ~ Time between typing the next letter
     }
 
-    setTimeout(() => {
-        startTypewriter(textToDisplay);
-    }, 500);
-
-    function startTypewriter(text) {
-        output.textContent = '';
-        textToDisplay = text;
+    function startTypewriter() { // ! Reset before starting~
+        output.textContent = ''; 
         i = 0;
+        textToDisplay = prewrittenTexts[textIndex];
 
         if (showCharacter) {
-            const charName = characterDisplayName.toLowerCase().replace(/\s/g, '');
-            const characterIMG = document.querySelector('.characterIMG');
-            if (characterIMG) {
-                characterIMG.src = `${window.location.origin}/shrines/OMORI/omoriAssets/Sprites/${charName}_${emotions[textIndex]}.gif`;
-            }
+            updateCharacterImage(characterDisplayName, emotions[textIndex]);
         }
 
         interval = setTimeout(typeNextChar, 20);
@@ -161,15 +94,74 @@ function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharact
         if (event.key === 'Enter' && waitingForEnter) {
             waitingForEnter = false;
             document.removeEventListener('keydown', handleEnterKey);
+            document.removeEventListener('touchend', handleTap); // ~ Remove listener when done
             textIndex++;
             if (textIndex < prewrittenTexts.length) {
-                startTypewriter(prewrittenTexts[textIndex]);
+                startTypewriter();
             }
         }
     }
+    setTimeout(startTypewriter, 500); // ! Slight delay for the text to play
 }
 
+// ? Build a Bitch
 
+function createLightbox(useWhiteLightbox) {
+    const lightbox = document.createElement('div');
+    lightbox.classList.add(useWhiteLightbox ? 'lightbox2' : 'lightbox', 'show');
+    return lightbox;
+}
+
+function createTextbox(characterDisplayName, showCharacter, emotion) {
+    const textboxContainer = document.createElement('div');
+    textboxContainer.classList.add('textboxContainer');
+
+    const textboxWrapper = document.createElement('div');
+    textboxWrapper.classList.add('textboxWrapper');
+
+    const topWrapper = document.createElement('div');
+    topWrapper.classList.add('topWrapper');
+
+    if (showCharacter) {
+        const characterName = document.createElement('p');
+        characterName.classList.add('characterName');
+        characterName.textContent = characterDisplayName.replace(/^DW/i, '');
+
+        const charName = characterDisplayName.toLowerCase().replace(/\s/g, '');
+        const characterIMG = document.createElement('img');
+        characterIMG.classList.add('characterIMG');
+        characterIMG.src = `${window.location.origin}/OMORI/img/${charName}_${emotion}.gif`;
+
+        topWrapper.appendChild(characterName);
+        topWrapper.appendChild(characterIMG);
+    }
+
+    const textbox = document.createElement('div');
+    textbox.classList.add('textbox');
+
+    const cursorImg = document.createElement('img');
+    cursorImg.classList.add('cursor');
+    cursorImg.src = `${window.location.origin}/OMORI/img/cursor.png`;
+    textbox.appendChild(cursorImg);
+
+    const output = document.createElement('div');
+    output.id = 'text';
+    textbox.appendChild(output);
+
+    textboxWrapper.appendChild(topWrapper);
+    textboxWrapper.appendChild(textbox);
+    textboxContainer.appendChild(textboxWrapper);
+
+    return { textboxContainer, output }; // ! Remember to return both
+}
+
+function updateCharacterImage(characterDisplayName, emotion) {
+    const charName = characterDisplayName.toLowerCase().replace(/\s/g, '');
+    const characterIMG = document.querySelector('.characterIMG');
+    if (characterIMG) {
+        characterIMG.src = `${window.location.origin}/OMORI/img/${charName}_${emotion}.gif`;
+    }
+}
 
 function healup(prewrittenTexts, characterDisplayName, emotions, showCharacter, useWhiteLightbox) {
     const picnicJingle = document.getElementById("picnicjingle");
@@ -179,12 +171,11 @@ function healup(prewrittenTexts, characterDisplayName, emotions, showCharacter, 
 
     setTimeout(() => {
         healSound.play();
-
         setTimeout(() => {
-            healSound.currentTime = 0; 
+            healSound.currentTime = 0;
             healSound.play();
         }, 335);
-    }, 1200); 
+    }, 1200);
 
     setTimeout(() => {
         typewriter(prewrittenTexts, characterDisplayName, emotions, showCharacter, useWhiteLightbox);

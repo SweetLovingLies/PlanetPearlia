@@ -566,10 +566,10 @@ header {
 #MARI {
     border-width: 14px;
     border-style: solid;
-    border-image: url("/shrines/OMORI/omoriAssets/picnic.jpg") 17 round;
+    border-image: url("/OMORI/img/picnic.jpg") 17 round;
 
     background:
-        url("/shrines/OMORI/omoriAssets/Space_parallax_stars.png"),
+        url("/OMORI/img/Space_parallax_stars.png"),
         #6C0FFF;
 
     background-size: 250%;

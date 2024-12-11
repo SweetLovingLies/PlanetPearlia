@@ -1,6 +1,6 @@
 @import url("/css/nowplaying!.css");
 
-@import url("/css/OMORIboxes.css");
+@import url("/OMORI/css/OMORIboxes.css");
 
 
 @font-face {
@@ -25,7 +25,7 @@ body {
 }
 
 body {
-    background: url(/shrines/OMORI/omoriAssets/Space_parallax_stars.png) repeat;
+    background: url("/OMORI/img/Space_parallax_stars.png") repeat;
     background-color: #6C0FFF;
     background-size: 50%;
     background-attachment: fixed;
@@ -135,7 +135,7 @@ h4::before {
     display: inline-block;
     height: 20px;
     width: 20px;
-    background-image: url(/assets/pixels/chatbubble\(flower\).gif);
+    background-image: url("/assets/pixels/chatbubble\(flower\).gif");
     background-size: contain;
     margin-right: 5px;
     vertical-align: text-top;
@@ -184,7 +184,7 @@ mark {
 
 .flowers {
     position: relative;
-    background-image: url(/assets/pixels/flowerborder3.webp);
+    background-image: url("/assets/pixels/flowerborder3.webp");
     background-size: 50%;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -255,7 +255,7 @@ mark {
 
 /* Start https://www.cursors-4u.com */
 * {
-    cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat786.cur), auto !important;
+    cursor: url("https://cur.cursors-4u.net/nature/nat-8/nat786.cur"), auto !important;
 }
 
 /* End https://www.cursors-4u.com */
@@ -278,7 +278,7 @@ mark {
         height: unset;
         justify-content: center;
         align-items: unset;
-        background: url('/shrines/OMORI/omoriAssets/picnic.jpg');
+        background: url("/shrines/OMORI/omoriAssets/picnic.jpg");
         animation: none;
     }
 

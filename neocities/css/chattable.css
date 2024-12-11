@@ -73,7 +73,7 @@
     font-size: small;
 }
 
-#textInput {
+#input {
     background: #00b5ad;
 }
 
@@ -81,8 +81,6 @@
     margin-right: 5px;
     color: #00b5ad;
 }
-
-.mod:before {}
 
 .owner:before {
     margin-right: 5px;

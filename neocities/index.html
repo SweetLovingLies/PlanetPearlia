@@ -10,9 +10,6 @@
   <link rel="icon" type="image/x-icon" href="assets/pixels/lily2.webp">
   <!-- This works better than Freezeframe.js. Credits to Graybox.lol on Neocities, I just modified it for my needs! -->
   <script src="js/jaxframeFork.js"></script>
-  <!-- Do you want to play a game?-->
-  <script src="shrines/OMORI/hangmanGame/js/keyCollectScript.js"></script>
-  <link href="shrines/OMORI/hangmanGame/css/keyscollected.css" rel="stylesheet">
   <!-- Change your Neocities Thumbnail/Preview image! You can find a tutorial here: https://arandomsite.neocities.org/writing/#custom-neocities-thumbnail. Just replace the code given there with the code below, or get it from here: https://arandomsite.ichi.city/snippets/ -->
   <script>
     const urlParams = new URLSearchParams(window.location.search);
@@ -20,7 +17,6 @@
       window.location.replace("/previewV2/");
     }
   </script>
-
 </head>
 
 <body onload="jaxframe.stop()">
@@ -60,8 +56,6 @@
         <img src="assets/stamps/thenight.gif" style="width:90px; height:auto;" alt="Nighttime Stamp!">
         <img src="assets/stamps/nightmoon.gif" style="width:90px; height:auto;" alt="Another nighttime Stamp!">
         <img src="assets/stamps/GlitterStars.gif" style="width:90px; height:auto;" alt="Glitter Stars Stamp!">
-
-        <img src="/shrines/OMORI/omoriAssets/keys/keyI.png" id="keyI" class="hangmanKeys" onclick="collectKey('I');">
       </leftside>
 
       <rightside>
@@ -102,7 +96,7 @@
       </div>
     </footer>
   </div>
-  <audio autoplay="" loop="" id="outerspace" class="song" data-title="Load Screen" data-writer="Stardew Valley OST"
+  <audio preload="auto" loop="" id="outerspace" class="song" data-title="Load Screen" data-writer="Stardew Valley OST"
     data-volume="0.06">
     <source src="https://files.catbox.moe/xuxdyp.mp3" preload="auto" type="audio/mpeg">
   </audio>
@@ -111,11 +105,6 @@
     .now-playing {
       bottom: 100px;
       z-index: 1000;
-    }
-
-    #keyI {
-      display: block;
-      margin: 500px auto 0;
     }
   </style>
   <script src="/js/nowplaying!.js"></script>

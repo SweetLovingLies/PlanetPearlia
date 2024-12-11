@@ -1,4 +1,3 @@
-// Added mobile fallback finally
 function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharacter, useWhiteLightbox) {
     const soundUrls = [
         'https://fallenhuman.neocities.org/seni/text1.ogg',
@@ -101,6 +100,18 @@ function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharact
             }
         }
     }
+
+    function handleTap() {
+        if (waitingForEnter) { // ~ Only handle tap if we are waiting for user input
+            waitingForEnter = false;
+            document.removeEventListener('touchend', handleTap); // ~ Remove listener after tap
+            textIndex++;
+            if (textIndex < prewrittenTexts.length) {
+                startTypewriter();
+            }
+        }
+    }
+
     setTimeout(startTypewriter, 500); // ! Slight delay for the text to play
 }
 

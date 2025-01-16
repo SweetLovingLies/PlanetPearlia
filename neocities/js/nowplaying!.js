@@ -1,5 +1,4 @@
 window.onload = function () {
-
     const nowPlayingDiv = document.createElement('div');
     nowPlayingDiv.id = 'nowPlaying';
     nowPlayingDiv.classList.add('now-playing', 'hidden');  
@@ -23,16 +22,20 @@ window.onload = function () {
 
     let currentSong = null;
 
+    songs.muted = true;
+
     songs.forEach(song => {
         song.pause();
         song.currentTime = 0;
+        song.muted = true; 
+        // console.log("Song Muted");
     });
 
+    // Select a random song
     const randomIndex = Math.floor(Math.random() * songs.length);
     currentSong = songs[randomIndex];
 
     // Get stored volume and pause/play state
-
     const savedVolume = localStorage.getItem('songVolume');
     currentSong.volume = savedVolume ? savedVolume : currentSong.getAttribute('data-volume');
     volumeSlider.value = currentSong.volume;
@@ -42,9 +45,11 @@ window.onload = function () {
         pauseButton.textContent = '▶';
     } else {
         currentSong.play();
+        currentSong.muted = false; 
+        // console.log("Song Unmuted");
     }
 
-    // Song Info 
+    // Song Info
     const title = currentSong.getAttribute('data-title');
     const writer = currentSong.getAttribute('data-writer');
     const OSTWriter = writer.includes('OST') ? ` from the ${writer}` : writer;
@@ -60,10 +65,12 @@ window.onload = function () {
             currentSong.play();
             pauseButton.textContent = '❚❚';
             localStorage.setItem('isPaused', 'false');
+            currentSong.muted = false;
         } else {
             currentSong.pause();
             pauseButton.textContent = '▶';
             localStorage.setItem('isPaused', 'true');
+            currentSong.muted = true;
         }
     });
 
@@ -97,6 +104,3 @@ window.onload = function () {
         }
     });
 };
-
-
-// If you use this, make sure NOT to put it in the head tag! It will not work otherwise.

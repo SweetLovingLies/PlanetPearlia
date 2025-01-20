@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealRegular.ttf') format('truetype');
+    font-weight: 500;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealBlack.ttf') format('truetype');
+    font-weight: 800;
+    /* Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    /* ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealBold.ttf') format('truetype');
+    font-weight: 600;
+    /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealSemiBold.ttf') format('truetype');
+    font-weight: 500;
+    /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealExtraLight.ttf') format('truetype');
+    font-weight: 300;
+    /* Extra Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealLight.ttf') format('truetype');
+    font-weight: 200;
+    /* Light */
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('/fonts/ethereal/EtherealThin.ttf') format('truetype');
+    font-weight: 100;
+    /* Thin */
+    font-style: normal;
+}

@@ -1,13 +1,14 @@
 #top_banner {
-    background: #00b5ad;
+    display: none;
 }
 
 #top_banner:before {
+    content: '';
     display: inline-block;
     width: 15pt;
     height: 15pt;
-    content: ' ';
-    background-image: url('https://pearliasystem.neocities.org/assets/pixels/lily2.webp');
+    /* ! Change this when you upload */
+    /* background-image: url('https://pearliasystem.neocities.org/assets/pixels/lily2.webp');  */
     background-size: 100% 100%;
     margin-right: 5px;
 }
@@ -19,16 +20,16 @@
 }
 
 .msgWrapper {
-    font-family: basiic;
+    font-family: rainyhearts;
 }
 
 .allMessages {
-    font-family: basiic;
+    font-family: rainyhearts;
 }
 
 .senderInfo {
     font-weight: bold;
-    color: #ff6095;
+    color: #6f83c8;
 }
 
 .mod,
@@ -54,7 +55,7 @@
 }
 
 #input {
-    font-family: basiic;
+    font-family: rainydays;
     color: white;
 }
 
@@ -74,15 +75,16 @@
 }
 
 #input {
-    background: #00b5ad;
+    background: #BED3E4;
+    border-radius: 0;
 }
 
 #settings {
     margin-right: 5px;
-    color: #00b5ad;
+    color: #BED3E4;
 }
 
 .owner:before {
     margin-right: 5px;
-    color: #00b5ad;
+    color: #BED3E4;
 }

@@ -1,12 +1,4 @@
-@font-face {
-    font-family: Fine;
-    src: url('/fonts/OMORI_GAME.ttf');
-}
-
-@font-face {
-    font-family: Normal;
-    src: url('/fonts/OMORI_GAME2.ttf');
-}
+@import url("omoriPallete.css");
 
 .lightbox {
     position: fixed;

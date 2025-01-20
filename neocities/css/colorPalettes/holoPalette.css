@@ -1,0 +1,20 @@
+:root {
+    /* Normal */
+    --holo1: #E994D8;
+    --holo2: #EFD3EC;
+    --holo3: #99E3EE;
+    --holo4: #D3B4EF;
+    --holo5: #D8F3C6;
+
+    /* Pastel */
+    --holoPastel1: #CED9ED;
+    --holoPastel2: #CFC7FA;
+    --holoPastel3: #E2C6EE;
+    --holoPastel4: #EFC8DD;
+    --holoPastel5: #D7E9DB;
+}
+
+.holoOverlay {
+    background: url(/assets/backgrounds/holoOverlay.jpg) center/cover;
+    mix-blend-mode: overlay;
+}

@@ -1,3 +1,5 @@
+@import url("general/globals.css");
+
 body {
     height: 100vh;
     background: url("/assets/backgrounds/angelclouds.gif");
@@ -7,5 +9,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ethereal', sans-serif;
+    font-weight: 800;
 }

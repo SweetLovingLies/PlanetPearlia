@@ -1,0 +1,32 @@
+:root {
+    /* Antique Pearl */
+    --AP1: #EEE3D4;
+    --AP2: #DED0BD;
+    --AP3: #C7B9B0;
+    --AP4: #DBD1CE;
+
+    /* Mother of Pearl */
+
+    --MP1: #EBF5F7;
+    --MP2: #D7E4EA;
+    --MP3: #D1D7ED;
+    --MP4: #BED3E4;
+    --MP5: #F6E2E3;
+    --MP6: #ECD7DE;
+
+    /* Oyster & Pearl */
+
+    --OP1: #8A949A;
+    --OP2: #E3DBC6;
+    --OP3: #ECECEC;
+    --OP4: #DEDEE1;
+
+    /* River Pearl */
+
+    --RP1: #EAF4F6;
+    --RP2: #E2EBF2;
+    --RP3: #D9E6EF;
+    --RP4: #BBD1EA;
+    --RP5: #C6D6E7;
+    --RP6: #B5C7DF;
+}

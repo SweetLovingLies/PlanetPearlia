@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Fine;
+    src: url('/fonts/OMORI_GAME.ttf');
+}
+
+@font-face {
+    font-family: Normal;
+    src: url('/fonts/OMORI_GAME2.ttf');
+}
+
+/* Other Fonts */
+
+@font-face {
+    font-family: porkys;
+    src: url('/fonts/PORKYS_.TTF');
+}
+
+@font-face {
+    font-family: NORMAL;
+    src: url('/fonts/OMORI_GAME2.ttf');
+}
+
+@font-face {
+    font-family: NOTFINE;
+    src: url('/fonts/OMORI_GAME.ttf');
+}
+
+@font-face {
+    font-family: TeenIdle;
+    src: url('/fonts/Teenidle-7mjl.ttf');
+}
+
+@font-face {
+    font-family: LemonPopsicle;
+    src: url('/fonts/LemonPopsicle-ALav7.otf');
+}
+
+@font-face {
+    font-family: Soulvibe;
+    src: url('/fonts/Soulvibe.ttf');
+}
+
+@font-face {
+    font-family: KINKIE;
+    src: url('/fonts/KINKIE__.TTF');
+}

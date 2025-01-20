@@ -1,5 +1,225 @@
 @import url("general/globals.css");
+@import url("/OMORI/css/fronterCard.css");
 
 body {
+    position: relative;
+    background: url("/assets/backgrounds/bg_clouds.gif");
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* ! Temp */
+    font-family: 'rainyhearts', Arial, Helvetica, sans-serif;
+
+    overflow-y: auto;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#parent {
+    /* ! Temp */
+    flex: 0 1 70%;
+    min-height: 100vh;
+
+    border-top: none;
+    border-bottom: none;
+
+    position: relative;
+}
+
+#parent::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 70%;
+    height: 100%;
+
+    background: url("/assets/backgrounds/holoOverlay2.png") center/contain;
+    mix-blend-mode: overlay;
+    opacity: .4;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+/* & Layout */
+
+main {
+    flex: 1;
+    background-color: var(--RP3);
+
+    padding: 20px;
+
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+aside {
+    flex: 0 1 25%;
+    background-color: var(--RP4);
+
+    padding: 10px;
+
+    flex-flow: column nowrap;
+
+    gap: 10px;
+}
+
+header {
+    height: 150px;
+    background-color: white;
+    background: url("/assets/myAssets/PearliaSystemM.png") center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    width: 70%;
+
+    bottom: -4em;
+}
+
+.box {
+    min-height: 100px;
+    background-color: white;
+
+    border-radius: var(--globalBorderRadius);
+}
+
+/* & Content */
+
+/* ~ Left */
+
+#siteNav,
+#linksOut {
+    padding-bottom: 10px;
+}
+
+#siteNav div:first-of-type,
+#linksOut div:first-of-type {
+    height: calc(100% - 27px);
+}
+
+#siteNav ul,
+#linksOut ul {
+    padding: 0;
+}
+
+#siteNav li,
+#linksOut li {
+    margin-bottom: 7px;
+
+    background: linear-gradient(to right, rgba(190, 211, 228, 1), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
+    padding: 3px;
+
+    background-size: 200%;
+    background-position: right;
+    transition: background-position .6s;
+}
+
+#siteNav a:hover>li,
+#linksOut a:hover>li {
+    background-position: left;
+
+    font-style: italic;
+}
+
+#siteNav a,
+#linksOut a {
+    color: var(--DI4);
+    text-decoration: none;
+}
+
+/* ? Site Nav */
+
+#siteNav li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background: url("/assets/pixels/angelcore/button.png") center/contain no-repeat;
+    margin-right: 5px;
+    vertical-align: -.4em;
+}
+
+/* ? Links Out */
+
+#linksOut li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background: url("/assets/pixels/angelcore/key.png") center/contain no-repeat;
+    margin-right: 5px;
+    vertical-align: -.4em;
+}
+
+/* ? Status Cafe */
+
+#statusCafe {
+    padding: 10px;
+}
+
+
+/* ~ Middle */
+
+#welcomeText {
+    background-color: var(--holoPastel1);
+    height: 200px;
+    padding: 5px 10px;
+}
+
+#fronterView {
+    background-color: var(--MP3);
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#fronterView #carousel {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#fronterView h2 {
+    text-align: center;
+}
+
+/* General */
+
+a {
+    color: var(--DI5);
+}
+
+h2 {
+    font-family: 'Ethereal', sans-serif;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, var(--DI3) 25%, var(--DI3) 75%, rgba(255, 255, 255, 0.4) 100%);
 }

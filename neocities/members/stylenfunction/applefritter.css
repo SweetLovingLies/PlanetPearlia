@@ -1,6 +1,13 @@
-@import url("/css/nowplaying!.css");
+@import url("/css/general/nowplaying!.css");
 
-:root {}
+:root {
+    
+}
+
+@font-face {
+    font-family: rainyhearts;
+    src: url('/fonts/16ptpixels/rainyhearts.ttf');
+}
 
 @font-face {
     font-family: hug;
@@ -25,8 +32,7 @@ body {
     height: 100vh;
     overflow: hidden;
 
-    background-color: #ffebeb;
-    background: url(/assets/backgrounds/butterfliesNflowers.png) repeat;
+    background: url("/assets/backgrounds/butterfliesNflowers.png") repeat, #ffebeb;
 
     color: #424242;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,7 +122,7 @@ body {
 
 /* General Styles*/
 
-h2{
+h2 {
     font-family: hug;
     font-size: 1.6em;
     margin-bottom: 0;
@@ -124,7 +130,7 @@ h2{
     -webkit-text-stroke: .5px #17471a;
 }
 
-h3{
+h3 {
     font-family: hug;
     margin-bottom: 0;
     color: #ff5454;
@@ -226,13 +232,17 @@ strong {
     position: absolute;
     display: block;
     bottom: -20px;
-    background: url('/assets/pixels/yellowflowers.webp');
+    background: url('/assets/pixels/fd/yellowflowers2.webp');
     background-repeat: repeat-x;
     height: 100px;
     width: 110%;
     margin-left: -40px;
 
     pointer-events: none;
+}
+
+#flask {
+    width: 40px;
 }
 
 /* Other */
@@ -253,50 +263,54 @@ strong {
 
 @media only screen and (max-width: 1000px) {
 
-    body, #wrapper{
+    body,
+    #wrapper {
         flex-flow: column wrap;
     }
-    body{
+
+    body {
         width: 100vw;
         height: unset;
         padding: 0;
         overflow: auto;
     }
+
     .icon {
         width: 95%;
         margin: 0;
         z-index: 0;
     }
 
-    .icon img{
+    .icon img {
         width: 100%;
     }
 
-    .container{
+    .container {
         width: unset;
         height: unset;
     }
 
-    #title{
+    #title {
         font-size: 2em;
         margin-top: -75px;
     }
-    #title img{
+
+    #title img {
         width: 12%;
     }
 
-    .roseborder{
+    .roseborder {
         border: none;
     }
 
-    #links{
+    #links {
         flex-flow: row wrap;
         width: unset;
         justify-content: center;
         gap: 10px;
     }
 
-    #links a{
+    #links a {
         width: unset;
         border: 5px dashed white;
         border-radius: 10px;
@@ -304,5 +318,5 @@ strong {
 
     #content-three img {
         max-width: 250px;
-      }
+    }
 }

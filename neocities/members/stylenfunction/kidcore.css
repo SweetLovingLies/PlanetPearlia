@@ -1,0 +1,89 @@
+/* Learning how this stuff works */
+/* Comments for Orientation */
+
+@import url("/css/general/globals.css");
+
+/* Selects the "base" of the site */
+body {
+    /* Flex display to center things */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* vh is Viewport Height... meaning the height of the screen */
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Select id's with # */
+#wrapper {
+    /* Flex display also puts things next to each other */
+    display: flex;
+
+    gap: 20px;
+
+    padding-top: 50px;
+}
+
+/* Built in containers need no prefix */
+/* Can select multiple with a comma */
+main,
+aside {
+    /* 1 1 means both of them will grow and shrink as needed */
+    /* Syntax: flex: grow | shink | basis */
+    flex: 1 1;
+    width: 400px
+}
+
+/* Select Number of Type */
+hr:nth-of-type(1) {
+    border: none;
+    height: 44px;
+    background: url("/assets/pixels/dividers/kidcoreFlowerDivider.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+
+    image-rendering: pixelated;
+}
+
+hr:nth-of-type(2) {
+    border: none;
+    height: 21px;
+    background: url("/assets/pixels/dividers/kidcoreClipDivider.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+
+    image-rendering: pixelated;
+}
+
+#back {
+    display: block;
+    margin-top: 230px;
+}
+
+aside img {
+    /* 100% of the container's width, 400px */
+    width: 100%;
+}
+
+aside img:nth-of-type(1){
+    border: 3px solid #E9D6C4;
+
+    /* Round Corners */
+    border-radius: 10px;
+}
+
+aside img:nth-of-type(2){
+    border-style: solid;
+    border-image: url("/Assets/backgrounds/rainbow2.jpg") 28 fill stretch;
+    border-width: 5px;
+    background-clip: padding-box;
+}
+
+p {
+    /* Not sure what em stands for */
+    line-height: 2em;
+}

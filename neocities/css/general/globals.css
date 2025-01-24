@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: Feminime;
+    src: url('/fonts/Feminime.ttf');
+}
+
+@font-face {
     font-family: rainyhearts;
     src: url('/fonts/16ptpixels/rainyhearts.ttf');
 }
@@ -33,7 +38,7 @@ html {
     scrollbar-width: thin;
     box-sizing: border-box;
 
-    scrollbar-color: var(--bubblegum) white;
+    scrollbar-color: var(--AP2) white;
 }
 
 *::-webkit-scrollbar,
@@ -46,7 +51,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--bubblegum);
+    background-color: var(--AP2);
 }
 
 body {
@@ -145,20 +150,24 @@ quote::after {
     box-shadow: 2px 2px 0 var(--wisteria), 2px -2px 0 var(--wisteria), -2px 2px 0 var(--wisteria), -2px -2px 0 var(--wisteria), 2px 0px 0 var(--wisteria), 0px 2px 0 var(--wisteria), -2px 0px 0 var(--wisteria), 0px -2px 0 var(--wisteria);
 }
 
-/* Details at the top */
+/* Jaxframe */
 
-.detailing {
-    position: absolute;
-    background: url('/Assets/pixels/headers/headerpink2.gif') repeat-x;
-    background-size: contain;
-    height: 58px;
-    width: 100%;
+.ffButtons {
+    color: white;
+    background-color: var(--AP1);
+    border: 1px solid var(--AP4);
+    color: black;
 
-    top: 0;
-    left: 0;
-    z-index: 0;
-    pointer-events: none;
-}
+    font-family: 'Feminime', sans-serif;
+    font-size: 1.3em;
+
+    padding: 5px 7px;
+    transition: background-color .25s;
+  }
+  
+  .ffButtons:hover {
+    background-color: var(--AP3);
+  }
 
 /* Border Styles */
 

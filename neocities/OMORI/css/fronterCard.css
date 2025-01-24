@@ -35,6 +35,7 @@
     top: -20px;
     left: 0;
     right: 0;
+    z-index: 10;
     width: 80%;
     height: 34px;
     margin: auto;
@@ -58,6 +59,11 @@
 }
 
 /* Emotions! */
+
+.fine {
+    color: white;
+    font-size: 2em;
+}
 
 .happy {
     font-family: porkys;

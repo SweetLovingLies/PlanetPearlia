@@ -1,9 +1,17 @@
 @import url("general/globals.css");
 @import url("/OMORI/css/fronterCard.css");
+@import url("general/nowplaying!.css");
+@import url("general/marquee.css");
+
+:root {
+    --duration: 15s;
+    --scroll-start: 80%;
+    --scroll-end: -120%;
+}
 
 body {
     position: relative;
-    background: url("/assets/backgrounds/bg_clouds.gif");
+    background: url("/assets/backgrounds/bg_clouds.gif") fixed;
 
     display: flex;
     justify-content: center;
@@ -72,7 +80,7 @@ aside {
 }
 
 header {
-    height: 150px;
+    height: 200px;
     background-color: white;
     background: url("/assets/myAssets/PearliaSystemM.png") center/cover;
 
@@ -92,6 +100,8 @@ header img {
 .box {
     min-height: 100px;
     background-color: white;
+
+    overflow: hidden;
 
     border-radius: var(--globalBorderRadius);
 }
@@ -167,14 +177,20 @@ header img {
     vertical-align: -.4em;
 }
 
-/* ? Status Cafe */
+/* ? Chattable */
 
-#statusCafe {
-    padding: 10px;
+#chatBox {
+    height: 330px;
+    overflow: hidden;
 }
 
-
 /* ~ Middle */
+
+#ffControls {
+    background-color: var(--RP1);
+    justify-content: center;
+    gap: 10px;
+}
 
 #welcomeText {
     background-color: var(--holoPastel1);
@@ -194,11 +210,83 @@ header img {
     gap: 20px;
 }
 
-#fronterView h2 {
-    text-align: center;
+#middle {
+    
+}
+
+/* ? Status Cafe */
+
+#statusCafe {
+    flex: 1 1;
+    padding: 10px;
+}
+
+#photoODay {
+    flex: 1 1;
+}
+
+#photoODay img, #photoODay canvas {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* ~ Right */
+
+#pet {
+    background: url("/assets/backgrounds/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png") center/contain;
+    border: 2px solid white;
+}
+
+#pet iframe {
+    width: 100%;
+    height: 330px;
+}
+
+#fakeAdSystem {
+    border-radius: var(--globalBorderRadius);
+    overflow: hidden;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+#fakeAdSystem #marquee {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+
+    background-color: var(--AP1);
+}
+
+
+#fakeAdSystem iframe {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+#siteButton {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+#siteButton img,
+#siteButton canvas {
+    width: 88px;
+    height: 31px;
+}
+
+#siteButton textarea {
+    width: 100%;
 }
 
 /* General */
+
+img {
+    filter: grayscale(60%)  brightness(110%);
+    position: relative;
+}
 
 a {
     color: var(--DI5);
@@ -210,6 +298,8 @@ h2 {
     position: relative;
     text-align: center;
     padding-bottom: 3px;
+
+    background-color: white;
 }
 
 h2::after {

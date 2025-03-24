@@ -161,6 +161,17 @@
     -webkit-text-fill-color: transparent;
 }
 
+.calm {
+    font-family: GentleCalm;
+    font-size: 2.1em;
+    line-height: 1em;
+
+    background: linear-gradient(to top, var(--RP5) 0%, var(--RP4) 50%, var(--RP3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Fronter IMG */
 
 .fronterIMG {

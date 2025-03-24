@@ -1,85 +1,59 @@
-:root{
-  --button-shadow: unset;
-  --button-shadow-active: unset;
-  --button-border: unset;
-  --button-border-color: unset;
-  --button-border-color-default: unset;
-  --button-border-color-hovered: unset;
-  --button-border-color-active: unset;
-  --button-border-color-disabled: unset;
-  --button-text-color-disabled: unset;
-  --button-gradient: unset;
-  --button-gradient-hovered: unset;
-  --button-gradient-active: unset;
-  --element-spacing: 0;
-  --grouped-element-spacing: 0;
-  --border-radius: 0;
-  --border-width: 0;
-}
-
-.now-playing {
+#nowPlaying {
     position: fixed;
-    bottom: 50px;
-    right: -400px;
-    z-index: 100;
-
-    padding: 10px;
-    width: 330px;
-    min-height: 65px;
-    box-sizing: border-box;
-
-    background-color: #008185b3;
-    color: white;
-    border: 4px solid #f72b91;
-    border-radius: 30px 0px 0px 30px;
-
-    /* ! Temp */
-    font-family: rainyhearts;
-    
-    transition: transform 0.5s ease;
+    top: 0;
+    right: 10em;
 }
 
-.now-playing.visible {
-    transform: translateX(-396px);
-}
-
-.now-playing.hidden {
-    transform: translateX(0);
-}
-
-.now-playing-inner {
+#cloudPlayer {
     position: relative;
-    height: 100%;
+
+    transform: translateY(-400px);
+
+    transition: transform 1s;
+}
+
+#NP svg {
+    pointer-events: none;
+}
+
+#swingGroup {
+    pointer-events: all;
+}
+
+#star {
+    transition: filter .25s;
+}
+
+#star:hover {
+    cursor: pointer;
+
+    filter: drop-shadow(0 0 30px yellow)
+}
+
+#details {
+    position: absolute;
+    left: 4em;
+    top: 12em;
+
+    width: 180px;
+
+    margin: 0; 
+    text-align: center;
+}
+
+#cloudPlayer.visible {
+    transform: translateY(0px);
 }
 
 .controlsWrapper{
     display: flex;
-    gap: 10px;
-}
-
-#nowplayingLotus {
-    position: absolute;
-    top: -95px; 
-    left: 80px;
-
-    width: 150px;
-    pointer-events: none;
-
-    filter: drop-shadow(1px 3px 0px #f72b91) drop-shadow(-1px -3px #008185);
-}
-
-.now-playing p {
-    font-size: 18px;
-    margin: 0;
+    gap: 5px;
 }
 
 #MusicPauseButton {
-
-    all: unset;
-
     display: block;
     width: 32px;
-    background-color: #f72b91;
+    background-color: var(--RP6);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -88,17 +62,19 @@
 
     text-align: center;
 
-    transition: background-color .25s;
+    transition: all .25s;
 }
 
 #MusicPauseButton:hover {
-    background-color: #d7207e;
+    background-color: var(--RP2);
+    color: black;
 }
 
 #volumeSlider {
     flex: 1 1;
     margin-top: 10px;
 
+    width: 110px;
     height: 10px; 
     border-radius: 5px;
     outline: none; 
@@ -110,29 +86,29 @@
 #volumeSlider::-webkit-slider-runnable-track {
     background: white;
     border-radius: 5px;
-    border: 1px solid #f72b91;
+    border: 1px solid var(--OP1);
 }
 
 #volumeSlider::-webkit-slider-thumb {
     width: 20px; 
     height: 20px; 
-    background: #f72b91; 
+    background: var(--OP1); 
     border-radius: 50%; 
     cursor: pointer;
 }
 
 #volumeSlider::-moz-range-track {
+    width: 110px;
     height: 10px;
     background: white;
     border-radius: 5px;
-    border: 1px solid #f72b91;
+    border: 1px solid var(--OP1);
 }
 
 #volumeSlider::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #f72b91;
+    background: var(--OP1);
     border-radius: 50%;
     cursor: pointer;
 }
-

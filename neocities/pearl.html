@@ -12,6 +12,7 @@
     <link href="css/luster.css" rel="stylesheet">
 
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <!-- This works better than Freezeframe.js. Credits to Graybox.lol on Neocities! -->
     <script src="js/jaxframeFork.js"></script>
@@ -28,252 +29,266 @@
 </head>
 
 <body>
-    <div id="parent" class="cloudBorder">
-        <header>
-        </header>
-        <div id="content" class="wrapper">
-            <aside class="flex">
-                <nav id="siteNav" class="box">
-                    <h2>Navigation</h2>
-                    <div class="scrollbox">
-                        <ul>
-                            <a href="#">
-                                <li>Webmaster Speedrun</li>
-                            </a>
-                            <a href="#">
-                                <li>The System</li>
-                            </a>
-                            <a href="#">
-                                <li>Shrines</li>
-                            </a>
-                            <a href="#">
-                                <li>Sites We Love</li>
-                            </a>
-                            <a href="#">
-                                <li>Credits</li>
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
-
-                <nav id="linksOut" class="box">
-                    <h2>Links Out</h2>
-                    <ul>
-                        <a href="#">
-                            <li>Neocities Profile</li>
-                        </a>
-                        <a href="#">
-                            <li>System Pinterest</li>
-                        </a>
-                        <a href="#">
-                            <li>Host Site</li>
-                        </a>
-                        <a href="#">
-                            <li>The Paracosms</li>
-                        </a>
-                        <a href="#">
-                            <li>Pastel Goth's Site</li>
-                        </a>
-                    </ul>
-                </nav>
-
-                <div id="siteButton" class="flex box">
-                    <h2>The Site Button</h2>
-                    <p>
-                        <strong>Do not </strong>
-                        <a href="https://blog.hubspot.com/website/hotlinking#:~:text=Hotlinking%20is%20the%20act%20of,assets%20can%20also%20be%20hotlinked"
-                            target="_blank">hotlink!</a>
-                    </p>
-
-                    <img id="siteButton" src="/assets/coolsites/planetpearlia.gif" alt="Pearlia's Site!">
-                    <textarea
-                        id="txtarea">&lt;a href="https://pearliasystem.neocities.org/" target="_blank"&gt;&lt;img src="(INSERT YOUR OWN LINK TO MY BUTTON HERE!)" alt="'Planet Pearlia website!"&gt;&lt;/a&gt;</textarea>
-                </div>
-
-                <div id="chatBox" class="box">
-                    <h2>Chattable</h2>
-                    <iframe src="https://iframe.chat/embed/index.html?chat=PlanetPearlia" id="chattable"
-                        frameborder="none" width="100%;" height="300px;" style="margin-bottom: 10px;"></iframe>
-                </div>
-            </aside>
-
-            <main class="flex">
-                <div id="ffControls" class="flex">
-                    <button class="ffButtons" onclick="jaxframe.start()">Start Gifs</button>
-                    <button class="ffButtons" onclick="jaxframe.stop()">Stop Gifs</button>
-                </div>
-                <article id="welcomeText" class="scrollbox">
-                    <!-- ! Rewrite this ! -->
-                    <p style="margin-bottom: 10px;">
-                        Welcome to V2 of my central art project and information hub! Here, you can learn about me
-                        and my system, the weird little quirks and stories in my head, as well as see how I progress
-                        as a self-guided graphic designer and web developer. I published this site on <span
-                            style="color: red">December 2</span><span style="color: green">5th, 2023</span> and
-                        released V2 on August 15th, 2024!
-                    </p>
-                    <p style="margin-bottom: 10px;">
-                        I don't really intend to make and share tutorials and such on this site, but you can
-                        definitely take a look at my code and copy things! I am not at all a professional, so take
-                        <strong> EVERYTHING </strong> I do with a grain of salt, but I definitely know to how to
-                        make things functional.
-                    </p>
-                    <p style="margin-bottom: 10px;">
-                        I also pride myself on making things fun and interactive! Go around and click on things that
-                        look clickable! You never know with this site, something strange might happen!
-                    </p>
-                    <p style="margin-bottom: 10px;">
-                        I consider myself a social media refugee... I HATE modern social media with a sizable
-                        passion. I use it enough to get through my days and boost my career, but beyond that, it is
-                        all incredibly dull and melancholy to me, as are most things designed with modern styles in
-                        mind.
-                        I am largely a maximalist, finding beauty in the most <i>exquisite</i> styles and comfort in
-                        the most cluttered environments. I love aesthetics like Frutiger Aero, Shabby Chic, 50s
-                        Vintage, 90s Popstar, "Coquette", and other aesthetics along those lines. I believe this
-                        site, and my many projects stemming from it, are representative of that.
-                    </p>
-                    <p style="margin-bottom: 10px;">
-                        Anyways, beyond all that rambling, thank you for visiting, and I hope you enjoy my little
-                        space online :)
-                    </p>
-                </article>
-
-                <div id="fronterView" class="flex">
-                    <h2>Who's Fronting?</h2>
-                    <div id="carousel" class="wrapper">
-                        <div class="fronterCard flex">
-                            <div class="fronterEmotion">
-                                <h5 class="fronterTAG">F:</h5>
-                                <h5 class="happy">Hana</h5>
+    <div id="wrapper" class="circleBorder">
+        <div class="giftWrapping">
+            <div id="parent" class="cloudBorder">
+                <header>
+                </header>
+                <div id="content" class="wrapper">
+                    <aside class="flex">
+                        <nav id="siteNav" class="box">
+                            <h2>Navigation</h2>
+                            <div class="scrollbox">
+                                <ul>
+                                    <a href="#">
+                                        <li>Webmaster Speedrun</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>The System</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Shrines</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Sites We Love</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Credits</li>
+                                    </a>
+                                </ul>
                             </div>
-                            <a href="members/hana.html"><img class="fronterIMG"
-                                    src="/members/memberSpecific/Hana/calaMaria.png"></a>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="OMORI/img/heart.png">
-                                <div class="FronterCardHealth statBarText">
-                                    <p>222/222</p>
+                        </nav>
+
+                        <nav id="linksOut" class="box">
+                            <h2>Links Out</h2>
+                            <ul>
+                                <a href="#">
+                                    <li>Neocities Profile</li>
+                                </a>
+                                <a href="#">
+                                    <li>System Pinterest</li>
+                                </a>
+                                <a href="#">
+                                    <li>Host Site</li>
+                                </a>
+                                <a href="#">
+                                    <li>The Paracosms</li>
+                                </a>
+                                <a href="#">
+                                    <li>Pastel Goth's Site</li>
+                                </a>
+                            </ul>
+                        </nav>
+
+                        <div id="siteButton" class="flex box">
+                            <h2>The Site Button</h2>
+                            <p>
+                                <strong>Do not </strong>
+                                <a href="https://blog.hubspot.com/website/hotlinking#:~:text=Hotlinking%20is%20the%20act%20of,assets%20can%20also%20be%20hotlinked"
+                                    target="_blank">hotlink!</a>
+                            </p>
+
+                            <img id="siteButton" src="/assets/coolsites/planetpearlia.gif" alt="Pearlia's Site!">
+                            <textarea
+                                id="txtarea">&lt;a href="https://pearliasystem.neocities.org/" target="_blank"&gt;&lt;img src="(INSERT YOUR OWN LINK TO MY BUTTON HERE!)" alt="'Planet Pearlia website!"&gt;&lt;/a&gt;</textarea>
+                        </div>
+
+                        <div id="chatBox" class="box">
+                            <h2>Chattable</h2>
+                            <iframe src="https://iframe.chat/embed/index.html?chat=PlanetPearlia" id="chattable"
+                                frameborder="none" width="100%;" height="300px;" style="margin-bottom: 10px;"></iframe>
+                        </div>
+                    </aside>
+
+                    <main class="flex">
+                        <div id="ffControls" class="flex box">
+                            <button class="ffButtons" onclick="jaxframe.start()">Start Gifs</button>
+                            <button class="ffButtons" onclick="jaxframe.stop()">Stop Gifs</button>
+                        </div>
+
+                        <div class="divider box">
+                            <hr>
+                            <p class="laceborder">We are hosted with love on Neocities!</p>
+                            <hr>
+                        </div>
+
+                        <article id="welcomeText" class="scrollbox box">
+                            <!-- ! Rewrite this ! -->
+                            <p style="margin-bottom: 10px;">
+                                Welcome to V2 of my central art project and information hub! Here, you can learn about
+                                me
+                                and my system, the weird little quirks and stories in my head, as well as see how I
+                                progress
+                                as a self-guided graphic designer and web developer. I published this site on <span
+                                    style="color: red">December 2</span><span style="color: green">5th, 2023</span> and
+                                released V2 on August 15th, 2024!
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                I don't really intend to make and share tutorials and such on this site, but you can
+                                definitely take a look at my code and copy things! I am not at all a professional, so
+                                take
+                                <strong> EVERYTHING </strong> I do with a grain of salt, but I definitely know to how to
+                                make things functional.
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                I also pride myself on making things fun and interactive! Go around and click on things
+                                that
+                                look clickable! You never know with this site, something strange might happen!
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                I consider myself a social media refugee... I HATE modern social media with a sizable
+                                passion. I use it enough to get through my days and boost my career, but beyond that, it
+                                is
+                                all incredibly dull and melancholy to me, as are most things designed with modern styles
+                                in
+                                mind.
+                                I am largely a maximalist, finding beauty in the most <i>exquisite</i> styles and
+                                comfort in
+                                the most cluttered environments. I love aesthetics like Frutiger Aero, Shabby Chic, 50s
+                                Vintage, 90s Popstar, "Coquette", and other aesthetics along those lines. I believe this
+                                site, and my many projects stemming from it, are representative of that.
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                Anyways, beyond all that rambling, thank you for visiting, and I hope you enjoy my
+                                little
+                                space online :)
+                            </p>
+                        </article>
+
+                        <div id="fronterView" class="flex box">
+                            <h2>Who's Fronting?</h2>
+                            <div id="carousel" class="wrapper">
+                                <div class="fronterCard flex">
+                                    <div class="fronterEmotion">
+                                        <h5 class="fronterTAG">F:</h5>
+                                        <h5 class="calm">Shio</h5>
+                                    </div>
+                                    <a href="#"><img class="fronterIMG"
+                                            src="/members/memberSpecific/Shio/KoutaPFP1.jpg"></a>
+                                    <div class="FronterCardDivider"></div>
+                                    <div class="FronterCardStats">
+                                        <img src="OMORI/img/heart.png">
+                                        <div class="FronterCardHealth statBarText">
+                                            <p>150/150</p>
+                                        </div>
+                                    </div>
+                                    <div class="FronterCardDivider"></div>
+                                    <div class="FronterCardStats">
+                                        <img src="/OMORI/img/juice.png">
+                                        <div class="FronterCardJuice statBarText">
+                                            <p>100/100</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="/OMORI/img/juice.png">
-                                <div class="FronterCardJuice statBarText">
-                                    <p>444/444</p>
+
+                                <div class="fronterCard flex">
+                                    <div class="fronterEmotion">
+                                        <h5 class="fronterTAG">F:</h5>
+                                        <h5 class="happy">Hail</h5>
+                                    </div>
+                                    <a href="members/hail.html"><img class="fronterIMG"
+                                            src="/members/memberSpecific/Hail/picrew/4.png"></a>
+                                    <div class="FronterCardDivider"></div>
+                                    <div class="FronterCardStats">
+                                        <img src="OMORI/img/heart.png">
+                                        <div class="FronterCardHealth statBarText">
+                                            <p>200/200</p>
+                                        </div>
+                                    </div>
+                                    <div class="FronterCardDivider"></div>
+                                    <div class="FronterCardStats">
+                                        <img src="/OMORI/img/juice.png">
+                                        <div class="FronterCardJuice statBarText">
+                                            <p>200/200</p>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
 
-                        <div class="fronterCard flex">
-                            <div class="fronterEmotion">
-                                <h5 class="fronterTAG">F:</h5>
-                                <h5 class="happy">Alex</h5>
-                            </div>
-                            <a href="#"><img class="fronterIMG"
-                                    src="/members/memberSpecific/Alex/sourceIcons/howl3.jpg"></a>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="OMORI/img/heart.png">
-                                <div class="FronterCardHealth statBarText">
-                                    <p>300/300</p>
+                        <div id="eyecatcher" class="wrapper">
+                            <div id="statusCafe" class="box">
+                                <h2>Status</h2>
+                                <div class="status">
+                                    <div id="statuscafe">
+                                        <div id="statuscafe-username"></div>
+                                        <div id="statuscafe-content"></div>
+                                    </div>
+                                    <script src="https://status.cafe/current-status.js?name=sweetlovinglies" defer=""
+                                        target="_blank"></script>
                                 </div>
                             </div>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="/OMORI/img/juice.png">
-                                <div class="FronterCardJuice statBarText">
-                                    <p>100/100</p>
-                                </div>
+                            <div id="photoODay" class="box">
+                                <h2>Photo of the Whenever</h2>
+                                <img
+                                    src="https://media.tenor.com/jJtL4af7Lx8AAAAM/cat-cats.gif">
+                                <p>Picked by: <a href="#">Shio</a> </p>
                             </div>
                         </div>
+                    </main>
 
-                        <div class="fronterCard flex">
-                            <div class="fronterEmotion">
-                                <h5 class="fronterTAG">F:</h5>
-                                <h5 class="vibin">Gera</h5>
-                            </div>
-                            <a href="members/geraldine.html"><img class="fronterIMG"
-                                    src="/members/memberSpecific/Geraldine/Picrews/GeraldinePicrew5.png"></a>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="OMORI/img/heart.png">
-                                <div class="FronterCardHealth statBarText">
-                                    <p>100/100</p>
-                                </div>
-                            </div>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="/OMORI/img/juice.png">
-                                <div class="FronterCardJuice statBarText">
-                                    <p>240/240</p>
-                                </div>
-                            </div>
+                    <aside class="flex">
+                        <div id="pet" class="box">
+                            <h2>GifyPet</h2>
+                            <iframe scrolling="no"
+                                src="https://gifypet.neocities.org/pet/pet.html?name=Fleur&dob=1737589695&gender=f&element=Water&pet=https%3A%2F%2F64.media.tumblr.com%2Ftumblr_m7242nM29B1rtu4cho1_250.gif&map=https%3A%2F%2Fplanetpearlia.com%2Fassets%2Fbackgrounds%2Fsparklecloud.gif&background=&tablecolor=%23d7d7ff&textcolor=black"
+                                frameborder="0"></iframe>
                         </div>
 
-                        <div class="fronterCard flex">
-                            <div class="fronterEmotion">
-                                <h5 class="fronterTAG">F:</h5>
-                                <h5 class="fine">Hail</h5>
+                        <div id="fakeAdSystem">
+                            <div id="marquee" class="flex">
+                                <p class="marqueeitems">This is a fake ad! Want yours here? Contact me via the Chatbox
+                                    or
+                                    Discord!</p>
                             </div>
-                            <a href="members/hail.html"><img class="fronterIMG"
-                                    src="/members/memberSpecific/Hail/picrew/4.png"></a>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="OMORI/img/heart.png">
-                                <div class="FronterCardHealth statBarText">
-                                    <p>200/200</p>
-                                </div>
-                            </div>
-                            <div class="FronterCardDivider"></div>
-                            <div class="FronterCardStats">
-                                <img src="/OMORI/img/juice.png">
-                                <div class="FronterCardJuice statBarText">
-                                    <p>200/200</p>
-                                </div>
-                            </div>
+                            <iframe src="members/memberSpecific/Geraldine/GeraldinesCorner/fakeAd.html"></iframe>
                         </div>
-
-                    </div>
+                    </aside>
                 </div>
-
-                <div id="middle" class="wrapper">
-                    <div id="statusCafe" class="box">
-                        <h2>Status</h2>
-                        <div class="status">
-                            <div id="statuscafe">
-                                <div id="statuscafe-username"></div>
-                                <div id="statuscafe-content"></div>
-                            </div>
-                            <script src="https://status.cafe/current-status.js?name=sweetlovinglies" defer="" target="_blank"></script>
-                        </div>
-                    </div>
-                    <div id="photoODay" class="box">
-                        <h2>Photo of the Whenever</h2>
-                        <img src="https://clan.cloudflare.steamstatic.com/images//32791864/01052724eaf91ad14551845e93773d526ef7dc14.gif">
-                        <p>Picked by: <a href="members/hana.html">Hana</a> </p>
-                    </div>
-                </div>
-            </main>
-
-            <aside class="flex">
-                <div id="pet" class="box">
-                    <h2>GifyPet</h2>
-                    <iframe scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Fleur&dob=1737589695&gender=f&element=Water&pet=https%3A%2F%2F64.media.tumblr.com%2Ftumblr_m7242nM29B1rtu4cho1_250.gif&map=https%3A%2F%2Fplanetpearlia.com%2Fassets%2Fbackgrounds%2Fsparklecloud.gif&background=&tablecolor=%23d7d7ff&textcolor=black" frameborder="0"></iframe>
-                </div>
-
-                <div id="fakeAdSystem">
-                    <div id="marquee" class="flex">
-                        <p class="marqueeitems">This is a fake ad! Want yours here? Contact me via the Chatbox or Discord!</p>
-                    </div>
-                    <iframe src="members/memberSpecific/Geraldine/GeraldinesCorner/fakeAd.html"></iframe>
-                </div>
-            </aside>
+            </div>
         </div>
     </div>
- 
-    <audio preload="auto" loop="" class="song" data-title="Virtual Angel" data-writer="ARTMS"
-    data-volume="0.06">
-    <source src="https://files.catbox.moe/acearn.mp3" preload="auto" type="audio/mpeg">
-  </audio>
+
+
+    <audio preload="auto" loop="" class="song" data-title="Virtual Angel" data-writer="ARTMS" data-volume="0.06">
+        <source src="https://files.catbox.moe/acearn.mp3" preload="auto" type="audio/mpeg">
+    </audio>
+    <audio loop id="trees" class="song" data-title="Trees" data-writer="OMORI OST" data-volume="0.04">
+        <source src="https://files.catbox.moe/l2r4rh.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="saffron" class="song" data-title="Saffron and Green Tea" data-writer="Ibrahim" data-volume="0.04">
+        <source src="https://files.catbox.moe/v69zye.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="callme" class="song" data-title="Call Me" data-writer="90sFlav" data-volume="0.04">
+        <source src="https://files.catbox.moe/vz2wrr.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="eternal" class="song" data-title="Eternal Youth" data-writer="Rude" data-volume="0.04">
+        <source src="https://files.catbox.moe/o3nmb2.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="letgo" class="song" data-title="Let Go" data-writer="Ark Patrol" data-volume="0.04">
+        <source src="https://files.catbox.moe/4t8wvc.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="beneath" class="song" data-title="Beneath The Surface" data-writer="Calico OST" data-volume="0.04">
+        <source src="https://files.catbox.moe/8xi7p3.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="peace" class="song" data-title="A World at Peace" data-writer="Ibrahim" data-volume="0.04">
+        <source src="https://files.catbox.moe/qna79g.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="dreamy" class="song" data-title="Dreamy" data-writer="Elijah Lee" data-volume="0.04">
+        <source src="https://files.catbox.moe/oihly1.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="train" class="song" data-title="Bullet Train Fantasy" data-writer="Ibrahim" data-volume="0.04">
+        <source src="https://files.catbox.moe/xr431q.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="flowersILWAG" class="song" data-title="Flowers" data-writer="In Love With A Ghost and Nori"
+        data-volume="0.04">
+        <source src="https://files.catbox.moe/c3o43h.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="woolsweaters" class="song" data-title="Wool Sweaters and Early Mornings" data-writer="Ibrahim"
+        data-volume="0.04">
+        <source src="https://files.catbox.moe/p5w6oz.mp3" type="audio/mpeg">
+    </audio>
 
     <script src="/js/nowplaying!.js"></script>
 </body>

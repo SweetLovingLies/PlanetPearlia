@@ -14,7 +14,12 @@
     --holoPastel5: #D7E9DB;
 }
 
-.holoOverlay {
+.holoOverlay1 {
     background: url(/assets/backgrounds/holoOverlay.jpg) center/cover;
+    mix-blend-mode: overlay;
+}
+
+.holoOverlay2 {
+    background: url(/assets/backgrounds/holoOverlay2.png) center/cover;
     mix-blend-mode: overlay;
 }

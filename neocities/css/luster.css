@@ -91,9 +91,9 @@ aside {
 }
 
 header {
-    height: 200px;
+    height: 300px;
     background-color: white;
-    background: url("/assets/myAssets/PearliaSystemM.png") center/cover;
+    background: url("/assets/myAssets/CrystalHeader.png") center/cover;
 
     display: flex;
     justify-content: center;

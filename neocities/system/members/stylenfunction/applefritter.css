@@ -1,8 +1,6 @@
-@import url("/css/general/nowplaying!.css");
+@import url("/css/general/globals.css");
 
-:root {
-    
-}
+:root {}
 
 @font-face {
     font-family: rainyhearts;
@@ -17,12 +15,6 @@
 @font-face {
     src: url(/fonts/Thickjungle.ttf);
     font-family: ThickJungle;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -86,11 +78,17 @@ body {
 
 #title {
     font-family: "ThickJungle";
-    font-size: 3.3em;
+    font-size: 3.5rem;
     position: absolute;
     color: #ff9900;
     margin-top: -85px;
     text-shadow: -1px 0 #17471a, 0 1px #17471a, 1px 0 #17471a, 0 -1px #17471a;
+
+    margin-top: -75px;
+}
+
+#title img {
+    width: 12%;
 }
 
 .content {
@@ -288,15 +286,6 @@ strong {
     .container {
         width: unset;
         height: unset;
-    }
-
-    #title {
-        font-size: 2em;
-        margin-top: -75px;
-    }
-
-    #title img {
-        width: 12%;
     }
 
     .roseborder {

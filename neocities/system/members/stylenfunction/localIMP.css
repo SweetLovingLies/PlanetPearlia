@@ -1,4 +1,4 @@
-@import url("/css/nowplaying!.css");
+@import url("/css/general/globals.css");
 
 @font-face {
     font-family: Femme;
@@ -142,7 +142,7 @@ mark {
 }
 
 hr {
-    background-image: url(/assets/pixels/chainborder.webp);
+    background-image: url("/assets/pixels/dividers/chainborder.webp");
     background-size: 50%;
     background-repeat: repeat-x;
     width: 100%;
@@ -182,14 +182,14 @@ hr {
 
 /* Start https://www.cursors-4u.com */
 * {
-    cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat791.cur), auto !important;
+    cursor: url("https://cur.cursors-4u.net/nature/nat-8/nat791.cur"), auto !important;
 }
 
 /* End https://www.cursors-4u.com */
 
 @media (prefers-reduced-motion: reduce) {
     hr {
-        background-image: url(/assets/pixels/chainborderF.png);
+        background-image: url("/assets/pixels/dividers/chainborderF.png");
     }
 }
 

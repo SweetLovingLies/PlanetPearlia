@@ -1,4 +1,4 @@
-@import url("/css/nowplaying!.css");
+@import url("/css/general/globals.css");
 
 @import url("/OMORI/css/OMORIboxes.css");
 
@@ -27,9 +27,10 @@ body {
 body {
     background: url("/OMORI/img/Space_parallax_stars.png") repeat;
     background-color: #6C0FFF;
-    background-size: 50%;
+    background-size: 60%;
     background-attachment: fixed;
     animation: slide 30s linear infinite;
+    image-rendering: pixelated;
 }
 
 @keyframes slide {
@@ -61,9 +62,11 @@ body {
 
     width: 1100px;
     height: 620px;
-    background: url('/members/memberSpecific/MARI/MariSitePack/picnicblanket.png') no-repeat;
+    background: url('../memberSpecific/MARI/MariSitePack/picnicblanket.png') no-repeat;
     background-size: contain;
     overflow: hidden;
+
+    image-rendering:auto;
 }
 
 
@@ -184,7 +187,7 @@ mark {
 
 .flowers {
     position: relative;
-    background-image: url("/assets/pixels/flowerborder3.webp");
+    background-image: url("/assets/pixels/fd/flowerborder3.webp");
     background-size: 50%;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -221,6 +224,8 @@ mark {
     position: absolute;
     z-index: 10;
     transition: .25s filter;
+
+    image-rendering: auto;
 }
 
 .cornerimg:hover {

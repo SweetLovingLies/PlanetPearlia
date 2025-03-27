@@ -22,20 +22,22 @@
     </script>
     <script src="/OMORI/js/OMORIBoxes.js"></script>
     <script src="/js/jaxframeFork.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body onload="jaxframe.stop()">
     <div>
-        <a onclick="history.back()"><img id="back" src="/assets/pixels/sweetback.webp"></a>
+        <a onclick="history.back()"><img id="back" src="/assets/pixels/navigation/sweetback.webp"></a>
         <div class="picnicblanket">
 
-            <img class="cornerimg foods" id="picnic" src="/members/memberSpecific/MARI/MariSitePack/fruitbasket.png"
+            <img class="cornerimg foods" id="picnic" src="../members/memberSpecific/MARI/MariSitePack/fruitbasket.png"
                 onclick="healup(healWords, 'none', ['none'], false, true);">
-            <img class="cornerimg" id="lily" src="/members/memberSpecific/MARI/MariSitePack/lily.png"
+            <img class="cornerimg" id="lily" src="../members/memberSpecific/MARI/MariSitePack/lily.png"
                 onclick="typewriter(basilsWords, 'DWBASIL', emotions, true, false);">
-            <img class="cornerimg foods" id="fruits" src="/members/memberSpecific/MARI/MariSitePack/fruits.png"
+            <img class="cornerimg foods" id="fruits" src="../members/memberSpecific/MARI/MariSitePack/fruits.png"
                 onclick="healup(healWords, 'none', ['none'], false, true);">
-            <img class="cornerimg foods" id="drinks" src="/members/memberSpecific/MARI/MariSitePack/drinks.png"
+            <img class="cornerimg foods" id="drinks" src="../members/memberSpecific/MARI/MariSitePack/drinks.png"
                 onclick="healup(healWords, 'none', ['none'], false, true);">
 
 
@@ -50,7 +52,7 @@
 
             <main class="rLace">
                 <aside class="leftside">
-                    <img class=" icon" src='/members/memberSpecific/MARI/shesit.gif' alt="Mari from OMORI">
+                    <img class=" icon" src='../members/memberSpecific/MARI/shesit.gif' alt="Mari from OMORI">
 
                     <div class="details">
                         <div class="filler">
@@ -83,7 +85,7 @@
                 </aside>
                 <section>
                     <div>
-                        <img src="/assets/pixels/flowersbig.webp" class="lfloated">
+                        <img src="/assets/pixels/fd/flowersbig.webp" class="lfloated">
                         <p>
                             <b>Hi! I'm MARI.</b> I'm really only here to take care of the body and help others when they
                             are
@@ -109,22 +111,18 @@
                         I love fruits of all kinds! However, I do enjoy grapes a lot.
                     </p>
 
-                    <img id="garden" src="/assets/pixels/garden.webp" class="rfloated">
+                    <img id="garden" src="/assets/pixels/fd/garden.webp" class="rfloated">
 
                     <h4>Other:</h4>
                     <p>
-                        <img class="bullet" src="/assets/pixels/LilyofValley1.webp" alt="bullet">Of course, my family
+                        <img class="bullet" src="/assets/pixels/fd/lilyofvalley3.webp" alt="bullet">Of course, my family
                         will always be SUNNY, BASIL, KEL, and AUBREY.
                         <br>
-                        <img class="bullet" src="/assets/pixels/LilyofValley1.webp" alt="bullet">Taken by my beloved
+                        <img class="bullet" src="/assets/pixels/fd/lilyofvalley3.webp" alt="bullet">Taken by my beloved
                         HERO!
                         <br>
-                        <img class="bullet" src="/assets/pixels/LilyofValley1.webp" alt="bullet"> Recently was made
+                        <img class="bullet" src="/assets/pixels/fd/lilyofvalley3.webp" alt="bullet"> Recently was made
                         aware of HANA, and I enjoy her company.
-                    </p>
-                    <p>
-                        <img class="bullet" src="/assets/pixels/umbrella.webp" alt="bullet"> You can add more here when
-                        you're ready, girl. - HANA
                     </p>
 
                     <div>
@@ -153,10 +151,6 @@
             </script>
         </div>
     </div>
-
-    <img id="something" src="/OMORI/img/something.webp"
-        onmouseover="apparition.play(); hover(this); apparition.volume = 0.2;">
-    <audio id="apparition" src="https://files.catbox.moe/qk17h8.mp3" preload="auto"></audio>
 
     <div id="overlay2"></div>
 

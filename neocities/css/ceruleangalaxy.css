@@ -1,0 +1,185 @@
+@import url("general/globals.css");
+
+:root {
+    --blurple: #b1adff;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100vh;
+
+    animation: fadeInAnimation ease .25s forwards;
+
+    overflow-y: auto;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background: url("/assets/backgrounds/movestarbackground.gif");
+    width: 100vw;
+    flex: 1 0 150px;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Ethereal, sans-serif;
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    font-style: italic;
+}
+
+#wrapper {
+    width: 100vw;
+    flex-flow: row wrap;
+}
+
+
+/* & Main Layout */
+
+#wrapper a {
+    flex: 1 1 calc((100% / 2));
+    height: 100vh;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+
+    /* ! TEMP */
+    background: var(--blurple);
+    border: 5px solid black;
+
+    position: relative;
+}
+
+#hana section {
+    background: url("/assets/backgrounds/ditheredDream.png") center/cover;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: billo;
+    font-size: 5vw;
+}
+
+#sirona section {
+    background: url("/assets/backgrounds/oceanbg.jpg");
+    position: relative;
+}
+
+#sirona section::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #a4e2ffbb;
+}
+
+#millie section {
+    background: url("/assets/backgrounds/roses.gif");
+}
+
+#geraldine section {
+    background: url("/assets/backgrounds/butterfliesNflowers.png");
+}
+
+#pastelGoth section {
+    background: url("/system/members/memberSpecific/PastelGoth/PASTELGOTHBG.jpg");
+}
+
+#mari section {
+    background: url("/OMORI/img/Space_parallax_stars.png") repeat;
+    background-color: #6C0FFF;
+    background-size: 60%;
+    background-attachment: fixed;
+    animation: slide 30s linear infinite;
+
+    image-rendering: pixelated;
+}
+
+#hail section {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+
+    text-align: center;
+
+    flex-flow: column nowrap;
+
+    justify-content: space-between;
+}
+
+#hail section div:nth-of-type(1) {
+    width: 100%;
+    height: 44px;
+    background: url("/assets/pixels/dividers/kidcoreFlowerDivider.webp") center/contain repeat-x;
+    image-rendering: pixelated;
+}
+
+#hail section div:nth-of-type(2) {
+    width: 100%;
+    height: 21px;
+    background: url("/assets/pixels/dividers/kidcoreClipDivider.png") center/contain repeat-x;
+    image-rendering: pixelated;
+}
+
+
+@keyframes slide {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
+/* Other */
+
+.blockimages {
+    width: 40%;
+    margin: 10px 20px;
+}
+
+
+/* Custom Cursor from Cursors4U */
+* {
+    cursor: url("https://cur.cursors-4u.net/nature/nat-10/nat996.cur"), auto !important;
+}
+
+/* Custom Cursor from Cursors4U */
+
+
+/* Media Queries*/
+
+@media (prefers-reduced-motion: reduce) {
+    body, header {
+        background: url("/assets/backgrounds/movestarbackgroundF.gif");
+    }
+}
+
+@media only screen and (max-width: 810px) {
+
+}
+
+@media only screen and (max-width: 576px) {}

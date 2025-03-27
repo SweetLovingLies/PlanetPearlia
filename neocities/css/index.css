@@ -2,13 +2,25 @@
 
 body {
     height: 100vh;
-    background: url("/assets/backgrounds/angelclouds.gif");
+    background-color: #4e4e8f;
     color: black;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+
+    height: 100%;
+
+    z-index: -1;
+}
+
+
+h1 {
     font-family: 'Ethereal', sans-serif;
     font-weight: 800;
 }

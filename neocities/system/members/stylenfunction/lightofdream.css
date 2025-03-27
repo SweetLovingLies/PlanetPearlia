@@ -1,4 +1,4 @@
-@import url("/css/nowplaying!.css");
+@import url("/css/general/globals.css");
 
 :root{
     --icecaps: #c8d6ff;
@@ -6,12 +6,6 @@
     --periwinkle: #cfaaff;
     --peridust: #efedff;
     --blush: #ffcaed;
-}
-
-
-@font-face {
-    font-family: basiic;
-    src: url('/fonts/basiic.ttf');
 }
 
 @font-face {
@@ -24,14 +18,10 @@
     src: url('/fonts/RainbowmemoriesScript.ttf');
 }
 
-html,
 body {
-    padding: 0;
-    margin: 0;
-}
+    background: url("/assets/backgrounds/ditheredDream.png") center/cover fixed;
 
-body {
-    background-image: url('/assets/backgrounds/angelclouds.gif');
+    overflow-y: auto;
 }
 
 #wrapper {
@@ -130,7 +120,7 @@ body {
 .main li::before {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/periheart.gif);
+    background-image: url("/assets/pixels/angelcore/periheart.gif");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -142,7 +132,7 @@ body {
 .main p::before {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/hearttrinket.gif);
+    background-image: url("/assets/pixels/other/hearttrinket.gif");
     background-size: contain;
     width: 20px;
     height: 20px;
@@ -153,7 +143,7 @@ body {
 .main p:last-child:before {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/loading.gif);
+    background-image: url("/assets/pixels/fairyKei/loading.gif");
     background-size: contain;
     width: 20px;
     height: 20px;
@@ -230,7 +220,7 @@ nav a:hover {
 nav a::before {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/moonnstars.gif);
+    background-image: url("/assets/pixels/fairyKei/moonnstars.gif");
     background-size: contain;
     width: 20px;
     height: 20px;
@@ -261,7 +251,7 @@ nav a::before {
 .beloved p::before {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/chatbubble\(heart\).gif);
+    background-image: url("/assets/pixels/chatbubble\(heart\).gif");
     background-size: contain;
     width: 17px;
     height: 17px;
@@ -364,7 +354,7 @@ h3{
 h3::after {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/crystals.gif);
+    background-image: url("/assets/pixels/angelcore/crystals.gif");
     background-size: contain;
     width: 66px;
     height: 64px;
@@ -383,7 +373,7 @@ h4 {
 h4::after {
     display: inline-block;
     content: "";
-    background-image: url(/assets/pixels/heartcloud.gif);
+    background-image: url("/assets/pixels/other/heartcloud.gif");
     background-size: contain;
     width: 20px;
     height: 20px;

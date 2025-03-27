@@ -1,19 +1,33 @@
+/* ! Make sure you add GSAP to every page this is on! */
+
 #nowPlaying {
     position: fixed;
     top: 0;
     right: 10em;
+
+    pointer-events: none;
+
+    z-index: 200;
 }
 
 #cloudPlayer {
-    position: relative;
 
     transform: translateY(-400px);
 
     transition: transform 1s;
+    pointer-events: none;
+
+    font-family: rainyhearts;
 }
 
-#NP svg {
-    pointer-events: none;
+#cloudPlayer.visible {
+    transform: translateY(-20px);
+
+    pointer-events: all;
+}
+
+#graphicParent {
+    position: relative;
 }
 
 #swingGroup {
@@ -22,6 +36,8 @@
 
 #star {
     transition: filter .25s;
+
+    /* color: gray; */
 }
 
 #star:hover {
@@ -32,8 +48,8 @@
 
 #details {
     position: absolute;
-    left: 4em;
-    top: 12em;
+    left: 4rem;
+    top: 13rem;
 
     width: 180px;
 
@@ -41,8 +57,9 @@
     text-align: center;
 }
 
-#cloudPlayer.visible {
-    transform: translateY(0px);
+#details p {
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
 }
 
 .controlsWrapper{

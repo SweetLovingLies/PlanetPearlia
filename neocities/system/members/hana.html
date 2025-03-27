@@ -16,13 +16,15 @@
     }
   </script>
 
-<script src="/js/jaxframeFork.js"></script>
+  <script src="/js/jaxframeFork.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<img id="stranger" src="https://pearliasystem.neocities.org/shrines/OMORI/omoriAssets/STRANGER.png">
+
+<img id="stranger" src="/OMORI/img/STRANGER.png">
 
 <body onload="jaxframe.stop()">
   <div id="wrapper">
-    <a onclick="history.back()"><img id="back" src="/assets/pixels/carousel.webp"></a>
+    <a onclick="history.back()"><img id="back" src="/assets/pixels/angelcore/carousel.webp"></a>
     <aside class="leftside">
       <div class="mainoutline">
         <div id="home" class="main tabcontent">
@@ -111,18 +113,19 @@
         <img src="/assets/stamps/dream.png" alt="'Dream' Stamp!">
         <img src="/assets/stamps/stars.gif" alt="Stars Stamp!">
       </div>
-      <img src="../assets/pagedolls/MikuV2.png" id="pagedoll" class="hvr-wobble-vertical">
+      <img src="/assets/pagedolls/MikuV2.png" id="pagedoll" class="hvr-wobble-vertical">
     </aside>
     <aside class="rightsidebar">
       <span class="icon">
-        <img id="icon" src="/members/memberSpecific/Hana/frieren.jpg">
+        <img id="icon" src="/system/members/memberSpecific/Hana/frieren.jpg">
       </span>
       <nav class="box navbox">
-        <a class="tablink" onclick="openPage('home', this)" id="defaultOpen">home</a>
+        <a class="tablink" onclick="openPage('home', this)" id="defaultOpen">overview</a>
         <a class="tablink" onclick="openPage('more', this)">more details</a>
         <a class="out" href="../portfolio/portfolio.html" target="_blank">my portfolio</a>
-        <a class="out" href="https://iwishyouroses.neocities.org/" target="_blank">my site (WIP)</a>
+        <a class="out" href="https://iwishyouroses.neocities.org/" target="_blank">my site!</a>
       </nav>
+
       <div class="other box beloved">
         <h2>
           <span>
@@ -144,10 +147,9 @@
           </span>
         </h2>
         <h4>Intrasystem</h4>
-        <p>Hanako - My main source</p>
-        <p>Shio - My big brother</p>
-        <p>Millie - is a pain in the ass but its ok!</p>
-        <p>Saturnalia - My main parent figure forever.</p>
+        <p>Sirona and I share the same heart.</p>
+        <p>Shio is my big brother</p>
+        <p>Millie is a pain in the ass but its ok!</p>
 
         <h4>Extrasystem</h4>
         <p>Circé - You are my other half, always. Whether that be platonically or romantically, you will always have a
@@ -161,8 +163,8 @@
     </aside>
   </div>
 
-  <audio loop id="winter" class="song" data-title="Snow Forest - A Single Flower Blooms"
-    data-writer="OMORI OST" data-volume="0.02">
+  <audio loop id="winter" class="song" data-title="Snow Forest - A Single Flower Blooms" data-writer="OMORI OST"
+    data-volume="0.02">
     <source src="https://files.catbox.moe/1jf9yt.mp3" preload="auto" type="audio/mpeg">
   </audio>
 

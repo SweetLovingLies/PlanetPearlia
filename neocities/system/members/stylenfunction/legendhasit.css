@@ -59,13 +59,13 @@ main{
     margin: 0;
 }
 #frame1{
-    background: url(/assets/myAssets/toptrimK.png);
+    background: url("/assets/myAssets/toptrimK.png");
     background-repeat: repeat-x;
     background-size: contain;
     background-position: bottom;
 } 
 #frame2{
-    background: url(/assets/myAssets/bottomtrimK.png);
+    background: url("/assets/myAssets/bottomtrimK.png");
     background-repeat: repeat-x;
     background-size: contain;
     background-position: top;
@@ -83,18 +83,18 @@ main{
 }
 
 .bubbleDivider{
-    background-image: url(/assets/pixels/King_Lulu_Deer_Pixels/KLDBubbleBorder.gif);
-    background-repeat: repeat-x;
-    background-size: auto;
-    height: 57px;
+    background: url("/assets/pixels/King_Lulu_Deer_Pixels/KLDBubbleBorder.gif") center/contain repeat-x;
+    height: 46px;
     margin: 0;
+    image-rendering: pixelated;
+
 }
 .StarShellDivider{
-    background-image: url(/assets/pixels/King_Lulu_Deer_Pixels/KLDShellStarBorder.gif);
-    background-repeat: repeat-x;
-    background-size: auto;
-    height: 56px;
+    background: url("/assets/pixels/King_Lulu_Deer_Pixels/KLDShellStarBorder.gif")center/contain repeat-x;
+    height: 45px;
     margin: 0;
+
+    image-rendering: pixelated;
 }
 
 .water {
@@ -107,7 +107,7 @@ main{
 }
 
 #kokomi{
-    background: url("/members/memberSpecific/Hanako/kokomiArt.png");
+    background: url("/system/members/memberSpecific/Hanako/kokomiArt.png");
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -194,7 +194,7 @@ p{
 
 @media (prefers-reduced-motion: reduce) {
     .water {
-        background-image: url(/assets/backgrounds/waterframe0.gif);
+        background-image: url("/assets/backgrounds/waterframe0.gif");
     }
 }
 

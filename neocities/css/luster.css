@@ -193,8 +193,29 @@ header img {
 /* ? Chattable */
 
 #chatBox {
-    height: 330px;
+    height: 340px;
     overflow: hidden;
+}
+
+/* ? Site Button */
+
+#siteButton {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+#siteButton img,
+#siteButton canvas {
+    width: 88px;
+    height: 31px;
+
+    filter: grayscale(0%) brightness(100%);
+}
+
+#siteButton textarea {
+    width: 100%;
 }
 
 /* ~ Middle */
@@ -208,7 +229,7 @@ header img {
 }
 
 #welcomeText {
-    background-color: var(--holoPastel1);
+    background: url(/assets/backgrounds/check5-b.gif);
     height: 200px;
     padding: 5px 10px;
 }
@@ -280,21 +301,26 @@ header img {
     aspect-ratio: 1;
 }
 
-#siteButton {
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 5px;
-    overflow: hidden;
+#webcam {
+    position: relative;
+    border-radius: 10px;
+
+    background: white;
 }
 
-#siteButton img,
-#siteButton canvas {
-    width: 88px;
-    height: 31px;
+#webcam sup,
+#webcam a {
+    color: #4932C9;
 }
 
-#siteButton textarea {
+#webcam a {
+    font-weight: bold;
+}
+
+#kangel {
     width: 100%;
+    border: 0;
+    border-radius: 10px;
 }
 
 /* Decor */

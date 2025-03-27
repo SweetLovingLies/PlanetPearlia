@@ -1,12 +1,7 @@
-@import url("/css/nowplaying!.css");
+@import url("/css/general/globals.css");
 
 :root {
-  --mainbg: url('/members/memberSpecific/PastelGoth/heartgrid.gif');
-}
-
-@font-face {
-  font-family: basiic;
-  src: url('/fonts/basiic.ttf');
+  --mainbg: url('../memberSpecific/PastelGoth/heartgrid.gif');
 }
 
 @font-face {
@@ -14,11 +9,18 @@
   src: url('/fonts/KINKIE__.TTF');
 }
 
+* {
+  box-sizing: content-box;
+}
+
 body {
-  font-family: basiic;
+  font-family: rainyhearts;
+
   background-color: white;
-  background-image: url('/members/memberSpecific/PastelGoth/PASTELGOTHBG.jpg');
+  background-image: url('../memberSpecific/PastelGoth/PASTELGOTHBG.jpg');
   background-attachment: fixed;
+
+  overflow-y: auto;
 }
 
 .container {
@@ -92,7 +94,7 @@ body {
 }
 
 .profile-description {
-  font-size: 14px;
+  font-size:16px;
   line-height: 1.5;
 }
 
@@ -108,7 +110,7 @@ body {
   color: #555;
   margin-right: 5px;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .image-gallery {
@@ -193,7 +195,7 @@ body {
 .field-value {
   margin: 0;
   text-align: right;
-  font-size: 15px;
+  font-size: 16px;
   overflow-wrap: break-word;
 }
 
@@ -222,7 +224,7 @@ body {
 }
 
 a {
-  background-image: url('/members/memberSpecific/PastelGoth/blingeeglitz2.gif');
+  background-image: url('../memberSpecific/PastelGoth/blingeeglitz2.gif');
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -263,7 +265,7 @@ a:visited {
 }
 
 blockquote {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -292,7 +294,7 @@ blockquote {
 }
 
 .rainbowtxt {
-  background-image: url('/members/memberSpecific/PastelGoth/rainbow gradient.gif');
+  background-image: url('../memberSpecific/PastelGoth/rainbow gradient.gif');
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -301,7 +303,7 @@ blockquote {
 }
 
 .sparkles {
-  background-image: url('/members/memberSpecific/PastelGoth/blingeeglitz.gif');
+  background-image: url('../memberSpecific/PastelGoth/blingeeglitz.gif');
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -312,7 +314,7 @@ blockquote {
 }
 
 .rainbowdivider {
-  background-image: url('/members/memberSpecific/PastelGoth/rainbow!.webp');
+  background-image: url('../memberSpecific/PastelGoth/rainbow!.webp');
   background-size: 50%;
   background-repeat: repeat-x;
   width: 100%;
@@ -321,7 +323,7 @@ blockquote {
 }
 
 .sweetsdivider {
-  background-image: url('/members/memberSpecific/PastelGoth/sweets.webp');
+  background-image: url('../memberSpecific/PastelGoth/sweets.webp');
   background-size: 50%;
   background-repeat: repeat-x;
   width: 100%;
@@ -358,7 +360,7 @@ blockquote {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-image: url('/members/memberSpecific/PastelGoth/pastels2.gif');
+  background-image: url('../memberSpecific/PastelGoth/pastels2.gif');
   background-size: 100%;
   background-position: center;
   border-radius: 10px;

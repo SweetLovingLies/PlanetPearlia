@@ -2,12 +2,11 @@
 
 body {
     height: 100vh;
-    background-color: #4e4e8f;
+    background-color: #b5ceeb;
     color: black;
 
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 
 #particles-js {
@@ -19,8 +18,31 @@ body {
     z-index: -1;
 }
 
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 
-h1 {
+    pointer-events: none;
+}
+
+main div {
+    align-self: center;
+    flex: 1;
+}
+
+h1, h2 {
     font-family: 'Ethereal', sans-serif;
     font-weight: 800;
+    color: white;
+    text-align: center;
+    pointer-events: all;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+a {
+    text-decoration: none;
 }

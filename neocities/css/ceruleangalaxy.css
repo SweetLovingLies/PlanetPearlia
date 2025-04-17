@@ -1,5 +1,11 @@
 @import url("general/globals.css");
 
+
+@font-face {
+    font-family: pixel;
+    src: url('/fonts/8ptpixels/PokemonClassic.ttf');
+}
+
 :root {
     --blurple: #b1adff;
 }
@@ -26,7 +32,7 @@ body {
 }
 
 header {
-    background: url("/assets/backgrounds/movestarbackground.gif");
+    background: url("/assets/backgrounds/tumblr_mrkslsy7nd1s7jutto2_250.png");
     width: 100vw;
     flex: 1 0 150px;
 
@@ -35,11 +41,11 @@ header {
     align-items: center;
 
     font-family: Ethereal, sans-serif;
-    color: white;
+    color: black;
 }
 
 header a {
-    color: white;
+    color: black;
 }
 
 header a:hover {
@@ -116,6 +122,16 @@ section {
     image-rendering: pixelated;
 }
 
+@keyframes slide {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
 #hail section {
     background: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -143,16 +159,56 @@ section {
     image-rendering: pixelated;
 }
 
+#purePure section {
+    background: url("/assets/backgrounds/ditherBliss.png") center/cover;
+    overflow: hidden;
 
-@keyframes slide {
-    0% {
-        background-position: 0;
-    }
+    padding: 40px;
 
-    100% {
-        background-position: -100%;
-    }
+    font-family: pixel, Arial, Helvetica, sans-serif;
 }
+
+#purePure #window {
+    width: 100%;
+    height: 100%; 
+    flex-flow: column nowrap;
+
+    background-color: lightgray;
+    border: 2px ridge white;
+}
+
+#purePure #window * {
+    display: block;
+}
+
+#purePure h {
+    width: 100%;
+    height: 30px;
+    background-color: #C3DAED;
+
+    border-bottom: 2px ridge white;
+}
+
+#purePure space {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+#purePure space img:first-of-type {
+    position: absolute;
+    right: -20em;
+    width: 100%;
+}
+
+#purePure f {
+    width: 100%;
+    height: 20px;
+    background-color: #C3DAED;
+
+    border-top: 2px ridge white;
+}
+
 
 /* Other */
 

@@ -172,28 +172,28 @@ quote::after {
 
 .kerchiefBorder {
     border-style: solid;
-    border-image: url("/Assets/borders/border2FP.png") 28 round;
+    border-image: url("/assets/borders/border2FP.png") 28 round;
     border-width: 28px;
     background-clip: padding-box;
 }
 
 .cloudBorder {
     border-style: solid;
-    border-image: url("/Assets/borders/borderfilled.png") 8 round;
+    border-image: url("/assets/borders/borderfilled.png") 8 round;
     border-width: 8px;
     background-clip: padding-box;
 }
 
 .blueberryBorder {
     border-style: solid;
-    border-image: url("/Assets/borders/blueberryGingham.png") 8 round;
+    border-image: url("/assets/borders/blueberryGingham.png") 8 round;
     border-width: 7px;
     background-clip: padding-box;
 }
 
 .circleBorder {
     border-style: solid;
-    border-image: url("/Assets/myAssets/laceCircle.png") 90 round;
+    border-image: url("/assets/myAssets/laceCircle.png") 90 round;
     border-width: 10px;
     background-clip: padding-box;
 }

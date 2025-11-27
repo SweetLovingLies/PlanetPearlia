@@ -173,21 +173,37 @@ section {
     height: 100%; 
     flex-flow: column nowrap;
 
-    background-color: lightgray;
+    background: url("/system/members/memberSpecific/PurePure/BG.png") top/cover;
     border: 2px ridge white;
-}
-
-#purePure #window * {
-    display: block;
 }
 
 #purePure h {
     width: 100%;
-    height: 30px;
-    background-color: #C3DAED;
+    display: flex;
+    display: flex;
+    overflow: hidden;
 
+    background-color: #C3DAED;
     border-bottom: 2px ridge white;
 }
+
+#purePure h p {
+    flex: 1;
+    padding-left: 5px;
+}
+
+#purePure iconify-icon {
+    font-size: 1.5em;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+
+    padding: 5px;
+}
+#purePure iconify-icon:hover {
+    background-color: #b1c8db;
+}
+
 
 #purePure space {
     flex: 1;
@@ -195,10 +211,10 @@ section {
     position: relative;
 }
 
-#purePure space img:first-of-type {
+#purePure space img {
     position: absolute;
     right: -20em;
-    width: 100%;
+    width: 50rem
 }
 
 #purePure f {

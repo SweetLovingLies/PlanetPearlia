@@ -2,39 +2,65 @@
 
 body {
     height: 100vh;
-    background-color: #b5ceeb;
-    color: black;
-
     display: flex;
-    justify-content: center;
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-
-    height: 100%;
-
-    z-index: -1;
 }
 
 main {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    overflow: hidden;
+}
 
-    pointer-events: none;
+main video {
+    height: 100%;
+
+    position: relative;
+    right: 30%;
 }
 
 main div {
-    align-self: center;
-    flex: 1;
+    position: relative;
+}
+
+main div:first-of-type {
+    max-width: 60%;
+    overflow: hidden;
+
+    z-index: 0;
+}
+
+divider {
+    display: block;
+    width: 10px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border-style: solid;
+    border-image: url("/Assets/myAssets/laceCircle.png") 90 round;
+    background-clip: padding-box;
+
+    border-width: 50px;
+    border-right: none;
+    border-top: none ;
+    border-bottom: none;
+}
+
+main div:last-of-type {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 h1, h2 {
     font-family: 'Ethereal', sans-serif;
     font-weight: 800;
-    color: white;
+    color: #728dac;
     text-align: center;
     pointer-events: all;
 }
@@ -44,5 +70,10 @@ h1 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline 1px double white;
+    text-transform: uppercase;
+}
+
+a:hover {
+    font-style: italic;
 }

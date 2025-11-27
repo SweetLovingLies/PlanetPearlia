@@ -2,41 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/index.css" rel="stylesheet">
-  <link href="css/general/nowplaying!.css" rel="stylesheet">
-  <meta name="description" content="Your ship has landed on: Planet Pearlia" />
-  <title>Planet Pearlia (is a wip)</title>
-  <link rel="icon" type="image/x-icon" href="assets/pixels/angelcore/glitz.webp">
-  <!-- This works better than Freezeframe.js. Credits to Graybox.lol on Neocities, I just modified it for my needs! -->
-  <script src="js/jaxframeFork.js"></script>
-  <!-- Change your Neocities Thumbnail/Preview image! You can find a tutorial here: https://arandomsite.neocities.org/writing/#custom-neocities-thumbnail. Just replace the code given there with the code below, or get it from here: https://arandomsite.ichi.city/snippets/ -->
-  <script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="description" content="Your ship has landed on: Planet Pearlia" />
+    <title>Planet Pearlia (is a wip)</title>
+    <link rel="icon" type="image/x-icon" href="assets/pixels/angelcore/glitz.webp">
+    <!-- This works better than Freezeframe.js. Credits to Graybox.lol on Neocities, I just modified it for my needs! -->
+    <script src="js/jaxframeFork.js"></script>
+    <!-- Change your Neocities Thumbnail/Preview image! You can find a tutorial here: https://arandomsite.neocities.org/writing/#custom-neocities-thumbnail. Just replace the code given there with the code below, or get it from here: https://arandomsite.ichi.city/snippets/ -->
+    <!-- <script>
     const urlParams = new URLSearchParams(window.location.search);
     if (navigator.userAgent.includes('Screenjesus')) {
       window.location.replace("/previewV3/");
     }
-  </script>
+  </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body onload="jaxframe.stop()">
-  <main>
-    <h1>This place is now under reconstruction!</h1>
-  </main>
-  <audio preload="auto" loop="" id="outerspace" class="song" data-title="Load Screen" data-writer="Stardew Valley OST"
-    data-volume="0.06">
-    <source src="https://files.catbox.moe/xuxdyp.mp3" preload="auto" type="audio/mpeg">
-  </audio>
+    <main>
+        <div>
+            <video src="assets/HSR/cyrene/cyreneAnim.mp4" crossorigin="anonymous" autoplay></video>
+            <divider></divider>
+        </div>
+        <div>
+            <h2>You are now entering the orbital ring of</h2>
+            <a href="pearl.html"><h1>Planet Pearlia</h1></a>
+        </div>
+    </main>
 
-  <style>
-    .now-playing {
-      bottom: 100px;
-      z-index: 1000;
-    }
-  </style>
+    <audio preload="auto" loop="" id="outerspace" class="song" data-title="Load Screen" data-writer="Stardew Valley OST"
+        data-volume="0.06">
+        <source src="https://files.catbox.moe/xuxdyp.mp3" preload="auto" type="audio/mpeg">
+    </audio>
 
-  <script src="/js/nowplaying!.js"></script>
+    <script src="/js/nowplaying!.js"></script>
 </body>
 
 </html>

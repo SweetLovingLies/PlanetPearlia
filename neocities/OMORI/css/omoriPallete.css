@@ -44,3 +44,8 @@
     font-family: KINKIE;
     src: url('/fonts/KINKIE__.TTF');
 }
+
+@font-face {
+    font-family: GentleCalm;
+    src: url('/fonts/GentleCalm.otf');
+}

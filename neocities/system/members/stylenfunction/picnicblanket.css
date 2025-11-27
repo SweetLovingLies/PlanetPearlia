@@ -1,0 +1,328 @@
+@import url("/css/general/globals.css");
+
+@import url("/OMORI/css/OMORIboxes.css");
+
+
+@font-face {
+    font-family: NORMAL;
+    src: url('/fonts/OMORI_GAME2.ttf');
+}
+
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    font-family: Normal;
+}
+
+body {
+    background: url("/OMORI/img/Space_parallax_stars.png") repeat;
+    background-color: #6C0FFF;
+    background-size: 60%;
+    background-attachment: fixed;
+    animation: slide 30s linear infinite;
+    image-rendering: pixelated;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.picnicblanket {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1100px;
+    height: 620px;
+    background: url('../memberSpecific/MARI/MariSitePack/picnicblanket.png') no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+    image-rendering:auto;
+}
+
+
+main {
+    position: relative;
+    display: flex;
+    width: 950px;
+    height: 570px;
+    padding: 10px;
+    gap: 20px;
+    z-index: 1;
+}
+
+.leftside {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 200px;
+}
+
+section {
+    padding: 10px;
+    flex: 1 1 600px;
+    overflow: auto;
+    background-color: white;
+}
+
+.icon {
+    width: 90%;
+    display: block;
+    height: auto;
+    border: 10px solid #9A71FB;
+    border-radius: 10px;
+}
+
+.details {
+    padding: 10px;
+    overflow: auto;
+    background-color: white;
+}
+
+/* General Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    border-bottom: 2px solid black;
+}
+
+h3 {
+    font-size: 1.7em;
+    margin: 6px 0;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin: 6px 0;
+}
+
+h4::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url("/assets/pixels/chatbubble\(flower\).gif");
+    background-size: contain;
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #c4aaff;
+    transition: 0.3s color;
+}
+
+a:hover {
+    color: #9A71FB;
+}
+
+mark {
+    background-color: #9A71FB;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+
+::selection {
+    background: #9A71FB;
+    color: white;
+}
+
+::-moz-selection {
+    background: #9A71FB;
+    color: white;
+}
+
+/* Other */
+
+.flowers {
+    position: relative;
+    background-image: url("/assets/pixels/fd/flowerborder3.webp");
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #7fd17f;
+}
+
+.lfloated {
+    float: left;
+}
+
+.rfloated {
+    float: right;
+}
+
+.bullet {
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+
+#garden {
+    width: 230px;
+    height: 103px;
+}
+
+#back {
+    align-self: flex-start;
+}
+
+/* Those little BUTTONS in the corners! */
+
+.cornerimg {
+    position: absolute;
+    z-index: 10;
+    transition: .25s filter;
+
+    image-rendering: auto;
+}
+
+.cornerimg:hover {
+    -webkit-filter: drop-shadow(3px 3px 0 #ff9797) drop-shadow(-3px -3px 0 #ff9797);
+    filter: drop-shadow(3px 3px 0 #ff9797) drop-shadow(-3px -3px 0 #ff9797);
+}
+
+#picnic {
+    width: 150px;
+    top: 0;
+    left: 0;
+}
+
+#lily {
+    width: 120px;
+    bottom: 0;
+    left: 0;
+}
+
+#fruits {
+    width: 200px;
+    bottom: 0;
+    right: 0;
+}
+
+#drinks {
+    width: 150px;
+    top: 0;
+    right: 0;
+}
+
+
+/* Start https://www.cursors-4u.com */
+* {
+    cursor: url("https://cur.cursors-4u.net/nature/nat-8/nat786.cur"), auto !important;
+}
+
+/* End https://www.cursors-4u.com */
+#something {
+    position: absolute;
+    bottom: 0;
+    right: 50vw;
+    z-index: 40;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+} 
+
+@media only screen and (max-width: 950px) {
+    body {
+        height: unset;
+        justify-content: center;
+        align-items: unset;
+        background: url("/shrines/OMORI/omoriAssets/picnic.jpg");
+        animation: none;
+    }
+
+    .icon {
+        width: 95%;
+    }
+
+    .picnicblanket {
+        justify-content: unset;
+        align-items: unset;
+        width: 100%;
+        height: unset;
+        background: none;
+        overflow: auto;
+    }
+
+    #picnic,
+    #lily,
+    #fruits,
+    #drinks {
+        width: 30%;
+    }
+
+    main {
+        flex-flow: column nowrap;
+        width: auto;
+        height: auto;
+    }
+
+    #basilsWords,
+    #healWords {
+        width: 340px;
+    }
+
+    #basilsWords {
+        height: 128px;
+    }
+
+    #healWords {
+        height: 80px;
+    }
+}

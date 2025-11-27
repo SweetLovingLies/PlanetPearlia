@@ -60,6 +60,7 @@ var jaxframe = {
     },
     applyState: function () {
         var gifState = localStorage.getItem('gifState');
+        // console.log(gifState);
         if (gifState === 'stopped') {
             jaxframe.stop();
         } else {

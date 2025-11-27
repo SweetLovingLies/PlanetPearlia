@@ -1,0 +1,672 @@
+<div id="wrapper">
+        <header class="flex2">
+            <planet>🪐</planet>
+            <h1>Planet Pearlia</h1>
+            <div id="headerDetail">
+                <div class="marquee">
+                    <img src="/assets/gifs/1.gif">
+                    <img src="/assets/gifs/2.gif">
+                    <img src="/assets/gifs/3.gif">
+                    <img src="/assets/gifs/4.gif">
+                    <img src="/assets/gifs/5.gif">
+                    <img src="/assets/gifs/6.gif">
+                    <img src="/assets/gifs/7.gif">
+                    <img src="/assets/gifs/8.gif">
+                    <img src="/assets/gifs/9.gif">
+                    <img src="/assets/gifs/10.gif">
+                    <!-- Duplicates! -->
+                    <img src="/assets/gifs/1.gif">
+                    <img src="/assets/gifs/2.gif">
+                    <img src="/assets/gifs/3.gif">
+                    <img src="/assets/gifs/4.gif">
+                    <img src="/assets/gifs/5.gif">
+                    <img src="/assets/gifs/6.gif">
+                    <img src="/assets/gifs/7.gif">
+                    <img src="/assets/gifs/8.gif">
+                    <img src="/assets/gifs/9.gif">
+                    <img src="/assets/gifs/10.gif">
+                </div>
+            </div>
+            <a onclick="history.back()">
+                <h2>Back</h2>
+            </a>
+        </header>
+        <div id="maintxt">
+            <p>
+                Welcome in, Stranger! Click the buttons to navigate to our individual sites. More will be added in the
+                future as headmates decide to make themselves known, but until then, enjoy what we have here! <img
+                    src="assets/pixels/heartcloud.gif">
+            </p>
+        </div>
+        <main>
+            <div id="allButtons" class="flex">
+                <a id="HanakoWrapper" class="buttonWrapper" href="members/hanako.html">
+                    <img id="KKMfish" class="floaters" src="/members/memberSpecific/Hanako/peceskokomi.png">
+                    <img id="KKMshell" class="floaters" src="/members/memberSpecific/Hanako/seashell.png">
+                    <div class="hidden">
+                        <img id="kokomi" class="dolls" src="/assets/pagedolls/kokomi.png">
+                    </div>
+                    <div id="Hanako" class="systemButton">
+                        <p class="water"> Hanako</p>
+                    </div>
+                </a>
+                <a id="HanaWrapper" class="buttonWrapper" href="members/hana.html">
+                    <img id="HNwings" class="floaters" src="/assets/pixels/angelwings.gif">
+                    <img id="HNcloud" class="floaters" src="/assets/pixels/cloud.gif">
+                    <div class="hidden">
+                        <img id="HNmiku" class="dolls" src="/assets/pagedolls/MikuV2.png">
+                    </div>
+                    <div id="Hana" class="systemButton">
+                        <p>hana</p>
+                    </div>
+                </a>
+                <a id="MillieWrapper" class="buttonWrapper" href="members/millie.html">
+                    <img id="" class="floaters" src="">
+                    <img id="" class="floaters" src="">
+                    <div class="hidden">
+                        <img id="MillsandMox" src="members/memberSpecific/Millie/moxieandmillie.webp">
+                    </div>
+                    <div id="Millie" class="systemButton">
+                        <p>Millie</p>
+                    </div>
+                </a>
+                <a id="GeraldineWrapper" class="buttonWrapper" href="members/geraldine.html">
+                    <img id="junimo" class="floaters" src="members/memberSpecific/Geraldine/junimo.gif">
+                    <div class="hidden">
+                        <img id="GDPicrew" class="dolls"
+                            src="members/memberSpecific/Geraldine/Picrews/GeraldinePicrew5.png">
+                    </div>
+                    <div id="Geraldine" class="systemButton">
+                        <p>Geraldine</p>
+                    </div>
+                </a>
+                <!-- To Tia... please update this for yourself at some point lmao. I do not have your maximalist prowess! - Hana -->
+                <a id="TIAWrapper" class="buttonWrapper" href="members/pastelgoth.html">
+                    <img id="" class="floaters" src="">
+                    <img id="" class="floaters" src="">
+                    <div class="hidden">
+                        <img id="kangel" class="dolls" src="/assets/pagedolls/kangel.png">
+                    </div>
+                    <div id="TIA" class="systemButton">
+                        <p>D3C0RAGIRL</p>
+                    </div>
+                </a>
+                <a id="MARIWrapper" class="buttonWrapper" href="members/mari.html">
+                    <img id="" class="floaters" src="">
+                    <img id="" class="floaters" src="">
+                    <div class="hidden">
+                        <img id="MARIFriends" class="dolls" src="OMORI/img/DWfriendsT.gif">
+                    </div>
+                    <div id="MARI" class="systemButton">
+                        <p>MARI</p>
+                    </div>
+                </a>
+            </div>
+            <div id="stats">
+                <p>
+                    Last completed: Hana V3
+                    <br>
+                    Last updated: October 7th, 2024
+                </p>
+            </div>
+        </main>
+    </div>
+
+
+
+    
+#wrapper {
+    width: 85vw;
+}
+
+/* Main Display */
+
+main {
+    background: #ececec;
+    border-radius: 0 0 20px 20px;
+
+    padding: 40px 30px;
+    height: 100%;
+}
+
+#maintxt{
+    background: white;
+    padding: 20px;
+
+}
+
+#maintxt p{
+    margin: 0;
+}
+
+#maintxt img, #maintxt canvas{
+    vertical-align: text-bottom;
+}
+
+#allButtons{
+    gap: 45px;
+    align-content: flex-start
+}
+
+/* Header */
+
+header {
+    align-items: center;
+    padding: 0 20px;
+
+    background: #1f768b;
+    border-bottom: 10px solid #ffa8cc;
+
+    gap: 15px;
+}
+
+#headerDetail {
+    display: flex;
+    flex: 1 1;
+    position: relative;
+
+    max-height: 70px;
+    overflow: hidden;
+
+    border: 3px solid #ffa8cc;
+    border-radius: 999px;
+}
+
+#headerDetail .marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+#headerDetail img, #headerDetail canvas  {
+    width: 230px;
+    flex: 0 1 auto;
+
+    height: 140px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#stats p{
+    padding: 10px 20px;
+    text-align: right;
+    margin-left: auto;
+    width: 40%;
+
+    background-color: #ffa8cc;
+    border-right: 6px dashed white;
+    border-left: 6px solid #1f768b;
+
+    border-radius: 20px 0 0 20px;
+
+    font-size: 1.2em
+}
+
+/* Main */
+
+.buttonWrapper {
+    display: flex;
+
+    text-decoration: none;
+    position: relative;
+
+    width: 350px;
+    max-height: 230px;
+    height: auto;
+
+    align-items: flex-end;
+
+    filter: grayscale(100%) sepia(20%);
+    transition: filter .25s ease-in-out;
+}
+
+.buttonWrapper:hover {
+    filter: none;
+}
+
+.systemButton {
+    display: flex;
+
+    width: 350px;
+    height: 200px;
+
+    background: #999999;
+    /* Base Color! */
+}
+
+.floaters {
+    position: absolute;
+}
+
+.systemButton p {
+    position: absolute;
+    margin: 0;
+
+    align-self: end;
+    right: 10px;
+
+    z-index: 5;
+}
+
+.buttonWrapper > .hidden {
+    position: absolute;
+    max-height: 250px;
+    width: 350px;
+    overflow: hidden;
+    z-index: 4;
+
+}
+
+/* Specifics */
+
+#Hanako {
+    border: 10px solid #93c5ff;
+    border-radius: 40px;
+
+    background: url("/members/memberSpecific/Hanako/frame0.gif");
+    background-position: right;
+}
+
+#HanakoWrapper:hover>#Hanako {
+    background: url("/members/memberSpecific/Hanako/water.gif");
+    background-position: right;
+}
+
+#HanakoWrapper .hidden {
+    border-radius: 40px;
+    bottom: 10px;
+}
+
+#Hanako p {
+    font-family: Chopin, Times, serif;
+    font-size: 6em;
+
+    -webkit-text-stroke: .3px #b97cff;
+    filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
+
+    bottom: -20px;
+}
+
+.water {
+    background-image: url(/assets/backgrounds/waterframe0.gif);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--deepblue);
+}
+
+#HanakoWrapper:hover>#Hanako>.water {
+    background-image: url(/assets/backgrounds/water.gif);
+}
+
+
+#kokomi {
+    width: 400px;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: top;
+    transform: translateY(0);
+}
+
+#HanakoWrapper:hover>.hidden>#kokomi {
+    animation: kokofloat 2s infinite ease-in-out;
+}
+
+@keyframes kokofloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#KKMfish {
+    width: 200px;
+    left: -90px;
+    top: -10px;
+    transform: translateX(20px) translateY(0) scaleX(-1) rotate(-10deg);
+
+    z-index: 6;
+}
+
+#HanakoWrapper:hover>#KKMfish {
+    animation: fishfloat 2s infinite ease-in-out;
+}
+
+@keyframes fishfloat {
+    0% {
+        transform: translateX(20px) translateY(0) scaleX(-1) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateX(25px) translateY(5px) scaleX(-1) rotate(-15deg);
+    }
+
+    100% {
+        transform: translateX(20px) translateY(0) scaleX(-1) rotate(-10deg);
+    }
+}
+
+#KKMshell {
+    width: 120px;
+    z-index: 5;
+
+    right: -30px;
+    bottom: -20px;
+
+    transform: rotate(140deg);
+}
+
+
+#HanakoWrapper:hover>#KKMshell {
+    animation: shellmove 2s infinite ease-in-out;
+}
+
+@keyframes shellmove {
+    0% {
+        transform: rotate(140deg);
+    }
+
+    50% {
+        transform: rotate(145deg);
+    }
+
+    100% {
+        transform: rotate(140deg);
+    }
+}
+
+/* Hanako Finished */
+
+#HanaWrapper:hover>#Hana {
+    background: url("/members/memberSpecific/Hana/sparklesky.gif");
+    background-clip: padding-box;
+}
+
+#HanaWrapper .hidden {
+    bottom: 14px;
+}
+
+#Hana {
+    border-width: 14px;
+    border-style: solid;
+    border-image: url("/assets/borders/laceborder.png") 14 round;
+    background: url("/members/memberSpecific/Hana/frame0.gif");
+    background-clip: padding-box;
+}
+
+#Hana p {
+    font-family: billo;
+    font-size: 5em;
+    padding-right: 10px;
+
+    -webkit-text-stroke: .9px black;
+    color: #bfb4ff;
+
+    bottom: -10px;
+}
+
+#HNmiku {
+    width: 350px;
+    transform: translateY(0);
+
+    filter: drop-shadow(0px 0px .5px white) drop-shadow(0px 0px .5px white) drop-shadow(0px 0px .5px white) drop-shadow(0px 0px .5px white) drop-shadow(0px 0px .5px white) drop-shadow(0px 0px .5px white) drop-shadow(0px 0px .5px white);
+
+    transform: rotate(0deg);
+}
+
+#HanaWrapper:hover>.hidden>#HNmiku {
+    animation: hnmikumove 4s infinite;
+}
+
+@keyframes hnmikumove {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    33% {
+        transform: translateY(0) rotate(3deg);
+    }
+
+    66% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+#HNwings {
+    top: 10px;
+    left: 10px;
+    transform: rotate(-10deg);
+    z-index: 10;
+
+    width: 135px;
+}
+
+#HNcloud {
+    bottom: 30%;
+    right: 20px;
+    transform: rotate(-10deg);
+    z-index: 10;
+}
+
+/* Hana Finished */
+
+#MillieWrapper .hidden {
+    bottom: 10px;
+    left: 6px;
+}
+
+#Millie {
+    border-style: solid;
+    border-width: 11px;
+    border-image: url("/assets/borders/blacklace-Solaria.png") 14 round;
+    background: url("/assets/backgrounds/stars5.gif");
+    background-clip: padding-box;
+}
+
+#Millie p {
+    font-family: Femme;
+    font-weight: bold;
+    font-size: 8em;
+    padding-right: 10px;
+
+    color: #ff6139;
+    -webkit-text-stroke: .2px white;
+}
+
+#MillsandMox {
+    width: 300px;
+
+    -webkit-filter: drop-shadow(3px 3px 0 #ffffff) drop-shadow(-3px -3px 0 #818181);
+    filter: drop-shadow(3px 3px 0 #818181) drop-shadow(-3px -3px 0 #ffffff);
+}
+
+/* Millie Finished */
+
+#GeraldineWrapper .hidden {
+    bottom: 12px;
+}
+
+#Geraldine {
+    border-width: 14px;
+    border-style: solid;
+    border-image: url("/assets/borders/cherryborder.png") 17 round;
+
+    background: url("/assets/backgrounds/stardew.png");
+    background-size: cover;
+    background-clip: content-box;
+}
+
+
+#Geraldine p {
+    font-family: Jungle;
+    font-weight: bold;
+    font-size: 4em;
+    padding-right: 10px;
+
+    color: #ff6139;
+    -webkit-text-stroke: .2px white;
+}
+
+#GDPicrew {
+    width: 200px;
+    transform: translateX(150px) scaleX(-1);
+}
+
+#junimo {
+    bottom: 10px;
+    width: 190px;
+    z-index: 6;
+}
+
+/* Geraldine Finished */
+
+#TIAWrapper .hidden {
+    bottom: 7px;
+    filter: hue-rotate(0);
+}
+
+#TIA {
+    border-top: 10px dashed white;
+    border-left: 10px dashed #ff56be;
+    border-right: 10px dashed #6756ff;
+    border-bottom: 10px dashed black;
+
+    background: url("/assets/backgrounds/stars.gif");
+    background-size: 30%;
+}
+
+#TIAWrapper:hover {
+    animation: colorchange 15s infinite;
+}
+
+@keyframes colorchange {
+    0%{
+        filter: hue-rotate(0);
+    }
+
+    50%{
+        filter: hue-rotate(360deg);
+    }
+
+    100%{
+        filter: hue-rotate(0);
+    }
+}
+
+#TIA p {
+    font-family: Omekashi;
+    font-weight: bold;
+    font-size: 2.3em;
+    text-align: left;
+    padding: 0 10px;
+
+    color: #aafcff;
+    background-color: black;
+    border-radius: 20px 0 0 20px;
+    width: 84%;
+
+    top: 25%;
+    z-index: 6;
+}
+
+#kangel{
+    width: 330px;
+}
+
+/* Pastel Goth Finished */
+
+#MARIWrapper .hidden {
+    display: flex;
+    justify-content: center;
+    bottom: 14px;
+}
+
+#MARI {
+    border-width: 14px;
+    border-style: solid;
+    border-image: url("/OMORI/img/picnic.jpg") 17 round;
+
+    background:
+        url("/OMORI/img/Space_parallax_stars.png"),
+        #6C0FFF;
+
+    background-size: 250%;
+    background-position: 0;
+    background-clip: content-box;
+}
+
+#MARIWrapper:hover>#MARI {
+    animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -250%;
+    }
+}
+
+#MARI p {
+    font-family: Normal;
+    font-weight: bold;
+    font-size: 3em;
+    
+    width: fit-content;
+    padding: 0 20px;
+    background-color: black;
+    border: 3px solid white;
+    outline: 3px solid black;
+    border-radius: 5px;
+    box-sizing: content-box;
+    color: white;
+}
+
+
+#MARIFriends {
+    width: 94%;
+}
+
+/* MARI Finished */
+
+/* General */
+
+h1 {
+    font-family: 'RainbowMemories', Times, serif;
+    color: white;
+    font-size: 2.8em;
+}
+
+planet{
+    font-size: 4em;
+    padding: 0;
+
+    filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
+}
+
+h2 {
+    font-family: 'RainbowMemories', Times, serif;
+    color: #ff7373;
+    font-size: 2.8em;
+}

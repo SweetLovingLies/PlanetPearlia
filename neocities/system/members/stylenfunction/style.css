@@ -1,0 +1,170 @@
+@import url("/css/general/globals.css");
+
+:root {
+    --blue1: #cfe8ef;
+    --blue2: #c6dbf0;
+    --blue3: #aed1e6;
+    --blue4: #a0c4e2;
+    --blue5: #85c7de;
+
+    --bradius: 20px;
+
+    --ridgeBorder: 2px ridge white;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('/fonts/8ptpixels/PokemonClassic.ttf');
+}
+
+@font-face {
+    font-family: basiic;
+    src: url('/fonts/16ptpixels/basiic.ttf');
+}
+
+body {
+    background: url("/assets/backgrounds/cloudynite.gif");
+
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parent {
+    flex: 0 1 50%;
+
+    /* Height is temporary */
+    height: 70%;
+    /* Height is temporary */
+
+    background-color: var(--blue4);
+    border-radius: var(--bradius);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    flex: 0 1 93%;
+    height: 90%;
+
+    background-color: var(--blue1);
+    border-radius: var(--bradius);
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+
+    gap: 20px;
+}
+
+header {
+    background-color: var(--blue3);
+    padding: 5px 15px;
+    border-radius: 10px;
+
+    font-family: pixel;
+
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    gap: 20px;
+
+    flex: 1 1 auto;
+}
+
+aside,
+main {
+    background-color: var(--blue3);
+    border-radius: var(--bradius);
+    flex: 1 1;
+
+    height: 100%;
+
+    padding: 10px;
+
+    font-family: basiic;
+}
+
+main {}
+
+
+#imageWrap img {
+    display: block;
+    position: relative;
+
+    margin: 0 auto 15px;
+    width: 90%;
+
+    border-radius: var(--bradius);
+    border: var(--ridgeBorder);
+
+    z-index: 3;
+}
+
+#imageWrap {
+    position: relative;
+}
+
+#imageWrap div {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    right: 6px;
+
+    background-color: blue;
+    width: 90%;
+    aspect-ratio: 16 / 9;
+
+    border-radius: var(--bradius);
+
+    transition: right 1s, top  1s;
+    filter: hue-rotate(0deg);
+
+    animation: outlineFun 2s linear infinite;
+}
+
+@keyframes outlineFun {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    25% {
+    }
+
+    50% {
+    }
+
+    75% {
+    }
+
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+
+
+
+/* Source: https://screenspan.net/polka/ */
+.polka {
+    background-image:
+        radial-gradient(white 10%, transparent 10%),
+        radial-gradient(white 10%, transparent 10%);
+    background-position: 0px 0px, 24px 24px;
+    background-size: 48px 48px;
+}
+
+img {
+    width: 100%;
+}

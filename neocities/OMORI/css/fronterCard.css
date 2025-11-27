@@ -35,6 +35,7 @@
     top: -20px;
     left: 0;
     right: 0;
+    z-index: 10;
     width: 80%;
     height: 34px;
     margin: auto;
@@ -58,6 +59,11 @@
 }
 
 /* Emotions! */
+
+.fine {
+    color: white;
+    font-size: 2em;
+}
 
 .happy {
     font-family: porkys;
@@ -150,6 +156,17 @@
     line-height: 1em;
 
     background: radial-gradient(circle, #ff85da 0%, #ff8296 50%, #c341ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.calm {
+    font-family: GentleCalm;
+    font-size: 2.1em;
+    line-height: 1em;
+
+    background: linear-gradient(to top, var(--RP5) 0%, var(--RP4) 50%, var(--RP3) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

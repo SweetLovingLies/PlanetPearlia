@@ -1,9 +1,17 @@
 @import url("general/globals.css");
 @import url("/OMORI/css/fronterCard.css");
+@import url("general/nowplaying!.css");
+@import url("general/marquee.css");
+
+:root {
+    --duration: 15s;
+    --scroll-start: 80%;
+    --scroll-end: -120%;
+}
 
 body {
     position: relative;
-    background: url("/assets/backgrounds/bg_clouds.gif");
+    background: url("/assets/backgrounds/angelclouds.gif") fixed;
 
     display: flex;
     justify-content: center;
@@ -12,6 +20,8 @@ body {
     /* ! Temp */
     font-family: 'rainyhearts', Arial, Helvetica, sans-serif;
 
+    padding-top: 70px;
+
     overflow-y: auto;
 }
 
@@ -19,30 +29,39 @@ body {
     display: flex;
 }
 
-#parent {
+#wrapper {
     /* ! Temp */
     flex: 0 1 70%;
     min-height: 100vh;
+}
 
-    border-top: none;
+.giftWrapping {
+    padding: 20px;
+
+    border: 6px solid white;
+    background: url("/assets/backgrounds/blueplaid.png");
+
     border-bottom: none;
+}
 
+#parent {
     position: relative;
 }
 
 #parent::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 
-    width: 70%;
+
+    width: 100%;
     height: 100%;
 
     background: url("/assets/backgrounds/holoOverlay2.png") center/contain;
     mix-blend-mode: overlay;
-    opacity: .4;
+    opacity: .6;
 
     pointer-events: none;
     user-select: none;
@@ -72,9 +91,9 @@ aside {
 }
 
 header {
-    height: 150px;
+    height: 300px;
     background-color: white;
-    background: url("/assets/myAssets/PearliaSystemM.png") center/cover;
+    background: url("/assets/myAssets/CrystalHeader.png") center/cover;
 
     display: flex;
     justify-content: center;
@@ -90,10 +109,14 @@ header img {
 }
 
 .box {
-    min-height: 100px;
     background-color: white;
 
+    overflow: hidden;
+
     border-radius: var(--globalBorderRadius);
+
+    border: ridge 4px var(--MP3);
+    outline: solid 4px var(--MP5)
 }
 
 /* & Content */
@@ -167,17 +190,46 @@ header img {
     vertical-align: -.4em;
 }
 
-/* ? Status Cafe */
+/* ? Chattable */
 
-#statusCafe {
-    padding: 10px;
+#chatBox {
+    height: 340px;
+    overflow: hidden;
 }
 
+/* ? Site Button */
+
+#siteButton {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+#siteButton img,
+#siteButton canvas {
+    width: 88px;
+    height: 31px;
+
+    filter: grayscale(0%) brightness(100%);
+}
+
+#siteButton textarea {
+    width: 100%;
+}
 
 /* ~ Middle */
 
+#ffControls {
+    background-color: var(--RP1);
+    justify-content: center;
+    gap: 10px;
+
+    padding: 5px;
+}
+
 #welcomeText {
-    background-color: var(--holoPastel1);
+    background: url(/assets/backgrounds/check5-b.gif);
     height: 200px;
     padding: 5px 10px;
 }
@@ -194,11 +246,131 @@ header img {
     gap: 20px;
 }
 
-#fronterView h2 {
+#eyecatcher {
+    gap: 10px;
+}
+
+/* ? Status Cafe */
+
+#statusCafe {
+    flex: 1 1;
+    padding: 10px;
+}
+
+#photoODay {
+    flex: 1 1;
+}
+
+#photoODay img,
+#photoODay canvas {
+    width: 100%;
+    height: 170px;
+}
+
+/* ~ Right */
+
+#pet {
+    background: url("/assets/backgrounds/tumblr_mb0595hJYH1qcm0eto1_r1_1280.png") center/contain;
+    border: 2px solid white;
+}
+
+#pet iframe {
+    width: 100%;
+    height: 330px;
+}
+
+#fakeAdSystem {
+    border-radius: var(--globalBorderRadius);
+    overflow: hidden;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+#fakeAdSystem #marquee {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+
+    background-color: var(--AP1);
+}
+
+
+#fakeAdSystem iframe {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+#webcam {
+    position: relative;
+    border-radius: 10px;
+
+    background: white;
+}
+
+#webcam sup,
+#webcam a {
+    color: #4932C9;
+}
+
+#webcam a {
+    font-weight: bold;
+}
+
+#kangel {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Decor */
+
+.divider {
+    background: url("/assets/backgrounds/bgtf5b.gif") fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90px;
+}
+
+.divider hr {
+    position: absolute;
+
+    border: none;
+    margin: 0;
+
+    background: url("/assets/pixels/headers/tumblr_lszm0yFakV1ql1l0v540.gif") center/contain;
+    width: 100%;
+    height: 32px;
+}
+
+.divider hr:first-of-type {
+    top: 0;
+    left: 0;
+}
+
+.divider hr:last-of-type {
+    bottom: 0;
+    transform: scaleY(-1);
+}
+
+.divider p {
+    position: relative;
+    z-index: 1;
+
     text-align: center;
+    font-family: 'Ethereal', sans-serif;
 }
 
 /* General */
+
+img,
+canvas {
+    filter: grayscale(60%) brightness(110%);
+    position: relative;
+}
 
 a {
     color: var(--DI5);
@@ -210,6 +382,8 @@ h2 {
     position: relative;
     text-align: center;
     padding-bottom: 3px;
+
+    background-color: white;
 }
 
 h2::after {

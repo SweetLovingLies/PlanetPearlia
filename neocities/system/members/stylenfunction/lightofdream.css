@@ -236,7 +236,7 @@ nav a::before {
 .beloved {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 400px;
     color: #696969;
     font-size: 14px;
     background-color: var(--icedust);

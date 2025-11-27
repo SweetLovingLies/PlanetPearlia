@@ -364,6 +364,11 @@ header img {
     font-family: 'Ethereal', sans-serif;
 }
 
+footer {
+    background-color: white;
+    text-align: center;
+}
+
 /* General */
 
 img,

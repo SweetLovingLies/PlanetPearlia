@@ -11,7 +11,7 @@
 }
 
 #cloudPlayer {
-
+    position: relative;
     transform: translateY(-400px);
 
     transition: transform 1s;

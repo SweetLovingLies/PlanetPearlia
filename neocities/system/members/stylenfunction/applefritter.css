@@ -80,12 +80,10 @@ body {
     font-family: "ThickJungle";
     font-size: 3.5rem;
     position: absolute;
-    color: #ff9900;
-    margin-top: -85px;
-    text-shadow: -1px 0 #17471a, 0 1px #17471a, 1px 0 #17471a, 0 -1px #17471a;
+    top: -15%;
 
-    margin-top: -75px;
-}
+    color: #ff9900;
+    text-shadow: -1px 0 #17471a, 0 1px #17471a, 1px 0 #17471a, 0 -1px #17471a;}
 
 #title img {
     width: 12%;

@@ -38,7 +38,7 @@ divider {
     right: 0;
 
     border-style: solid;
-    border-image: url("/Assets/myAssets/laceCircle.png") 90 round;
+    border-image: url("/assets/myAssets/laceCircle.png") 90 round;
     background-clip: padding-box;
 
     border-width: 50px;

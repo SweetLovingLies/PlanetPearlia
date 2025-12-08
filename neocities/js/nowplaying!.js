@@ -65,9 +65,7 @@ window.onload = function () {
         localStorage.setItem('songVolume', volumeSlider.value);
     }
 
-
     // Animation Stuffs
-
     let isHovered = false;
 
     const introAnimation = () => {
@@ -205,7 +203,7 @@ window.onload = function () {
 
             // console.log("isHoveredgraphicParent:", isHoveredgraphicParent, "isHoveredDetails:", isHoveredDetails);
 
-            // If neither is hovered, resume animations
+            // If neither is hovered, start the animation
             if (!isHoveredgraphicParent && !isHoveredDetails && !currentSong.paused) {
                 introAnimation();
             }
@@ -231,7 +229,12 @@ window.onload = function () {
             currentSong.muted = false;
             pauseButton.textContent = '❚❚';
             localStorage.setItem('isPaused', 'false');
-            resumeAnimations();
+            
+            if (!isHoveredgraphicParent && !isHoveredDetails && !currentSong.paused) {
+                introAnimation();
+            }
+
+
         } else {
             currentSong.pause();
             smoothStop();
@@ -251,7 +254,11 @@ window.onload = function () {
             currentSong.play();
             currentSong.muted = false;
             pauseButton.textContent = '❚❚';
-            resumeAnimations();
+            
+            if (!isHoveredgraphicParent && !isHoveredDetails && !currentSong.paused) {
+                introAnimation();
+            }
+
         }
     }
 

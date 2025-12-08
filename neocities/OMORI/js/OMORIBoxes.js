@@ -1,10 +1,10 @@
 function typewriter(prewrittenTexts, characterDisplayName, emotions, showCharacter, useWhiteLightbox) {
     const soundUrls = [
-        'https://fallenhuman.neocities.org/seni/text1.ogg',
-        'https://fallenhuman.neocities.org/seni/text2.ogg',
-        'https://fallenhuman.neocities.org/seni/text3.ogg',
-        'https://fallenhuman.neocities.org/seni/text4.ogg',
-        'https://fallenhuman.neocities.org/seni/text5.ogg'
+        './audio/text1.ogg',
+        './audio/text2.ogg',
+        './audio/text3.ogg',
+        './audio/text4.ogg',
+        './audio/text5.ogg'
     ];
 
     const audioObjects = soundUrls.map(url => {
